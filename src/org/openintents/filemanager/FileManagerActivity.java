@@ -626,7 +626,7 @@ public class FileManagerActivity extends ListActivity {
           mProgressBar.setVisibility(View.GONE);
           setListAdapter(null); 
           
-		  mDirectoryScanner = new DirectoryScanner(currentDirectory, this, currentHandler, mMimeTypes);
+		  mDirectoryScanner = new DirectoryScanner(currentDirectory, this, currentHandler, mMimeTypes, mSdCardPath);
 		  mDirectoryScanner.start();
 		  
 		  
@@ -906,17 +906,23 @@ public class FileManagerActivity extends ListActivity {
 		menu.add(0, MENU_RENAME, 0, R.string.menu_rename);
 		menu.add(0, MENU_DELETE, 0, R.string.menu_delete);
 
-        Uri data = Uri.fromFile(file);
-        Intent intent = new Intent(null, data);
-        String type = mMimeTypes.getMimeType(file.getName());
+		//if (!file.isDirectory()) {
+	        Uri data = Uri.fromFile(file);
+	        Intent intent = new Intent(null, data);
+	        String type = mMimeTypes.getMimeType(file.getName());
 
-        intent.setDataAndType(data, type);
+	        intent.setDataAndType(data, type);
+	        //intent.addCategory(Intent.CATEGORY_SELECTED_ALTERNATIVE);
 
-//        Log.v(TAG, "Data=" + data);
-//        Log.v(TAG, "Type=" + type);
-		
-		menu.addIntentOptions(Menu.CATEGORY_ALTERNATIVE, 0, 0,
-				new ComponentName(this, FileManagerActivity.class), null, intent, 0, null);
+	        Log.v(TAG, "Data=" + data);
+	        Log.v(TAG, "Type=" + type);
+
+	        if (type != null) {
+			// Add additional options for the MIME type of the selected file.
+				menu.addIntentOptions(Menu.CATEGORY_ALTERNATIVE, 0, 0,
+						new ComponentName(this, FileManagerActivity.class), null, intent, 0, null);
+	        }
+		//}
 	}
 
 	@Override

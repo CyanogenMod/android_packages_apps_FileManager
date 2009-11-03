@@ -22,16 +22,21 @@ To obtain the current release, visit
   http://www.openintents.org
 
 ---------------------------------------------------------
-release: 1.0.1
-date: 2008-12-??
-- Added support for following extensions:
+release: 1.1.0
+date: 2009-10-30
+- display file size.
+- show thumbnails for images.
+- copy files.
+- handle GET_CONTENT action.
+- added support for all WebKit extensions.
+- added support for following extensions:
   .amr, .3gp
-- Added support for upper case or mixed case letter
+- added support for upper case or mixed case letter
   extensions (like .png and .PNG)
-- Fix for send files via MMS.
+- fix for send files via MMS.
 - support for OI About.
 - encode file URIs properly
-- translations: French, German
+- translations: Chinese, French, German, Japanese, Spanish
 
 ---------------------------------------------------------
 release: 1.0.0

@@ -21,9 +21,10 @@
 
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
+  DiegoJ https://launchpad.net/~diegojromerolopez
   miwie https://launchpad.net/~mw-miwie</string>
 
-    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
+    <string name="about_comments">OI File Manager es un gestor abierto de archivos que cooperar fluidamente con otras aplicaciones.</string>
 	<string name="about_website_label">OI File Manager en OpenIntents</string>
 
 	<!-- ***************************
@@ -37,7 +38,7 @@
     <string name="menu_send">Enviar</string>
     <string name="menu_open">Abrir</string>
     <string name="menu_move">Mover</string>
-    <string name="menu_copy">Copy</string>
+    <string name="menu_copy">Copiar</string>
 
     <string name="create_new_folder">Crear nueva carpeta</string>
     <string name="folder_name">Nombre de carpeta</string>
@@ -50,14 +51,14 @@
     <string name="folder_renamed">Carpeta cambiado de nombre.</string>
     <string name="file_moved">Fichero movido.</string>
     <string name="folder_moved">Carpeta movido.</string>
-    <string name="file_copied">File copied.</string>
+    <string name="file_copied">Archivo copiado.</string>
     <string name="move_title">Seleccionar carpeta de destino</string>
     <string name="move_button">Mover acá</string>
-    <string name="copy_title">Select folder to copy to</string>
-    <string name="copy_button">Copy here</string>
+    <string name="copy_title">Seleccione carpeta a copiar a</string>
+    <string name="copy_button">Copiar aquí</string>
 
-    <string name="copied_file_name">Copy of %s</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
+    <string name="copied_file_name">Copia de %s</string>
+    <string name="copied_file_name_2">Copia %d de %s</string>
 
     <string name="error_creating_new_folder">No se puede crear la carpeta nueva.</string>
     <string name="error_deleting_file">No se puede borrar el fichero.</string>
@@ -66,7 +67,7 @@
     <string name="error_renaming_folder">No se puede cambiar de nombre de la carpeta.</string>
     <string name="error_moving_file">No se puede mover el fichero.</string>
     <string name="error_moving_folder">No se puede mover la carpeta.</string>
-    <string name="error_copying_file">Could not copy file.</string>
+    <string name="error_copying_file">No se pudo copiar el archivo.</string>
     <string name="error_file_does_not_exists">El archivo no existe.</string>
 
     <string name="send_not_available">Aplicación no disponible para enviar.</string>
@@ -83,10 +84,7 @@
 	<string name="eula_refuse">Cancelar</string>
 
 	<!-- Update -->
-	<string name="update_box_text">Please check manually for updates or install OI Update
-for automatic notifications.
-Current version: %s
-	</string>
+	<string name="update_box_text">Por favor, compruebe manualmente las actualizaciones o instale OI Update para notificaciones automáticas. Versión actual: %s</string>
 	<string name="update_check_now">Comprobar ahora.</string>
 	<string name="update_get_updater">Obtenga el Actualizador de OI</string>
 	<string name="update_error">Descarga aplicación no disponible.</string>
@@ -94,7 +92,7 @@ Current version: %s
 
     <!-- About -->
     <string name="about">Sobre</string>
-	<string name="aboutapp_not_available">Version %s\n\nNo compatible extension available to display full info (contact, credits, license).</string>
+	<string name="aboutapp_not_available">La versión %s\nNo es compatible con el complemento disponible para mostrar información completa (contacto, créditos, licencia).</string>
     <string name="aboutapp_get">Obtenga Acerca de OI</string>
 
 

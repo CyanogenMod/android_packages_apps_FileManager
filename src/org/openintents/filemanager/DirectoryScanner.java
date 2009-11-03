@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.openintents.filemanager.util.FileUtils;
 import org.openintents.filemanager.util.MimeTypes;
 
 import android.content.Context;
@@ -13,6 +14,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
@@ -43,12 +45,13 @@ public class DirectoryScanner extends Thread {
     
 
 
-	DirectoryScanner(File directory, Context context, Handler handler, MimeTypes mimeTypes) {
+	DirectoryScanner(File directory, Context context, Handler handler, MimeTypes mimeTypes, String sdCardPath) {
 		super("Directory Scanner");
 		currentDirectory = directory;
 		this.context = context;
 		this.handler = handler;
 		this.mMimeTypes = mimeTypes;
+		this.mSdCardPath = sdCardPath;
 	}
 	
 	private void clearData() {
@@ -129,7 +132,7 @@ public class DirectoryScanner extends Thread {
 
 				String mimetype = mMimeTypes.getMimeType(fileName);
 
-				currentIcon = getDrawableForMimetype(mimetype);
+				currentIcon = getDrawableForMimetype(currentFile, mimetype);
 				if (currentIcon == null) {
 					currentIcon = genericFileIcon;
 				}
@@ -204,17 +207,36 @@ public class DirectoryScanner extends Thread {
      * @param mimetype
      * @return
      */
-    Drawable getDrawableForMimetype(String mimetype) {
+    Drawable getDrawableForMimetype(File file, String mimetype) {
+     if (mimetype == null) {
+	 return null;
+     }
+
    	 PackageManager pm = context.getPackageManager();
    	 
+	 Uri data = FileUtils.getUri(file);
+
    	 Intent intent = new Intent(Intent.ACTION_VIEW);
-   	 intent.setType(mimetype);
+	 //intent.setType(mimetype);
    	 
+	 // Let's probe the intent exactly in the same way as the VIEW action
+	 // is performed in FileManagerActivity.openFile(..)
+     intent.setDataAndType(data, mimetype);
+
    	 final List<ResolveInfo> lri = pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
    	 
    	 if (lri != null && lri.size() > 0) {
+		 //Log.i(TAG, "lri.size()" + lri.size());
+
    		 // return first element
-   		 final ResolveInfo ri = lri.get(0);
+		 int index = 0;
+
+		 // Actually first element should be "best match",
+		 // but it seems that more recently installed applications
+		 // could be even better match.
+		 index = lri.size()-1;
+
+		 final ResolveInfo ri = lri.get(index);
    		 return ri.loadIcon(pm);
    	 }
    	 

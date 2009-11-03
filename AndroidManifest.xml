@@ -16,11 +16,34 @@
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.openintents.filemanager"
-	android:versionName="1.0.1-rc1"
-	android:versionCode="2">
-	<!-- History: 1.0.0 [1]: 2008-12-10
-	1.0.1 [2]: 2009-01-16 -->
+	android:versionName="1.1.0"
+	android:versionCode="5">
+	<!-- History:
+	[5] 1.1.0:     2009-10-30
+	[4] 1.1.0-rc1: 2009-10-24
+	[3] 1.0.2:     2009-10-15
+	[2] 1.0.1:     2009-01-16
+	[1] 1.0.0:     2008-12-10
+	-->
+
+
+        <uses-sdk android:minSdkVersion="2"
+            android:targetSdkVersion="4"
+
+     />
+
+<supports-screens android:smallScreens="true"
+                  android:normalScreens="true"
+                  android:largeScreens="true"
+/>
+
+	    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application android:icon="@drawable/ic_launcher_folder" android:label="@string/app_name">
+
+        <!-- aTrackDog metadata -->
+        <meta-data android:name="com.a0soft.gphone.aTrackDog.testVersion"
+           android:value="4" />
+
 		<meta-data android:name="org.openintents.metadata.COMMENTS"
                        android:value="@string/about_comments" />
         <meta-data android:name="org.openintents.metadata.COPYRIGHT"
@@ -80,4 +103,4 @@
         </activity>  -->
     <provider android:name=".FileManagerProvider" android:authorities="org.openintents.filemanager"></provider>
 </application>
-</manifest> 
+</manifest>

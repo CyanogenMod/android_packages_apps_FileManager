@@ -21,7 +21,8 @@
 	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
-  Peli https://launchpad.net/~peli0101</string>
+  Peli https://launchpad.net/~peli0101
+  marco.jahn https://launchpad.net/~accounts+launchpad-net</string>
 	
     <string name="about_comments">OI Dateimanager ist ein offener Dateimanager, der nahtlos mit anderen Anwendungen zusammenarbeitet.</string>  
 	<string name="about_website_label">OI Dateimanager auf OpenIntents</string> 
@@ -37,7 +38,7 @@
     <string name="menu_send">Senden</string>
     <string name="menu_open">Öffnen</string>
     <string name="menu_move">Verschieben</string>
-    <string name="menu_copy">Copy</string>
+    <string name="menu_copy">Kopie</string>
     
     <string name="create_new_folder">Neuen Ordner erstellen</string>
     <string name="folder_name">Name des Ordners</string>
@@ -50,14 +51,14 @@
     <string name="folder_renamed">Ordner umbenannt.</string>
     <string name="file_moved">Datei verschoben.</string>
     <string name="folder_moved">Ordner verschoben.</string>
-    <string name="file_copied">File copied.</string>
+    <string name="file_copied">Datei kopiert.</string>
     <string name="move_title">Ordner zum Verschieben auswählen</string>
     <string name="move_button">Hierher verschieben</string>
-    <string name="copy_title">Select folder to copy to</string>
-    <string name="copy_button">Copy here</string>
-    
-    <string name="copied_file_name">Copy of %s</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
+    <string name="copy_title">Wählen Sie Zielverzeichnis für den Kopiervorgang</string>
+    <string name="copy_button">Hierher kopieren</string>
+
+    <string name="copied_file_name">Kopie von %s</string>
+    <string name="copied_file_name_2">%d von %s kopiert</string>
 
     <string name="error_creating_new_folder">Neuer Ordner konnte nicht erstellt werden.</string>
     <string name="error_deleting_file">Datei konnte nicht gelöscht werden.</string>
@@ -66,7 +67,7 @@
     <string name="error_renaming_folder">Ordner konnte nicht umbenannt werden.</string>
     <string name="error_moving_file">Datei konnte nicht verschoben werden.</string>
     <string name="error_moving_folder">Ordner konnte nicht verschoben werden.</string>
-    <string name="error_copying_file">Could not copy file.</string>
+    <string name="error_copying_file">Datei kann nicht kopiert werden.</string>
     <string name="error_file_does_not_exists">Datei existiert nicht.</string>
     
     <string name="send_not_available">Keine Anwendung zum Senden vorhanden.</string>

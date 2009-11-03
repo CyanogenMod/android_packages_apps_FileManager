@@ -22,7 +22,7 @@
 	<type extension=".jpeg" mimetype="image/jpeg" />
 	<type extension=".bmp" mimetype="image/bmp" />
 	    
-	<!-- Autio types -->
+	<!-- Audio types -->
 	<type extension=".mp3" mimetype="audio/mp3" />
 	<type extension=".wav" mimetype="audio/wav" />
 	<type extension=".ogg" mimetype="audio/x-ogg" />

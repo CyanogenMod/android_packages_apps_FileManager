@@ -21,6 +21,7 @@
 
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
+  Simon de Vlieger https://launchpad.net/~ikanobori
   pjv https://launchpad.net/~pjv</string>
 
     <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
@@ -37,7 +38,7 @@
     <string name="menu_send">Verzenden</string>
     <string name="menu_open">Openen</string>
     <string name="menu_move">Verplaatsen</string>
-    <string name="menu_copy">Copy</string>
+    <string name="menu_copy">Kopieer</string>
 
     <string name="create_new_folder">Nieuwe map aanmaken</string>
     <string name="folder_name">Naam van de map</string>
@@ -50,14 +51,14 @@
     <string name="folder_renamed">Map hernoemd.</string>
     <string name="file_moved">Bestand verplaatst.</string>
     <string name="folder_moved">Map verplaatst.</string>
-    <string name="file_copied">File copied.</string>
-    <string name="move_title">Select folder to move to</string>
-    <string name="move_button">Move here</string>
-    <string name="copy_title">Select folder to copy to</string>
-    <string name="copy_button">Copy here</string>
+    <string name="file_copied">Bestand gekopieerd.</string>
+    <string name="move_title">Kies map om naartoe te verplaatsen</string>
+    <string name="move_button">Hierheen verplaatsen</string>
+    <string name="copy_title">Kies map om naartoe te kopiëren</string>
+    <string name="copy_button">Kopieer hier</string>
 
-    <string name="copied_file_name">Copy of %s</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
+    <string name="copied_file_name">Kopie van %s</string>
+    <string name="copied_file_name_2">Kopie %d van %s</string>
 
     <string name="error_creating_new_folder">Could not create new folder.</string>
     <string name="error_deleting_file">Could not delete file.</string>
