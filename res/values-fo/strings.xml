@@ -21,7 +21,8 @@
 
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
-  Gunleif Joensen https://launchpad.net/~gunleif</string>
+  Gunleif Joensen https://launchpad.net/~gunleif
+  Peli https://launchpad.net/~peli0101</string>
 
     <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
 	<string name="about_website_label">OI File Manager at OpenIntents</string>

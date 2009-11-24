@@ -1121,20 +1121,48 @@ public class FileManagerActivity extends ListActivity {
 		}
 	}
 
+	/*! Recursively delete a directory and all of its children.
+	 *  @params toastOnError If set to true, this function will toast if an error occurs.
+	 *  @returns true if successful, false otherwise.
+	 */
+	private boolean recursiveDelete(File file, boolean toastOnError) {
+		// Recursively delete all contents.
+		File[] files = file.listFiles();
+
+		for (int x=0; x<files.length; x++) {
+			File childFile = files[x];
+			if (childFile.isDirectory()) {
+				if (!recursiveDelete(childFile, toastOnError)) {
+					return false;
+				}
+			} else {
+				if (!childFile.delete()) {
+					Toast.makeText(this, getString(R.string.error_deleting_child_file, childFile.getAbsolutePath()), Toast.LENGTH_LONG);
+					return false;
+				}
+			}
+		}
+
+		if (!file.delete()) {
+			Toast.makeText(this, getString(R.string.error_deleting_folder, file.getAbsolutePath()), Toast.LENGTH_LONG);
+			return false;
+		}
+
+		return true;
+	}
 
 	private void deleteFileOrFolder(File file) {
 		
-		if (file.delete()) {
-			// Delete was successful.
-			refreshList();
-			if (file.isDirectory()) {
+		if (file.isDirectory()) {
+			if (recursiveDelete(file, true)) {
+				refreshList();
 				Toast.makeText(this, R.string.folder_deleted, Toast.LENGTH_SHORT).show();
-			} else {
-				Toast.makeText(this, R.string.file_deleted, Toast.LENGTH_SHORT).show();
 			}
 		} else {
-			if (file.isDirectory() && file.list().length > 0) {
-				Toast.makeText(this, R.string.error_folder_not_empty, Toast.LENGTH_SHORT).show();
+			if (file.delete()) {
+				// Delete was successful.
+				refreshList();
+				Toast.makeText(this, R.string.file_deleted, Toast.LENGTH_SHORT).show();
 			} else {
 				Toast.makeText(this, R.string.error_deleting_file, Toast.LENGTH_SHORT).show();
 			}
