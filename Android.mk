@@ -12,16 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH:= $(call my-dir)
-include $(CLEAR_VARS)
-
-LOCAL_MODULE_TAGS := user
-
-LOCAL_SRC_FILES := $(call all-java-files-under, src)
-
-LOCAL_PACKAGE_NAME := FileManager
-
-include $(BUILD_PACKAGE)
-
-# Use the following include to make our test apk.
-include $(call all-makefiles-under,$(LOCAL_PATH))
+$(call build-third-party-package)
