@@ -22,6 +22,7 @@
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
   DiegoJ https://launchpad.net/~diegojromerolopez
+  Paco Molinero https://launchpad.net/~franciscomol
   miwie https://launchpad.net/~mw-miwie</string>
 
     <string name="about_comments">OI File Manager es un gestor abierto de archivos que cooperar fluidamente con otras aplicaciones.</string>
@@ -62,13 +63,14 @@
 
     <string name="error_creating_new_folder">No se puede crear la carpeta nueva.</string>
     <string name="error_deleting_file">No se puede borrar el fichero.</string>
-    <string name="error_folder_not_empty">Carpeta no es vacia.</string>
+    <string name="error_deleting_folder">No se puede borrar la carpeta «'%sx.</string>
     <string name="error_renaming_file">No se puede cambiar de nombre del fichero.</string>
     <string name="error_renaming_folder">No se puede cambiar de nombre de la carpeta.</string>
     <string name="error_moving_file">No se puede mover el fichero.</string>
     <string name="error_moving_folder">No se puede mover la carpeta.</string>
     <string name="error_copying_file">No se pudo copiar el archivo.</string>
     <string name="error_file_does_not_exists">El archivo no existe.</string>
+    <string name="error_deleting_child_file">No se puede borrar el archivo hijo «%s».</string>
 
     <string name="send_not_available">Aplicación no disponible para enviar.</string>
 

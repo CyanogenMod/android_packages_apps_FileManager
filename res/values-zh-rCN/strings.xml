@@ -61,13 +61,14 @@
     
     <string name="error_creating_new_folder">无法建立新文件夹</string>
     <string name="error_deleting_file">无法删除文件</string>
-    <string name="error_folder_not_empty">文件夹不为空</string>
+    <string name="error_deleting_folder">Could not delete folder '%s'.</string>
     <string name="error_renaming_file">无法重命名文件</string>
     <string name="error_renaming_folder">无法重命名文件夹</string>
     <string name="error_moving_file">无法移动文件</string>
     <string name="error_moving_folder">无法移动文件夹</string>
     <string name="error_copying_file">无法复制文件</string>
     <string name="error_file_does_not_exists">文件不存在</string>
+    <string name="error_deleting_child_file">Could not delete child file '%s'.</string>
     
     <string name="send_not_available">无法找到用于传送的应用程序</string>
     

@@ -16,9 +16,11 @@
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.openintents.filemanager"
-	android:versionName="1.1.0"
-	android:versionCode="5">
+	android:versionName="1.1.1"
+	android:versionCode="6">
 	<!-- History:
+	[7] 1.1.1:     2009-12-26
+	[6] 1.1.1-rc1: 2009-12-19
 	[5] 1.1.0:     2009-10-30
 	[4] 1.1.0-rc1: 2009-10-24
 	[3] 1.0.2:     2009-10-15
@@ -28,9 +30,9 @@
 
 
         <uses-sdk android:minSdkVersion="2"
-            android:targetSdkVersion="4"
-
-     />
+            android:targetSdkVersion="4" />
+        <!-- If targetSdkVersion is increased, the following needs to be adjusted:
+             * FileManagerActivity: onKeyDown(): New way how "back" key is handled. -->
 
 <supports-screens android:smallScreens="true"
                   android:normalScreens="true"
@@ -42,7 +44,7 @@
 
         <!-- aTrackDog metadata -->
         <meta-data android:name="com.a0soft.gphone.aTrackDog.testVersion"
-           android:value="4" />
+           android:value="6" />
 
 		<meta-data android:name="org.openintents.metadata.COMMENTS"
                        android:value="@string/about_comments" />
