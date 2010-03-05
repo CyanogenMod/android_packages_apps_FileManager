@@ -21,6 +21,18 @@ seamlessly cooperates with other applications.
 To obtain the current release, visit
   http://www.openintents.org
 
+
+---------------------------------------------------------
+release: 1.1.2
+date: 2010-?-?
+- translations: Russian
+
+---------------------------------------------------------
+release: 1.1.1
+date: 2009-12-26
+- recursive delete
+- translations: Dutch, Faroese, Korean, Lao, Romanian
+
 ---------------------------------------------------------
 release: 1.1.0
 date: 2009-10-30

@@ -1338,6 +1338,35 @@ public class FileManagerActivity extends ListActivity {
 		return super.onKeyDown(keyCode, event);
 	}
 	
+	// For targetSdkVersion="5" or higher, one needs to use the following code instead of the one above:
+	// (See http://android-developers.blogspot.com/2009/12/back-and-other-hard-keys-three-stories.html )
+
+	/*
+	//@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)  {
+	    if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.ECLAIR
+	            && keyCode == KeyEvent.KEYCODE_BACK
+	            && event.getRepeatCount() == 0) {
+	        // Take care of calling this method on earlier versions of
+	        // the platform where it doesn't exist.
+	        onBackPressed();
+	    }
+
+	    return super.onKeyDown(keyCode, event);
+	}
+
+	//@Override
+	public void onBackPressed() {
+	    // This will be called either automatically for you on 2.0
+	    // or later, or by the code above on earlier versions of the
+	    // platform.
+		if (mStepsBack > 0) {
+			upOneLevel();
+		} else {
+			finish();
+		}
+	}
+	*/
 
     /**
      * This is called after the file manager finished.
