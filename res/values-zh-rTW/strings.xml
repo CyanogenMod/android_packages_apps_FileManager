@@ -61,14 +61,14 @@
     
     <string name="error_creating_new_folder">無法建立新資料夾。</string>
     <string name="error_deleting_file">無法刪除檔案。</string>
-    <string name="error_deleting_folder">Could not delete folder '%s'.</string>
+    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
     <string name="error_renaming_file">檔案無法重新命名。</string>
     <string name="error_renaming_folder">資料夾無法重新命名。</string>
     <string name="error_moving_file">無法移動檔案。</string>
     <string name="error_moving_folder">無法移動資料夾。</string>
     <string name="error_copying_file">無法複製檔案。</string>
     <string name="error_file_does_not_exists">檔案不存在。</string>
-    <string name="error_deleting_child_file">Could not delete child file '%s'.</string>
+    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
     
     <string name="send_not_available">找不到傳送用的應用程式。</string>
     

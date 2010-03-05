@@ -61,14 +61,14 @@
 
     <string name="error_creating_new_folder">새 폴더를 생성할 수 없습니다.</string>
     <string name="error_deleting_file">파일을 삭제할 수 없습니다.</string>
-    <string name="error_deleting_folder">Could not delete folder '%s'.</string>
+    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
     <string name="error_renaming_file">파일의 이름을 변경할 수 없습니다.</string>
     <string name="error_renaming_folder">폴더의 이름을 변경할 수 없습니다.</string>
     <string name="error_moving_file">파일을 이동할 수 없습니다.</string>
     <string name="error_moving_folder">폴더를 이동할 수 없습니다.</string>
     <string name="error_copying_file">파일을 복사할 수 없습니다.</string>
     <string name="error_file_does_not_exists">파일이 존재하지 않습니다.</string>
-    <string name="error_deleting_child_file">Could not delete child file '%s'.</string>
+    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
 
     <string name="send_not_available">No application available for sending.</string>
 

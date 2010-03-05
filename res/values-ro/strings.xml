@@ -62,14 +62,14 @@
 
     <string name="error_creating_new_folder">Nu am putut crea un dosar nou.</string>
     <string name="error_deleting_file">Nu am putut șterge fișierul.</string>
-    <string name="error_deleting_folder">Could not delete folder '%s'.</string>
+    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
     <string name="error_renaming_file">Nu am putut redenumi fișierul.</string>
     <string name="error_renaming_folder">Nu am putut redenumi dosarul.</string>
     <string name="error_moving_file">Nu am putut muta fișierul.</string>
     <string name="error_moving_folder">Nu am putut muta dosarul.</string>
     <string name="error_copying_file">Nu am putut copia fișierul.</string>
     <string name="error_file_does_not_exists">Fișierul nu există.</string>
-    <string name="error_deleting_child_file">Could not delete child file '%s'.</string>
+    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
 
     <string name="send_not_available">Nu există aplicație pentru trimitere.</string>
 

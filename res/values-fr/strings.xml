@@ -71,7 +71,7 @@
     <string name="error_file_does_not_exists">Le fichier n\'existe pas.</string>
     <string name="error_deleting_child_file">Impossible de supprimer le fichier enfant «%s».</string>
 
-    <string name="send_not_available">Pas d'application disponible pour l\'envoi</string>
+    <string name="send_not_available">Pas d\'application disponible pour l\'envoi</string>
 
     <string name="application_not_available">Application non disponible</string>
 

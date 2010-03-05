@@ -62,14 +62,14 @@
 
     <string name="error_creating_new_folder">Невозможно создать новую папку.</string>
     <string name="error_deleting_file">Невозможно удалить файл.</string>
-    <string name="error_deleting_folder">Невозможно удалить папку '%s'.</string>
+    <string name="error_deleting_folder">Невозможно удалить папку \'%s\'.</string>
     <string name="error_renaming_file">Невозможно переименовать файл.</string>
     <string name="error_renaming_folder">Невозможно переименовать папку.</string>
     <string name="error_moving_file">Невозможно переместить файл.</string>
     <string name="error_moving_folder">Невозможно переместить папку.</string>
     <string name="error_copying_file">Невозможно скопировать файл.</string>
     <string name="error_file_does_not_exists">Файл не существует.</string>
-    <string name="error_deleting_child_file">Невозможно удалить вложенный файл '%s'.</string>
+    <string name="error_deleting_child_file">Невозможно удалить вложенный файл \'%s\'.</string>
 
     <string name="send_not_available">Нет приложения для отправки.</string>
 

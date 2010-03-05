@@ -63,7 +63,7 @@
 
     <string name="error_creating_new_folder">Neuer Ordner konnte nicht erstellt werden.</string>
     <string name="error_deleting_file">Datei konnte nicht gelöscht werden.</string>
-    <string name="error_deleting_folder">Ordner '%s' kann nicht gelöscht werden.</string>
+    <string name="error_deleting_folder">Ordner \'%s\' kann nicht gelöscht werden.</string>
     <string name="error_renaming_file">Datei konnte nicht umbenannt werden.</string>
     <string name="error_renaming_folder">Ordner konnte nicht umbenannt werden.</string>
     <string name="error_moving_file">Datei konnte nicht verschoben werden.</string>
