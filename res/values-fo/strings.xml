@@ -36,7 +36,7 @@
     <string name="menu_delete">Strika</string>
     <string name="menu_rename">Nýnevna</string>
     <string name="menu_send">Senda</string>
-    <string name="menu_open">Opna</string>
+    <string name="menu_open">Lat upp</string>
     <string name="menu_move">Flyt</string>
     <string name="menu_copy">Copy</string>
 
@@ -45,33 +45,33 @@
     <string name="file_name">Skjáttu navn</string>
     <string name="this_folder_is_empty">Hendan skjáttan er tóm</string>
     <string name="really_delete">Vil tú veruliga strika %s?</string>
-    <string name="file_deleted">Fíla strika</string>
+    <string name="file_deleted">Fíla strikað</string>
     <string name="folder_deleted">Skjátta strikað.</string>
     <string name="file_renamed">Fíla nýnevnd</string>
     <string name="folder_renamed">Skjátta nýnevnd</string>
     <string name="file_moved">Fýla flutt</string>
     <string name="folder_moved">Skjátta flutt</string>
-    <string name="file_copied">File copied.</string>
+    <string name="file_copied">Fíla avritað</string>
     <string name="move_title">Vel skjáttu at flyta til</string>
     <string name="move_button">Flyt hertil</string>
-    <string name="copy_title">Select folder to copy to</string>
-    <string name="copy_button">Copy here</string>
+    <string name="copy_title">Vel skjáttu at avrita til</string>
+    <string name="copy_button">Avrita her</string>
 
-    <string name="copied_file_name">Copy of %s</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
+    <string name="copied_file_name">Avrita av %s</string>
+    <string name="copied_file_name_2">Avrita %d av %s</string>
 
     <string name="error_creating_new_folder">Kundi ikki stovna nýggja skjáttu.</string>
     <string name="error_deleting_file">Kundi ikki strika fílu.</string>
-    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
+    <string name="error_deleting_folder">Kundi ikki strika skjáttu \'%s\'.</string>
     <string name="error_renaming_file">Kundi ikki nýnevna fílu.</string>
     <string name="error_renaming_folder">Kundi ikki nýnevna skjáttu.</string>
     <string name="error_moving_file">Kundi ikki flýta fílu.</string>
-    <string name="error_moving_folder">Kundi ikki flyta.</string>
-    <string name="error_copying_file">Could not copy file.</string>
+    <string name="error_moving_folder">Kundi ikki flyta skjáttu.</string>
+    <string name="error_copying_file">Kundi ikki avrita fílu.</string>
     <string name="error_file_does_not_exists">Fíla finnst ei.</string>
-    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
+    <string name="error_deleting_child_file">Kundi ikki strika fílu \'%s\'.</string>
 
-    <string name="send_not_available">Eingin nýtsluskipan tøk til varpingar</string>
+    <string name="send_not_available">Eingin nýtsluskipan tøk til sending.</string>
 
     <string name="application_not_available">Nýtsluskipan ikki tøk</string>
 
@@ -81,7 +81,7 @@
 
 	<!-- EULA -->
 	<string name="eula_title">OI File Manager EULA</string>
-	<string name="eula_accept">Accept</string>
+	<string name="eula_accept">Játta</string>
 	<string name="eula_refuse">Ógilda</string>
 
 	<!-- Update -->
@@ -92,7 +92,7 @@ Current version: %s
 	<string name="update_check_now">Kanna nú.</string>
 	<string name="update_get_updater">Get OI Updater.</string>
 	<string name="update_error">Niðurtøku nýtsluskipan ikki tøk.</string>
-	<string name="update">Kanna dagførslur</string>
+	<string name="update">Kanna dagføringar</string>
 
     <!-- About -->
     <string name="about">Um</string>

@@ -3,8 +3,10 @@ package org.openintents.filemanager;
 import java.io.File;
 import java.util.List;
 
+import org.openintents.filemanager.compatibility.BitmapDrawable_Compatible;
 import org.openintents.filemanager.util.FileUtils;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -21,17 +23,24 @@ public class ThumbnailLoader extends Thread {
     boolean cancel;
     File file;
     Handler handler;
+    Context context;
 	
-    private int thumbnailWidth = 32;
-    private int thumbnailHeight = 32;
+    private static int thumbnailWidth = 32;
+    private static int thumbnailHeight = 32;
     
 	
-	ThumbnailLoader(File file, List<IconifiedText> list, Handler handler) {
+	ThumbnailLoader(File file, List<IconifiedText> list, Handler handler, Context context) {
 		super("Thumbnail Loader");
 		
 		listFile = list;
 		this.file = file;
 		this.handler = handler;
+		this.context = context;
+	}
+
+	public static void setThumbnailHeight(int height) {
+		thumbnailHeight = height;
+		thumbnailWidth = height * 4 / 3;
 	}
 	
 	public void run() {
@@ -85,7 +94,11 @@ public class ThumbnailLoader extends Thread {
 					if (bitmap != null) {
 //						Log.v(TAG, "Got thumbnail for " + text.getText());
 						
-						BitmapDrawable drawable = new BitmapDrawable(bitmap);
+						// SDK 1.6 and higher only:
+						// BitmapDrawable drawable = new BitmapDrawable(context.getResources(), bitmap);
+
+						BitmapDrawable drawable = BitmapDrawable_Compatible.getNewBitmapDrawable(context.getResources(), bitmap);
+
 						drawable.setGravity(Gravity.CENTER);
 						drawable.setBounds(0, 0, thumbnailWidth, thumbnailHeight);
 						

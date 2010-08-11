@@ -20,82 +20,82 @@
 	     *************************** -->
 
 	<!-- Automatically filled in by Launchpad: -->
-	<string name="about_translators">translator-credits</string>
+	<string name="about_translators">Launchpad Contributions:
+  Diego Pierotto https://launchpad.net/~gringo
+  Federico Pontelli https://launchpad.net/~federico
+  Peli https://launchpad.net/~peli0101</string>
 
-    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
-	<string name="about_website_label">OI File Manager at OpenIntents</string>
+    <string name="about_comments">OI Gestore File è un gestore di file che coopera senza soluzione di continuità con altre applicazioni.</string>
+	<string name="about_website_label">OI Gestore File di OpenIntents</string>
 
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
-    <string name="app_name">OI File Manager</string>
+    <string name="app_name">OI Gestore File</string>
 
-    <string name="menu_new_folder">New Folder</string>
-    <string name="menu_delete">Delete</string>
-    <string name="menu_rename">Rename</string>
-    <string name="menu_send">Send</string>
-    <string name="menu_open">Open</string>
-    <string name="menu_move">Move</string>
-    <string name="menu_copy">Copy</string>
+    <string name="menu_new_folder">Nuova cartella</string>
+    <string name="menu_delete">Elimina</string>
+    <string name="menu_rename">Rinomina</string>
+    <string name="menu_send">Invia</string>
+    <string name="menu_open">Apri</string>
+    <string name="menu_move">Sposta</string>
+    <string name="menu_copy">Copia</string>
 
-    <string name="create_new_folder">Create new folder</string>
-    <string name="folder_name">Folder name</string>
-    <string name="file_name">Folder name</string>
-    <string name="this_folder_is_empty">This folder is empty.</string>
-    <string name="really_delete">Do you really want to delete %s?</string>
-    <string name="file_deleted">File deleted.</string>
-    <string name="folder_deleted">Folder deleted.</string>
-    <string name="file_renamed">File renamed.</string>
-    <string name="folder_renamed">Folder renamed.</string>
-    <string name="file_moved">File moved.</string>
-    <string name="folder_moved">Folder moved.</string>
-    <string name="file_copied">File copied.</string>
-    <string name="move_title">Select folder to move to</string>
-    <string name="move_button">Move here</string>
-    <string name="copy_title">Select folder to copy to</string>
-    <string name="copy_button">Copy here</string>
+    <string name="create_new_folder">Crea nuova cartella</string>
+    <string name="folder_name">Nome cartella</string>
+    <string name="file_name">Nome cartella</string>
+    <string name="this_folder_is_empty">Questa cartella è vuota.</string>
+    <string name="really_delete">Sei sicuro di eliminare %s?</string>
+    <string name="file_deleted">Il file è stato eliminato.</string>
+    <string name="folder_deleted">La cartella è stata eliminata.</string>
+    <string name="file_renamed">Il file è stato rinominato.</string>
+    <string name="folder_renamed">La cartella è stata rinominata.</string>
+    <string name="file_moved">Il file è stato spostato.</string>
+    <string name="folder_moved">La cartella è stata spostata.</string>
+    <string name="file_copied">Il file è stato copiato.</string>
+    <string name="move_title">Seleziona la cartella dove spostare</string>
+    <string name="move_button">Sposta qui</string>
+    <string name="copy_title">Seleziona la cartella dove copiare</string>
+    <string name="copy_button">Copia qui</string>
 
-    <string name="copied_file_name">Copy of %s</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
+    <string name="copied_file_name">Copia di %s</string>
+    <string name="copied_file_name_2">Copia %d di %s</string>
 
-    <string name="error_creating_new_folder">Could not create new folder.</string>
-    <string name="error_deleting_file">Could not delete file.</string>
-    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
-    <string name="error_renaming_file">Could not rename file.</string>
-    <string name="error_renaming_folder">Could not rename folder.</string>
-    <string name="error_moving_file">Could not move file.</string>
-    <string name="error_moving_folder">Could not move folder.</string>
-    <string name="error_copying_file">Could not copy file.</string>
-    <string name="error_file_does_not_exists">File does not exist.</string>
-    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
+    <string name="error_creating_new_folder">Impossibile creare una nuova cartella.</string>
+    <string name="error_deleting_file">Impossibile eliminare il file.</string>
+    <string name="error_deleting_folder">Impossibile eliminare la cartella \'%s\'.</string>
+    <string name="error_renaming_file">Impossibile rinominare il file.</string>
+    <string name="error_renaming_folder">Impossibile rinominare la cartella.</string>
+    <string name="error_moving_file">Impossibile spostare il file.</string>
+    <string name="error_moving_folder">Impossibile spostare la cartella.</string>
+    <string name="error_copying_file">Impossibile copiare il file.</string>
+    <string name="error_file_does_not_exists">Il file non esiste.</string>
+    <string name="error_deleting_child_file">Impossibile eliminare il sotto file \'%s\'.</string>
 
-    <string name="send_not_available">No application available for sending.</string>
+    <string name="send_not_available">Nessuna applicazione disponibile per l\'invio</string>
 
-    <string name="application_not_available">Application not available</string>
+    <string name="application_not_available">Applicazione non disponibile</string>
 
 	<!-- ***************************
 	     Distribution
 	     *************************** -->
 
 	<!-- EULA -->
-	<string name="eula_title">OI File Manager EULA</string>
-	<string name="eula_accept">Accept</string>
-	<string name="eula_refuse">Cancel</string>
+	<string name="eula_title">EULA OI Gestore File</string>
+	<string name="eula_accept">Accetto</string>
+	<string name="eula_refuse">Annulla</string>
 
 	<!-- Update -->
-	<string name="update_box_text">Please check manually for updates or install OI Update
-for automatic notifications.
-Current version: %s
-	</string>
-	<string name="update_check_now">Check now.</string>
-	<string name="update_get_updater">Get OI Updater.</string>
-	<string name="update_error">Download application not available.</string>
-	<string name="update">Check updates</string>
+	<string name="update_box_text">Controlla manualmente gli aggiornamenti o installa OI Aggiornamenti per le notifiche automatiche. Versione attuale: %s</string>
+	<string name="update_check_now">Controlla adesso.</string>
+	<string name="update_get_updater">Scarica OI Aggiornamenti.</string>
+	<string name="update_error">Scaricamento dell\'applicazione non disponibile.</string>
+	<string name="update">Controlla aggiornamenti</string>
 
     <!-- About -->
-    <string name="about">About</string>
-	<string name="aboutapp_not_available">Version %s\n\nNo compatible extension available to display full info (contact, credits, license).</string>
-    <string name="aboutapp_get">Get OI About</string>
+    <string name="about">Info</string>
+	<string name="aboutapp_not_available">Versione %s\n\nNessuna estensione compatibile disponibile per mostrare tutte le info (contatti, crediti, licenza).</string>
+    <string name="aboutapp_get">Scarica OI Info</string>
 
 
 </resources>

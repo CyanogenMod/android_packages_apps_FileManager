@@ -70,7 +70,7 @@
     <string name="error_moving_folder">Ordner konnte nicht verschoben werden.</string>
     <string name="error_copying_file">Datei kann nicht kopiert werden.</string>
     <string name="error_file_does_not_exists">Datei existiert nicht.</string>
-    <string name="error_deleting_child_file">Konnte Unterdatei %s nicht löschen</string>
+    <string name="error_deleting_child_file">Konnte Unterdatei \'%s\' nicht löschen</string>
 
     <string name="send_not_available">Keine Anwendung zum Senden vorhanden.</string>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<!--
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,15 +21,15 @@
 	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">translator-credits</string>
-	
-    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>  
-	<string name="about_website_label">OI File Manager at OpenIntents</string> 
-	
+
+    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
+	<string name="about_website_label">OI File Manager at OpenIntents</string>
+
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
     <string name="app_name">OI File Manager</string>
-    
+
     <string name="menu_new_folder">New Folder</string>
     <string name="menu_delete">Delete</string>
     <string name="menu_rename">Rename</string>
@@ -37,7 +37,9 @@
     <string name="menu_open">Open</string>
     <string name="menu_move">Move</string>
     <string name="menu_copy">Copy</string>
-    
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+
     <string name="create_new_folder">Create new folder</string>
     <string name="folder_name">Folder name</string>
     <string name="file_name">Folder name</string>
@@ -58,6 +60,9 @@
     <string name="copied_file_name">Copy of %s</string>
     <string name="copied_file_name_2">Copy %d of %s</string>
     
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+
     <string name="error_creating_new_folder">Could not create new folder.</string>
     <string name="error_deleting_file">Could not delete file.</string>
     <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
@@ -68,20 +73,22 @@
     <string name="error_copying_file">Could not copy file.</string>
     <string name="error_file_does_not_exists">File does not exist.</string>
     <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
-    
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
+
     <string name="send_not_available">No application available for sending.</string>
-    
+
     <string name="application_not_available">Application not available</string>
 
 	<!-- ***************************
 	     Distribution
 	     *************************** -->
-	
+
 	<!-- EULA -->
 	<string name="eula_title">OI File Manager EULA</string>
 	<string name="eula_accept">Accept</string>
 	<string name="eula_refuse">Cancel</string>
-	
+
 	<!-- Update -->
 	<string name="update_box_text">Please check manually for updates or install OI Update
 for automatic notifications.
@@ -91,11 +98,11 @@ Current version: %s
 	<string name="update_get_updater">Get OI Updater.</string>
 	<string name="update_error">Download application not available.</string>
 	<string name="update">Check updates</string>
-	
+
     <!-- About -->
     <string name="about">About</string>
 	<string name="aboutapp_not_available">Version %s\n\nNo compatible extension available to display full info (contact, credits, license).</string>
     <string name="aboutapp_get">Get OI About</string>
-    
+
     
 </resources>

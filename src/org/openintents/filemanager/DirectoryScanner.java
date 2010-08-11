@@ -99,6 +99,8 @@ public class DirectoryScanner extends Thread {
 		/** SD card separate for sorting */
 		List<IconifiedText> listSdCard = new ArrayList<IconifiedText>(3);
 
+		boolean noMedia = false;
+
 		// Cache some commonly used icons.
 		Drawable sdIcon = context.getResources().getDrawable(R.drawable.icon_sdcard);
 		Drawable folderIcon = context.getResources().getDrawable(R.drawable.ic_launcher_folder);
@@ -137,6 +139,14 @@ public class DirectoryScanner extends Thread {
 					}
 				}else{
 					String fileName = currentFile.getName();
+
+					// Is this the ".nomedia" file?
+					if (!noMedia) {
+						if (fileName.equalsIgnoreCase(".nomedia")) {
+							// It is!
+							noMedia = true;
+						}
+					}
 
 					String mimetype = mMimeTypes.getMimeType(fileName);
 
@@ -182,6 +192,7 @@ public class DirectoryScanner extends Thread {
 			contents.listDir = listDir;
 			contents.listFile = listFile;
 			contents.listSdCard = listSdCard;
+			contents.noMedia = noMedia;
 
 			Message msg = handler.obtainMessage(FileManagerActivity.MESSAGE_SHOW_DIRECTORY_CONTENTS);
 			msg.obj = contents;

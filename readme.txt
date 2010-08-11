@@ -15,7 +15,7 @@
  ****************************************************************************
 
 
-OI File Manager is an open file manager that 
+OI File Manager is an open file manager that
 seamlessly cooperates with other applications.
 
 To obtain the current release, visit
@@ -23,9 +23,15 @@ To obtain the current release, visit
 
 
 ---------------------------------------------------------
+release: 1.1.3
+date: 2010-05-29
+- backward compatibility with Android 1.5.
+
+---------------------------------------------------------
 release: 1.1.2
-date: 2010-?-?
-- translations: Russian
+date: 2010-05-29
+- fix thumbnail size on high-density devices.
+- translations: Occitan (post 1500), Polish, Russian
 
 ---------------------------------------------------------
 release: 1.1.1
@@ -56,7 +62,7 @@ date: 2008-12-10
 
 - First public release on Android SDK 1.0.
 
-Features: 
+Features:
 - Show list of files.
 - Icons for home (root) directory and SD card.
 - Directory structure displayed through clickable

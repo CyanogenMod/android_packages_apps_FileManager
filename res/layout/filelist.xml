@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<!--
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,40 +19,40 @@
     android:layout_width="fill_parent" 
     android:layout_height="fill_parent">
     <FrameLayout
-        android:layout_width="fill_parent" 
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 	    <LinearLayout android:id="@+id/directory_buttons"
 		    android:orientation="horizontal"
-		    android:layout_width="wrap_content" 
+		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    <!-- Buttons added here dynamically -->
 		</LinearLayout>
 		<LinearLayout android:id="@+id/directory_input"
 		    android:orientation="horizontal"
-		    android:layout_width="fill_parent" 
+		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:visibility="gone">
 		    <EditText android:id="@+id/directory_text"
 				    android:layout_width="0dip"
-				    android:layout_weight="1" 
+				    android:layout_weight="1"
 				    android:layout_height="wrap_content" />
 			<ImageButton android:id="@+id/button_directory_pick"
 					android:src="@drawable/ic_menu_forward_small"
-				    android:layout_width="wrap_content" 
+				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content" />
 		</LinearLayout>
 	</FrameLayout>
     <LinearLayout
 	    android:orientation="horizontal"
-	    android:layout_width="fill_parent" 
+	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content">
 	    <EditText android:id="@+id/filename"
 			    android:layout_width="0dip"
-			    android:layout_weight="1" 
+			    android:layout_weight="1"
 			    android:layout_height="wrap_content" />
 		<Button android:id="@+id/button_pick"
 				android:text="@android:string/ok"
-			    android:layout_width="wrap_content" 
+			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:minWidth="64dip" />
 	</LinearLayout>
@@ -83,6 +83,7 @@
         <ListView android:id="@android:id/list"
             android:layout_width="fill_parent" 
             android:layout_height="fill_parent"
+            android:fastScrollEnabled="true"
             android:drawSelectorOnTop="false"/>
         
         <!-- Here is the view to show if the list is empty -->

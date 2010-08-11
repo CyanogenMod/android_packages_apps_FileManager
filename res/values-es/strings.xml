@@ -63,7 +63,7 @@
 
     <string name="error_creating_new_folder">No se puede crear la carpeta nueva.</string>
     <string name="error_deleting_file">No se puede borrar el fichero.</string>
-    <string name="error_deleting_folder">No se puede borrar la carpeta «\'%sx.</string>
+    <string name="error_deleting_folder">No se puede borrar la carpeta «%s».</string>
     <string name="error_renaming_file">No se puede cambiar de nombre del fichero.</string>
     <string name="error_renaming_folder">No se puede cambiar de nombre de la carpeta.</string>
     <string name="error_moving_file">No se puede mover el fichero.</string>
