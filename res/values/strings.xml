@@ -28,7 +28,7 @@
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
-    <string name="app_name">OI File Manager</string>
+    <string name="app_name">File Manager</string>
 
     <string name="menu_new_folder">New Folder</string>
     <string name="menu_delete">Delete</string>
