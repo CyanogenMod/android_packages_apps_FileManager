@@ -41,6 +41,8 @@
     <string name="menu_open">開く</string>
     <string name="menu_move">移動</string>
     <string name="menu_copy">コピー</string>
+    <string name="menu_include_in_media_scan">メディアスキャンに含める</string>
+    <string name="menu_exclude_from_media_scan">メディアスキャンから除外する</string>
     
     <string name="create_new_folder">新規フォルダーを作成</string>
     <string name="folder_name">フォルダ名</string>
@@ -61,6 +63,8 @@
 
     <string name="copied_file_name">%s のコピー</string>
     <string name="copied_file_name_2">%s の %d をコピー</string>
+    <string name="media_scan_included">このフォルダは次回のメディアスキャンに含められます。</string>
+    <string name="media_scan_excluded">このフォルダは次回のメディアスキャンから除外されます。</string>
 
     <string name="error_creating_new_folder">新規フォルダーを作成できませんでした。</string>
     <string name="error_deleting_file">ファイルを削除できませんでした。</string>
@@ -72,6 +76,8 @@
     <string name="error_copying_file">ファイルのコピーができません。</string>
     <string name="error_file_does_not_exists">ファイルが存在しません。</string>
     <string name="error_deleting_child_file">"フォルダの中の '%s' を削除できません。"</string>
+    <string name="error_generic">エラーが発生: </string>
+    <string name="error_media_scan">メディアスキャンの設定を変更できませんでした。</string>
 
     <string name="send_not_available">利用できる送信用アプリがありません。</string>
 
