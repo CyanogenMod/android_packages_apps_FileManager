@@ -683,12 +683,13 @@ public class FileManagerActivity extends ListActivity {
     	 
     	 mDirectoryButtons.removeAllViews();
     	 
+    	 int MATCH_PARENT = LinearLayout.LayoutParams.MATCH_PARENT;
     	 int WRAP_CONTENT = LinearLayout.LayoutParams.WRAP_CONTENT;
     	 
     	 // Add home button separately
     	 ImageButton ib = new ImageButton(this);
     	 ib.setImageResource(R.drawable.ic_launcher_home_small);
-		 ib.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT));
+		 ib.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, MATCH_PARENT));
 		 ib.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				jumpTo(new File("/"));
@@ -706,7 +707,7 @@ public class FileManagerActivity extends ListActivity {
     			 // Add SD card button
     			 ib = new ImageButton(this);
     	    	 ib.setImageResource(R.drawable.icon_sdcard_small);
-    			 ib.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT));
+    			 ib.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, MATCH_PARENT));
     			 ib.setOnClickListener(new View.OnClickListener() {
     					public void onClick(View view) {
     						jumpTo(new File(mSdCardPath));
@@ -715,7 +716,7 @@ public class FileManagerActivity extends ListActivity {
     			 mDirectoryButtons.addView(ib);
     		 } else {
 	    		 Button b = new Button(this);
-	    		 b.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT));
+	    		 b.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, MATCH_PARENT));
 	    		 b.setText(parts[i]);
 	    		 b.setTag(dir);
 	    		 b.setOnClickListener(new View.OnClickListener() {
@@ -742,12 +743,13 @@ public class FileManagerActivity extends ListActivity {
     	 int width = getWindowManager().getDefaultDisplay().getWidth();
     	 
     	 if (requiredwidth > width) {
+        	 int MATCH_PARENT = LinearLayout.LayoutParams.MATCH_PARENT;
         	 int WRAP_CONTENT = LinearLayout.LayoutParams.WRAP_CONTENT;
         	 
         	 // Create a new button that shows that there is more to the left:
         	 ImageButton ib = new ImageButton(this);
         	 ib.setImageResource(R.drawable.ic_menu_back_small);
-    		 ib.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT));
+    		 ib.setLayoutParams(new LinearLayout.LayoutParams(WRAP_CONTENT, MATCH_PARENT));
     		 // 
     		 ib.setOnClickListener(new View.OnClickListener() {
     				public void onClick(View view) {

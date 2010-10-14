@@ -24,22 +24,26 @@
 	    <LinearLayout android:id="@+id/directory_buttons"
 		    android:orientation="horizontal"
 		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content">
+		    android:layout_height="wrap_content"
+		    android:padding="5dip">
 		    <!-- Buttons added here dynamically -->
 		</LinearLayout>
 		<LinearLayout android:id="@+id/directory_input"
 		    android:orientation="horizontal"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
-		    android:visibility="gone">
+		    android:visibility="gone"
+		    android:padding="5dip">
 		    <EditText android:id="@+id/directory_text"
 				    android:layout_width="0dip"
 				    android:layout_weight="1"
-				    android:layout_height="wrap_content" />
+				    android:layout_height="match_parent"
+				    android:paddingRight="3dip"
+				    android:singleLine="true"/>
 			<ImageButton android:id="@+id/button_directory_pick"
 					android:src="@drawable/ic_menu_forward_small"
 				    android:layout_width="wrap_content"
-				    android:layout_height="wrap_content" />
+				    android:layout_height="match_parent" />
 		</LinearLayout>
 	</FrameLayout>
     <LinearLayout
