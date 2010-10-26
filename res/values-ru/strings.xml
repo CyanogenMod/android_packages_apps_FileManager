@@ -39,6 +39,8 @@
     <string name="menu_open">Открыть</string>
     <string name="menu_move">Переместить</string>
     <string name="menu_copy">Копировать</string>
+	<string name="menu_include_in_media_scan">Включить в поиск медиа</string>
+    <string name="menu_exclude_from_media_scan">Исключить из поиска медиа</string>
 
     <string name="create_new_folder">Создать новую папку</string>
     <string name="folder_name">Имя папки</string>
