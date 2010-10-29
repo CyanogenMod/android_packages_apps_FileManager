@@ -38,7 +38,9 @@
     <string name="menu_open">打开</string>
     <string name="menu_move">移动</string>
     <string name="menu_copy">复制</string>
-    
+    <string name="menu_include_in_media_scan">加入媒体扫描器列表</string>
+    <string name="menu_exclude_from_media_scan">从媒体扫描器列表中排除</string>
+
     <string name="create_new_folder">新建文件夹</string>
     <string name="folder_name">文件夹名</string>
     <string name="file_name">文件夹名</string>
@@ -59,16 +61,21 @@
     <string name="copied_file_name">复制 %s</string>
     <string name="copied_file_name_2">复制 %s 的 %d</string>
     
+    <string name="media_scan_included">该文件夹在下次媒体扫描时将自动被系统扫描。</string>
+    <string name="media_scan_excluded">该文件夹在下次媒体扫描时将不会被系统扫描。</string>
+
     <string name="error_creating_new_folder">无法建立新文件夹</string>
     <string name="error_deleting_file">无法删除文件</string>
-    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
+    <string name="error_deleting_folder">无法删除文件夹 \'%s\'。</string>
     <string name="error_renaming_file">无法重命名文件</string>
     <string name="error_renaming_folder">无法重命名文件夹</string>
     <string name="error_moving_file">无法移动文件</string>
     <string name="error_moving_folder">无法移动文件夹</string>
     <string name="error_copying_file">无法复制文件</string>
     <string name="error_file_does_not_exists">文件不存在</string>
-    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
+    <string name="error_deleting_child_file">无法删除子文件 \'%s\'。</string>
+    <string name="error_generic">发生错误：</string>
+    <string name="error_media_scan">无法更改媒体扫描设置。</string>
     
     <string name="send_not_available">无法找到用于传送的应用程序</string>
     
