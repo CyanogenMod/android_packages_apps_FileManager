@@ -55,9 +55,9 @@
     <string name="move_button">Move here</string>
     <string name="copy_title">Select folder to copy to</string>
     <string name="copy_button">Copy here</string>
-    
+
     <string name="copied_file_name">Copy of %s</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
 
     <string name="error_creating_new_folder">Could not create new folder.</string>
     <string name="error_deleting_file">Could not delete file.</string>

@@ -59,7 +59,7 @@
     <string name="copy_button">Copia qui</string>
 
     <string name="copied_file_name">Copia di %s</string>
-    <string name="copied_file_name_2">Copia %d di %s</string>
+    <string name="copied_file_name_2">Copia %1$d di %2$s</string>
 
     <string name="error_creating_new_folder">Impossibile creare una nuova cartella.</string>
     <string name="error_deleting_file">Impossibile eliminare il file.</string>

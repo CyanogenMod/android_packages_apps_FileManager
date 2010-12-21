@@ -57,7 +57,7 @@
     <string name="copy_button">Copiar aicí</string>
 
     <string name="copied_file_name">Còpia de %s</string>
-    <string name="copied_file_name_2">Còpia de %s sus %s</string>
+    <string name="copied_file_name_2">Còpia de %1$s sus %2$s</string>
 
     <string name="error_creating_new_folder">Impossible de crear lo dorsièr novèl.</string>
     <string name="error_deleting_file">Impossible de suprimir lo fichièr.</string>

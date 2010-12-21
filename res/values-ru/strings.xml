@@ -60,7 +60,7 @@
     <string name="copy_button">Скопировать сюда</string>
 
     <string name="copied_file_name">Копия %s</string>
-    <string name="copied_file_name_2">Копия %d из %s</string>
+    <string name="copied_file_name_2">Копия %1$d из %2$s</string>
 
     <string name="error_creating_new_folder">Невозможно создать новую папку.</string>
     <string name="error_deleting_file">Невозможно удалить файл.</string>

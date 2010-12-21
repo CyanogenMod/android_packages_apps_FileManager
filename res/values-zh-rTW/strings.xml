@@ -55,10 +55,10 @@
     <string name="move_button">移動到這裡</string>
     <string name="copy_title">選擇要複製的資料夾</string>
     <string name="copy_button">複製到這裡</string>
-    
+
     <string name="copied_file_name">複製 %s</string>
-    <string name="copied_file_name_2">複製 %d 個 %s</string>
-    
+    <string name="copied_file_name_2">複製 %1$d 個 %2$s</string>
+
     <string name="error_creating_new_folder">無法建立新資料夾。</string>
     <string name="error_deleting_file">無法刪除檔案。</string>
     <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>

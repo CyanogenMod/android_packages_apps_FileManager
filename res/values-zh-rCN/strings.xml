@@ -57,10 +57,10 @@
     <string name="move_button">移动到此处</string>
     <string name="copy_title">选择要复制的文件夹</string>
     <string name="copy_button">复制到此处</string>
-    
+
     <string name="copied_file_name">复制 %s</string>
-    <string name="copied_file_name_2">复制 %s 的 %d</string>
-    
+    <string name="copied_file_name_2">复制 %1$s 的 %2$d</string>
+
     <string name="media_scan_included">该文件夹在下次媒体扫描时将自动被系统扫描。</string>
     <string name="media_scan_excluded">该文件夹在下次媒体扫描时将不会被系统扫描。</string>
 

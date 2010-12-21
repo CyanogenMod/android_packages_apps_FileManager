@@ -62,7 +62,7 @@
     <string name="copy_button">ここへコピー</string>
 
     <string name="copied_file_name">%s のコピー</string>
-    <string name="copied_file_name_2">%s の %d をコピー</string>
+    <string name="copied_file_name_2">%1$s の %2$d をコピー</string>
     <string name="media_scan_included">このフォルダは次回のメディアスキャンに含められます。</string>
     <string name="media_scan_excluded">このフォルダは次回のメディアスキャンから除外されます。</string>
 

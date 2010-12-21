@@ -30,7 +30,7 @@
   <string name="copy_title">Seleccioneu la carpeta per copiar</string>
   <string name="copy_button">Copia aquí</string>
   <string name="copied_file_name">Còpia de %s</string>
-  <string name="copied_file_name_2">Còpia %d de %s</string>
+  <string name="copied_file_name_2">Còpia %1$d de %2$s</string>
   <string name="media_scan_included">Aquesta carpeta s\'inclourà en el proper anàlisi de suports.</string>
   <string name="media_scan_excluded">Aquesta carpeta s\'exclourà del proper anàlisi de suports.</string>
   <string name="error_creating_new_folder">No s\'ha pogut crear el nou directori.</string>

@@ -58,7 +58,7 @@
     <string name="copy_button">Kopieer hier</string>
 
     <string name="copied_file_name">Kopie van %s</string>
-    <string name="copied_file_name_2">Kopie %d van %s</string>
+    <string name="copied_file_name_2">Kopie %1$d van %2$s</string>
 
     <string name="error_creating_new_folder">Could not create new folder.</string>
     <string name="error_deleting_file">Could not delete file.</string>

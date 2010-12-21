@@ -57,7 +57,7 @@
     <string name="copy_button">여기로 복사</string>
 
     <string name="copied_file_name">%s의 복사</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
 
     <string name="error_creating_new_folder">새 폴더를 생성할 수 없습니다.</string>
     <string name="error_deleting_file">파일을 삭제할 수 없습니다.</string>

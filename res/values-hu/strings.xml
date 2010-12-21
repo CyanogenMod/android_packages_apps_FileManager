@@ -56,10 +56,10 @@
     <string name="move_button">Áthelyezés ide</string>
     <string name="copy_title">Mappa kiválasztása másolásra</string>
     <string name="copy_button">Másolás ide</string>
-    
+
     <string name="copied_file_name">%s másolata</string>
-    <string name="copied_file_name_2">Másolás %d -ből %s -ba</string>
-    
+    <string name="copied_file_name_2">Másolás %1$d -ből %2$s -ba</string>
+
     <string name="media_scan_included">Ez a mappa szerepelni fog a következő média-keresésben.</string>
     <string name="media_scan_excluded">Ez a mappa nem fog szerepelni a következő média-keresésben.</string>
 

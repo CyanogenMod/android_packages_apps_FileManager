@@ -58,7 +58,7 @@
     <string name="copy_button">Copiază aici</string>
 
     <string name="copied_file_name">Copie a %s</string>
-    <string name="copied_file_name_2">Copie %d a %s</string>
+    <string name="copied_file_name_2">Copie %1$d a %2$2$s</string>
 
     <string name="error_creating_new_folder">Nu am putut crea un dosar nou.</string>
     <string name="error_deleting_file">Nu am putut șterge fișierul.</string>

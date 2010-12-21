@@ -58,7 +58,7 @@
     <string name="copy_button">Avrita her</string>
 
     <string name="copied_file_name">Avrita av %s</string>
-    <string name="copied_file_name_2">Avrita %d av %s</string>
+    <string name="copied_file_name_2">Avrita %1$d av %2$s</string>
 
     <string name="error_creating_new_folder">Kundi ikki stovna nýggja skjáttu.</string>
     <string name="error_deleting_file">Kundi ikki strika fílu.</string>

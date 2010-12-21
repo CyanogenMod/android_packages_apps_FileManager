@@ -57,7 +57,7 @@
     <string name="copy_button">Skopiuj tutaj</string>
 
     <string name="copied_file_name">Kopia %s</string>
-    <string name="copied_file_name_2">Skopiuj %d z %s</string>
+    <string name="copied_file_name_2">Skopiuj %1$d z %2$s</string>
 
     <string name="error_creating_new_folder">Nie udało się utworzyć katalogu.</string>
     <string name="error_deleting_file">Nie udało się usunąć pliku.</string>

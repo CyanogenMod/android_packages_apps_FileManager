@@ -56,10 +56,10 @@
     <string name="move_button">Move here</string>
     <string name="copy_title">Select folder to copy to</string>
     <string name="copy_button">Copy here</string>
-    
+
     <string name="copied_file_name">Copy of %s</string>
-    <string name="copied_file_name_2">Copy %d of %s</string>
-    
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+
     <string name="media_scan_included">This folder will be included in the next media scan.</string>
     <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
 
