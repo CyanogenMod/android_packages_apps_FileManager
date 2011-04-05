@@ -1,11 +1,5 @@
 package org.openintents.filemanager;
 
-import java.io.File;
-import java.util.List;
-
-import org.openintents.filemanager.compatibility.BitmapDrawable_Compatible;
-import org.openintents.filemanager.util.FileUtils;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,6 +8,12 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.Gravity;
+import org.openintents.filemanager.compatibility.BitmapDrawable_Compatible;
+import org.openintents.filemanager.util.FileUtils;
+import org.openintents.filemanager.util.MimeTypes;
+
+import java.io.File;
+import java.util.List;
 
 public class ThumbnailLoader extends Thread {
 
@@ -24,20 +24,23 @@ public class ThumbnailLoader extends Thread {
     File file;
     Handler handler;
     Context context;
+
+	private MimeTypes mMimeTypes;
 	
     private static int thumbnailWidth = 32;
     private static int thumbnailHeight = 32;
     
 	
-	ThumbnailLoader(File file, List<IconifiedText> list, Handler handler, Context context) {
+	ThumbnailLoader(File file, List<IconifiedText> list, Handler handler, Context context, MimeTypes mimetypes) {
 		super("Thumbnail Loader");
 		
 		listFile = list;
 		this.file = file;
 		this.handler = handler;
 		this.context = context;
+		this.mMimeTypes = mimetypes;
 	}
-
+	
 	public static void setThumbnailHeight(int height) {
 		thumbnailHeight = height;
 		thumbnailWidth = height * 4 / 3;
@@ -59,14 +62,19 @@ public class ThumbnailLoader extends Thread {
 				return;
 			}
 			IconifiedText text = listFile.get(x);
-			
+			String fileName = text.getText();
 			try {
 				options.inJustDecodeBounds = true;
 				options.outWidth = 0;
 				options.outHeight = 0;
 				options.inSampleSize = 1;
 				
-				BitmapFactory.decodeFile(FileUtils.getFile(file, text.getText()).getPath(), options);
+				if ("video/mpeg".equals(mMimeTypes.getMimeType(fileName ))){
+					// don't try to decode mpegs.
+					continue;
+				}
+				
+				BitmapFactory.decodeFile(FileUtils.getFile(file, fileName).getPath(), options);
 				
 				if (options.outWidth > 0 && options.outHeight > 0) {
 					// Now see how much we need to scale it down.
@@ -89,7 +97,7 @@ public class ThumbnailLoader extends Thread {
 					options.inSampleSize = widthFactor;
 					options.inJustDecodeBounds = false;
 					
-					Bitmap bitmap = BitmapFactory.decodeFile(FileUtils.getFile(file, text.getText()).getPath(), options);
+					Bitmap bitmap = BitmapFactory.decodeFile(FileUtils.getFile(file, fileName).getPath(), options);
 				
 					if (bitmap != null) {
 //						Log.v(TAG, "Got thumbnail for " + text.getText());

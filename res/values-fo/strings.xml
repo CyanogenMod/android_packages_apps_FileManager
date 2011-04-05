@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
+<!-- 
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,20 +18,21 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-
+	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
   Gunleif Joensen https://launchpad.net/~gunleif
   Peli https://launchpad.net/~peli0101</string>
-
-    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
-	<string name="about_website_label">OI File Manager at OpenIntents</string>
-
+	
+    <!-- Short explanation of the application -->
+    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>  
+	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
     <string name="app_name">OI File Manager</string>
-
+    
     <string name="menu_new_folder">Nýggj skjátta</string>
     <string name="menu_delete">Strika</string>
     <string name="menu_rename">Nýnevna</string>
@@ -39,7 +40,9 @@
     <string name="menu_open">Lat upp</string>
     <string name="menu_move">Flyt</string>
     <string name="menu_copy">Copy</string>
-
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    
     <string name="create_new_folder">Stovna nýggja skjáttu</string>
     <string name="folder_name">Skjáttu navn</string>
     <string name="file_name">Skjáttu navn</string>
@@ -56,10 +59,16 @@
     <string name="move_button">Flyt hertil</string>
     <string name="copy_title">Vel skjáttu at avrita til</string>
     <string name="copy_button">Avrita her</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Avrita av %s</string>
-    <string name="copied_file_name_2">Avrita %1$d av %2$s</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">Kundi ikki stovna nýggja skjáttu.</string>
     <string name="error_deleting_file">Kundi ikki strika fílu.</string>
     <string name="error_deleting_folder">Kundi ikki strika skjáttu \'%s\'.</string>
@@ -70,34 +79,23 @@
     <string name="error_copying_file">Kundi ikki avrita fílu.</string>
     <string name="error_file_does_not_exists">Fíla finnst ei.</string>
     <string name="error_deleting_child_file">Kundi ikki strika fílu \'%s\'.</string>
-
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
+    
     <string name="send_not_available">Eingin nýtsluskipan tøk til sending.</string>
-
+    
     <string name="application_not_available">Nýtsluskipan ikki tøk</string>
-
+    
 	<!-- ***************************
-	     Distribution
+	     Preferences
 	     *************************** -->
-
-	<!-- EULA -->
-	<string name="eula_title">OI File Manager EULA</string>
-	<string name="eula_accept">Játta</string>
-	<string name="eula_refuse">Ógilda</string>
-
-	<!-- Update -->
-	<string name="update_box_text">Please check manually for updates or install OI Update
-for automatic notifications.
-Current version: %s
-	</string>
-	<string name="update_check_now">Kanna nú.</string>
-	<string name="update_get_updater">Get OI Updater.</string>
-	<string name="update_error">Niðurtøku nýtsluskipan ikki tøk.</string>
-	<string name="update">Kanna dagføringar</string>
-
-    <!-- About -->
-    <string name="about">Um</string>
-	<string name="aboutapp_not_available">Version %s\n\nNo compatible extension available to display full info (contact, credits, license).</string>
-    <string name="aboutapp_get">Get OI About</string>
-
-
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    
 </resources>

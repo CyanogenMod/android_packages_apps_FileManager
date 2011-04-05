@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
+<!-- 
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,17 +18,18 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-	
+
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">translator-credits</string>
 
+    <!-- Short explanation of the application -->
     <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
-	<string name="about_website_label">OI File Manager at OpenIntents</string>
 
 	<!-- ***************************
-	     Applicatio-specific strings
+	     Application-specific strings
 	     *************************** -->
-    <string name="app_name">File Manager</string>
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">OI File Manager</string>
 
     <string name="menu_new_folder">New Folder</string>
     <string name="menu_delete">Delete</string>
@@ -57,7 +58,10 @@
     <string name="copy_title">Select folder to copy to</string>
     <string name="copy_button">Copy here</string>
 
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Copy of %s</string>
+
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
     <string name="copied_file_name_2">Copy %1$d of %2$s</string>
 
     <string name="media_scan_included">This folder will be included in the next media scan.</string>
@@ -81,28 +85,96 @@
     <string name="application_not_available">Application not available</string>
 
 	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+
+    <string name="oi_distribution_app_name">OI Distribution Library</string>
+
+	<!-- ***************************
 	     Distribution
 	     *************************** -->
 
 	<!-- EULA -->
-	<string name="eula_title">OI File Manager EULA</string>
-	<string name="eula_accept">Accept</string>
-	<string name="eula_refuse">Cancel</string>
+	<!-- EULA (End user license agreement). %s is an application name, e.g. "OI Notepad EULA".
+		Translation should be short, since this is a title. -->
+	<string name="oi_distribution_eula_title">%s EULA</string>
+
+	<!-- EULA welcome message. %s is an application name, e.g. "... (EULA) for OI Notepad".
+		Translation can be as long as required. -->
+	<string name="oi_distribution_eula_message">Please read and accept the following End User License Agreement (EULA) for %s.</string>
+
+	<!-- Button: Accept terms of EULA. -->
+	<string name="oi_distribution_eula_accept">Accept</string>
+
+	<!-- Button: Refuse terms of EULA. -->
+	<string name="oi_distribution_eula_refuse">Cancel</string>
+
+	<!-- New version -->
+	<!-- Application name and version. %1$s is the application name (e.g. "OI Notepad") and %2$s is the version number (e.g. "1.2.0").
+	Keep unmodified, unless your language requires that the version number is displayed first. -->
+	<string name="oi_distribution_name_and_version">%1$s %2$s</string>
+
+	<!-- Welcome message. %s is an application name. -->
+	<string name="oi_distribution_newversion_message">Welcome to this new version of %s.</string>
+
+	<string name="oi_distribution_newversion_recent_changes">Recent changes:</string>
+
+	<!-- Button: Continue to main application. -->
+	<string name="oi_distribution_newversion_continue">Continue</string>
 
 	<!-- Update -->
-	<string name="update_box_text">Please check manually for updates or install OI Update
-for automatic notifications.
-Current version: %s
-	</string>
-	<string name="update_check_now">Check now.</string>
-	<string name="update_get_updater">Get OI Updater.</string>
-	<string name="update_error">Download application not available.</string>
-	<string name="update">Check updates</string>
+	<!-- Menu command to look for updates. -->
+    <string name="oi_distribution_menu_update">Check updates</string>
+	<!-- %s is the version number (e.g. "1.2.1") -->
+	<string name="oi_distribution_update_box_text">Check manually for updates or install OI Update for automatic notifications.</string>
+	<string name="oi_distribution_update_check_now">Check now</string>
+	<string name="oi_distribution_update_get_updater">Get OI Updater</string>
+	<string name="oi_distribution_update_error">Download application not available.</string>
+
+    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_update_app">OI Update</string>
 
     <!-- About -->
-    <string name="about">About</string>
-	<string name="aboutapp_not_available">Version %s\n\nNo compatible extension available to display full info (contact, credits, license).</string>
-    <string name="aboutapp_get">Get OI About</string>
+    <!-- Menu command to open the "about" or "info" dialog. -->
+    <string name="oi_distribution_about">About</string>
+    <!-- %s is the version number (e.g. "1.2.1") -->
+	<string name="oi_distribution_aboutapp_not_available">No compatible extension available to display full info (contact, credits, license).</string>
 
-    
+    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_aboutapp_get">Get OI About</string>
+
+    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_aboutapp">OI About</string>
+
+    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
+    <string name="oi_distribution_filemanager">OI File Manager</string>
+    <!-- Dialog message. -->
+    <string name="oi_distribution_filemanager_not_available">No compatible file manager is available.</string>
+
+    <!-- Safe -->
+    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
+    <string name="oi_distribution_safe">OI Safe</string>
+    <!-- Dialog message. -->
+    <string name="oi_distribution_safe_not_available">No compatible application for encryption is available.</string>
+    <string name="oi_distribution_safe_not_available_decrypt">No compatible application for decryption is available.\n\nNote: You have to restore the master key from a backup file in order to access previously encrypted data.</string>
+
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_market_message">Please download %s from the Market or the OpenIntents website.</string>
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_message">Please download %s from the OpenIntents website.</string>
+    <!-- Dialog button: download the suggested application from Android Market. -->
+    <string name="oi_distribution_download_market">Market download</string>
+    <!-- Dialog button: download the suggested application from the developer web site. -->
+    <string name="oi_distribution_download_web">Web download</string>
+	<!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_title">Download %s</string>
+
 </resources>

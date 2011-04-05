@@ -26,12 +26,13 @@
   maimuzo https://launchpad.net/~maimuzo
   tiantian https://launchpad.net/~tsukida-cmkc</string>
 	
+    <!-- Short explanation of the application -->
     <string name="about_comments">OI File Managerは他のアプリとシームレスに協力するみんなのためのファイルマネージャーです。</string>  
-	<string name="about_website_label">OpenIntentsのOI File Manager</string> 
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
     <string name="app_name">OI File Manager</string>
     
     <string name="menu_new_folder">新規フォルダ</string>
@@ -41,8 +42,8 @@
     <string name="menu_open">開く</string>
     <string name="menu_move">移動</string>
     <string name="menu_copy">コピー</string>
-    <string name="menu_include_in_media_scan">メディアスキャンに含める</string>
-    <string name="menu_exclude_from_media_scan">メディアスキャンから除外する</string>
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
     
     <string name="create_new_folder">新規フォルダーを作成</string>
     <string name="folder_name">フォルダ名</string>
@@ -60,49 +61,43 @@
     <string name="move_button">ここに移動</string>
     <string name="copy_title">コピーするフォルダを選択してください</string>
     <string name="copy_button">ここへコピー</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">%s のコピー</string>
-    <string name="copied_file_name_2">%1$s の %2$d をコピー</string>
-    <string name="media_scan_included">このフォルダは次回のメディアスキャンに含められます。</string>
-    <string name="media_scan_excluded">このフォルダは次回のメディアスキャンから除外されます。</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">新規フォルダーを作成できませんでした。</string>
     <string name="error_deleting_file">ファイルを削除できませんでした。</string>
-    <string name="error_deleting_folder">"'%s' のフォルダを削除できません。"</string>
+    <string name="error_deleting_folder">\'%s\' のフォルダを削除できません。</string>
     <string name="error_renaming_file">ファイル名を変更できませんでした。</string>
     <string name="error_renaming_folder">フォルダ名を変更できませんでした。</string>
     <string name="error_moving_file">ファイルを移動できませんでした。</string>
     <string name="error_moving_folder">フォルダーを移動できませんでした。</string>
     <string name="error_copying_file">ファイルのコピーができません。</string>
     <string name="error_file_does_not_exists">ファイルが存在しません。</string>
-    <string name="error_deleting_child_file">"フォルダの中の '%s' を削除できません。"</string>
-    <string name="error_generic">エラーが発生: </string>
-    <string name="error_media_scan">メディアスキャンの設定を変更できませんでした。</string>
-
-    <string name="send_not_available">利用できる送信用アプリがありません。</string>
-
-    <string name="application_not_available">アプリが利用できません</string>
-
-	<!-- ***************************
-	     Distribution
-	     *************************** -->
-	
-	<!-- EULA -->
-	<string name="eula_title">OI File Managerの利用者規約</string>
-	<string name="eula_accept">承諾する</string>
-	<string name="eula_refuse">キャンセル</string>
-	
-	<!-- Update -->
-	<string name="update_box_text">新バージョンを手動でチェックするか、自動通知のためにOI Updateをインストールしてください。現在のバージョン: %s</string>
-	<string name="update_check_now">確認中。</string>
-	<string name="update_get_updater">OI Updaterを入手する</string>
-	<string name="update_error">ダウンロード用アプリが利用できません。</string>
-	<string name="update">新バージョンをチェック</string>
-	
-    <!-- About -->
-    <string name="about">このソフトウェアについて</string>
-	<string name="aboutapp_not_available">バージョン %s\n\n全情報(連絡先・クレジット・ライセンスなど)を表示するための互換性のある拡張機能は利用できません。</string>
-    <string name="aboutapp_get">OI Aboutを入手する</string>
+    <string name="error_deleting_child_file">フォルダの中の \'%s\' を削除できません。</string>
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
     
+    <string name="send_not_available">利用できる送信用アプリがありません。</string>
+    
+    <string name="application_not_available">アプリが利用できません</string>
+    
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
     
 </resources>

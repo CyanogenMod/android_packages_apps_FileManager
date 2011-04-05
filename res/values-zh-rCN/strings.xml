@@ -23,12 +23,13 @@
 	<string name="about_translators">Launchpad Contributions:
   Swandle https://launchpad.net/~swandle</string>
 	
-    <string name="about_comments">OI文件管理器是一个开源的文件管理软件，它可以与其它应用程序进行无缝整合。</string>
-	<string name="about_website_label">开放组件的OI文件管理器</string>
+    <!-- Short explanation of the application -->
+    <string name="about_comments">OI文件管理器是一个开源的文件管理软件，它可以与其它应用程序进行无缝整合。</string>  
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
     <string name="app_name">OI文件管理器</string>
     
     <string name="menu_new_folder">新建文件夹</string>
@@ -38,9 +39,9 @@
     <string name="menu_open">打开</string>
     <string name="menu_move">移动</string>
     <string name="menu_copy">复制</string>
-    <string name="menu_include_in_media_scan">加入媒体扫描器列表</string>
-    <string name="menu_exclude_from_media_scan">从媒体扫描器列表中排除</string>
-
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    
     <string name="create_new_folder">新建文件夹</string>
     <string name="folder_name">文件夹名</string>
     <string name="file_name">文件夹名</string>
@@ -57,50 +58,43 @@
     <string name="move_button">移动到此处</string>
     <string name="copy_title">选择要复制的文件夹</string>
     <string name="copy_button">复制到此处</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">复制 %s</string>
-    <string name="copied_file_name_2">复制 %1$s 的 %2$d</string>
-
-    <string name="media_scan_included">该文件夹在下次媒体扫描时将自动被系统扫描。</string>
-    <string name="media_scan_excluded">该文件夹在下次媒体扫描时将不会被系统扫描。</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">无法建立新文件夹</string>
     <string name="error_deleting_file">无法删除文件</string>
-    <string name="error_deleting_folder">无法删除文件夹 \'%s\'。</string>
+    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
     <string name="error_renaming_file">无法重命名文件</string>
     <string name="error_renaming_folder">无法重命名文件夹</string>
     <string name="error_moving_file">无法移动文件</string>
     <string name="error_moving_folder">无法移动文件夹</string>
     <string name="error_copying_file">无法复制文件</string>
     <string name="error_file_does_not_exists">文件不存在</string>
-    <string name="error_deleting_child_file">无法删除子文件 \'%s\'。</string>
-    <string name="error_generic">发生错误：</string>
-    <string name="error_media_scan">无法更改媒体扫描设置。</string>
+    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
     
     <string name="send_not_available">无法找到用于传送的应用程序</string>
     
     <string name="application_not_available">未找到应用程序</string>
-
-	<!-- ***************************
-	     Distribution
-	     *************************** -->
-	
-	<!-- EULA -->
-	<string name="eula_title">OI 文件管理用户协议</string>
-	<string name="eula_accept">接受</string>
-	<string name="eula_refuse">取消</string>
-	
-	<!-- Update -->
-	<string name="update_box_text">请手动检查更新，或安装自动通知更新程序。当前版本：%s</string>
-	<string name="update_check_now">立即检查</string>
-	<string name="update_get_updater">获得自动更新程序</string>
-	<string name="update_error">没有应用程序可供下载</string>
-	<string name="update">检查更新</string>
-	
-    <!-- About -->
-    <string name="about">关于</string>
-	<string name="aboutapp_not_available">版本 %s\n\n找不到兼容的扩展用于显示完整信息（联系人，信用，许可）</string>
-    <string name="aboutapp_get">获得关于OI</string>
     
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
     
 </resources>

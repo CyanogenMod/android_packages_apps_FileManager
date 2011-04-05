@@ -1,5 +1,5 @@
  ****************************************************************************
- * Copyright (C) 2008 OpenIntents.org                                       *
+ * Copyright (C) 2008-2011 OpenIntents.org                                  *
  *                                                                          *
  * Licensed under the Apache License, Version 2.0 (the "License");          *
  * you may not use this file except in compliance with the License.         *
@@ -15,12 +15,23 @@
  ****************************************************************************
 
 
-OI File Manager is an open file manager that
+OI File Manager is an open file manager that 
 seamlessly cooperates with other applications.
 
 To obtain the current release, visit
   http://www.openintents.org
 
+
+---------------------------------------------------------
+release: 1.1.4
+date: 2011-02-05
+- new application icon for Android 2.0 or higher.
+- exclude/include directories from media scan (activate this feature in advanced settings).
+- allow app installation on external storage (requires Android 2.2 or higher)
+- fix browser file upload (issue 288)
+- support Android 2.3.
+- translations into various languages.
+- bug fixes (issue 308, 318).
 
 ---------------------------------------------------------
 release: 1.1.3
@@ -62,7 +73,7 @@ date: 2008-12-10
 
 - First public release on Android SDK 1.0.
 
-Features:
+Features: 
 - Show list of files.
 - Icons for home (root) directory and SD card.
 - Directory structure displayed through clickable
@@ -75,3 +86,4 @@ Features:
   list.
 - Create directory, rename, delete files.
 - Move files.
+

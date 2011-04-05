@@ -29,6 +29,7 @@
 	<type extension=".mid" mimetype="audio/mid" />
 	<type extension=".midi" mimetype="audio/midi" />
 	<type extension=".amr" mimetype="audio/AMR" />
+	<type extension=".aac" mimetype="audio/x-aac"/>
 	
 	<!-- Video types -->
 	<type extension=".mpeg" mimetype="video/mpeg" />
