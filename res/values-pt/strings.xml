@@ -22,7 +22,6 @@
     <!-- Automatically filled in by Launchpad: -->
     <string name="about_translators">translator-credits</string>
     <string name="about_comments">OI File Manager é um gerenciador de arquivos aberto que funciona perfeitamente em conjunto com outras aplicações.</string>
-    <string name="about_website_label">OI File Manager em OpenIntents</string>
 
     <!-- ***************************
 	 Applicatio-specific strings
@@ -78,28 +77,5 @@
     <string name="send_not_available">Não está disponível uma aplicação para enviar.</string>
 
     <string name="application_not_available">Aplicação não disponível</string>
-
-    <!-- ***************************
-         Distribution
-    *************************** -->
-
-    <!-- EULA -->
-    <string name="eula_title">OI Gerenciador de Arquivo EULA</string>
-    <string name="eula_accept">Aceitar</string>
-    <string name="eula_refuse">Cancelar</string>
-
-    <!-- Update -->
-    <string name="update_box_text">Por favor verifique manualmente por atualizações ou instale o OI Update
-para notificações automáticas.
-Versão atual: %s</string>
-    <string name="update_check_now">Verificar agora.</string>
-    <string name="update_get_updater">Obter OI Updater.</string>
-    <string name="update_error">O download da aplicação não está disponível.</string>
-    <string name="update">Verificar a existência de atualizações</string>
-
-    <!-- About -->
-    <string name="about">Sobre</string>
-    <string name="aboutapp_not_available">Versão %s\n\nNenhuma extensão compatível está disponível para visualizar a informação completa (contato, créditos, licenciamento).</string>
-    <string name="aboutapp_get">Obter Sobre OI </string>
 
 </resources>

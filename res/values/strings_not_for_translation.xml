@@ -19,8 +19,8 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-	<string name="about_copyright">Copyright © 2008-2009 OpenIntents</string> 
-	<string name="about_website_url">http://www.openintents.org/en/node/159</string>
+	<string name="about_copyright">Copyright © 2008-2011 OpenIntents</string> 
+	<string name="about_website_url">http://www.openintents.org/en/filemanager</string>
 	<string name="about_email">support@openintents.org</string>
 	
     <string-array name="about_authors"><!-- Add your name here if you helped out -->
@@ -44,20 +44,40 @@
     </string-array>
     
 	<!-- ***************************
+	     Preferences
+	     *************************** -->
+	<!-- ***************************
+	     About information
+	     *************************** -->
+	
+    
+    <string-array name="about_documenters"><!-- Add your name here if you helped out -->
+        <!-- <item></item> -->
+    </string-array>
+    
+    <string-array name="about_translators"><!-- Add your name here if you helped out, but only in the arrays.xml for the localization that you helped to translate into! -->
+        <!-- <item></item>  -->
+    </string-array>
+    
+    
+	
+	<!-- ***************************
 	     Distribution
 	     *************************** -->
 	<!-- Update -->
-	<string name="update_app_url">market://search?q=pname:org.openintents.filemanager</string>
-	<string name="update_app_developer_url">http://www.openintents.org/en/node/159</string><!-- 159 = OI File Manager -->
-	<string name="update_checker_url">market://search?q=pname:org.openintents.updatechecker</string>
-	<string name="update_checker_developer_url">http://www.openintents.org/en/node/203</string><!-- 203 = OI Update -->
+	<string name="oi_distribution_update_checker_package">org.openintents.updatechecker</string>
+    <string name="oi_distribution_update_checker_website">http://www.openintents.org/en/node/203</string><!-- 203 = OI Update -->
 	
 	<!-- About -->
-    <string name="aboutapp_market_uri">market://search?q=pname:org.openintents.about</string>
-    <string name="aboutapp_developer_uri">http://www.openintents.org/en/node/202</string><!-- 202 = OI About -->
-    
-	<!-- ***************************
-	     Preferences
-	     *************************** -->
+    <string name="oi_distribution_aboutapp_package">org.openintents.about</string>
+    <string name="oi_distribution_aboutapp_website">http://www.openintents.org/en/node/202</string><!-- 202 = OI About -->
+	
+    <!-- File Manager -->
+    <string name="oi_distribution_filemanager_package">org.openintents.filemanager</string>
+    <string name="oi_distribution_filemanager_website">http://www.openintents.org/en/filemanager</string>
+	
+	<!-- Safe -->
+    <string name="oi_distribution_safe_package">org.openintents.safe</string>
+    <string name="oi_distribution_safe_website">http://www.openintents.org/en/safe</string>
 	
 </resources> 

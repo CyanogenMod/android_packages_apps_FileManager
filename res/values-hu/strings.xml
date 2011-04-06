@@ -23,7 +23,6 @@
     <string name="about_translators">fordítók</string>
 
     <string name="about_comments">Az OI File Manager egy nyílt forrású fájlkezelő, ami zökkenőmentesen együttműködik más alkalmazásokkal.</string>
-    <string name="about_website_label">Az OI File Manager weboldala</string>
 
     <!-- ***************************
          Applicatio-specific strings
@@ -79,28 +78,5 @@
     <string name="send_not_available">Alkalmazás nem küldhető.</string>
 
     <string name="application_not_available">Az alkalmazás nem elérhető</string>
-
-    <!-- ***************************
-         Distribution
-         *************************** -->
-
-    <!-- EULA -->
-    <string name="eula_title">Oi File Manager végfelhasználói licencszerződés</string>
-    <string name="eula_accept">Elfogadom</string>
-    <string name="eula_refuse">Mégse</string>
-
-    <!-- Update -->
-    <string name="update_box_text">Kérem, ellenőrizze manuálisan, hogy elérhető-e új frissítés, vagy telepítse az OI Update-et automatikus értesítésekért.
-Jelenlegi verzió: %s</string>
-    <string name="update_check_now">Ellenőrzés most.</string>
-    <string name="update_get_updater">OI Updater beszerzése.</string>
-    <string name="update_error">A letölthető alkalmazás nem elérhető.</string>
-    <string name="update">Frissítések ellenőrzése</string>
-
-    <!-- About -->
-    <string name="about">Névjegy</string>
-    <string name="aboutapp_not_available">Verzió %s\n\n Nem található kompatibilis kiterjesztés a teljes információ megjelenítéséhez (névjegyek, programozók listája, licensz).</string>
-    <string name="aboutapp_get">Az OI-ról</string>
-
 
 </resources>

@@ -16,7 +16,6 @@
  -->
 <resources>
   <string name="about_comments">OI File Manager є файловим менеджером з відкритим кодом, який легко взаємодіє з програмами.</string>
-  <string name="about_website_label">OI File Manager в OpenIntents</string>
   <string name="app_name">Файловий менеджер</string>
   <string name="menu_new_folder">Новий каталог</string>
   <string name="menu_delete">Видалити</string>
@@ -61,15 +60,4 @@
   <string name="error_media_scan">Не вдалося змінити параметри пошуку файлів мультимедіа.</string>
   <string name="send_not_available">Немає жодної програми для надсилання.</string>
   <string name="application_not_available">Програма недоступна</string>
-  <string name="eula_title">Ліцензійна угода OI File Manager</string>
-  <string name="eula_accept">Прийняти</string>
-  <string name="eula_refuse">Скасувати</string>
-  <string name="update_box_text">Будь ласка, перевірте самостійно наявність оновлення або встановіть OI Update щоб отримувати автоматичні сповіщення. Поточна версія: %s  </string>
-  <string name="update_check_now">Перевірити зараз.</string>
-  <string name="update_get_updater">Завантажити ОІ Updater.</string>
-  <string name="update_error">Завантаження програми недоступне.</string>
-  <string name="update">Перевірити оновлення</string>
-  <string name="about">Про програму</string>
-  <string name="aboutapp_not_available">Версія %s\n\nНе встановлено жодного сумісного розширення для відображення повної інформації (контакти, подяки, ліцензія).</string>
-  <string name="aboutapp_get">Завантажити OI About</string>
 </resources>

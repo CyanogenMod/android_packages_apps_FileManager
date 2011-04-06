@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
+<!-- 
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,19 +18,20 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-
+	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
   usul https://launchpad.net/~usultis</string>
-
-    <string name="about_comments">OI File Manager jest otwartym menadzerem plików, który bezproblemowo współpracuje z innymi aplikacjami.</string>
-	<string name="about_website_label">OI File Manager na OpenIntents</string>
-
+	
+    <!-- Short explanation of the application -->
+    <string name="about_comments">OI File Manager jest otwartym menadzerem plików, który bezproblemowo współpracuje z innymi aplikacjami.</string>  
+	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
-    <string name="app_name">OI File Manager</string>
-
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">File Manager</string>
+    
     <string name="menu_new_folder">Nowy katalog</string>
     <string name="menu_delete">Usuń</string>
     <string name="menu_rename">Zmień nazwę</string>
@@ -38,7 +39,9 @@
     <string name="menu_open">Otwórz</string>
     <string name="menu_move">Przenieś</string>
     <string name="menu_copy">Kopiuj</string>
-
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    
     <string name="create_new_folder">Utwórz nowy katalog</string>
     <string name="folder_name">Nazwa katalogu</string>
     <string name="file_name">Nazwa katalogu</string>
@@ -55,10 +58,16 @@
     <string name="move_button">Przenieś tutaj</string>
     <string name="copy_title">Wybierz katalog docelowy</string>
     <string name="copy_button">Skopiuj tutaj</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Kopia %s</string>
-    <string name="copied_file_name_2">Skopiuj %1$d z %2$s</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">Nie udało się utworzyć katalogu.</string>
     <string name="error_deleting_file">Nie udało się usunąć pliku.</string>
     <string name="error_deleting_folder">Nie udało się usunąć katalogu \'%s\'.</string>
@@ -69,31 +78,23 @@
     <string name="error_copying_file">Nie udało się skopiować pliku.</string>
     <string name="error_file_does_not_exists">Plik nie istnieje</string>
     <string name="error_deleting_child_file">Nie udało się usunąć pliku potomnego \'%s\'.</string>
-
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
+    
     <string name="send_not_available">Nie ma dostępnych aplikacji do wysyłania.</string>
-
+    
     <string name="application_not_available">Aplikacja niedostępna</string>
-
+    
 	<!-- ***************************
-	     Distribution
+	     Preferences
 	     *************************** -->
-
-	<!-- EULA -->
-	<string name="eula_title">OI File Manager EULA</string>
-	<string name="eula_accept">Akceptuj</string>
-	<string name="eula_refuse">Anuluj</string>
-
-	<!-- Update -->
-	<string name="update_box_text">Sprawdź aktualizacje lub zainstaluj OI Update w celu uzyskania automatycznych powiadomień. Aktualna wersja: %s</string>
-	<string name="update_check_now">Sprawdź teraz.</string>
-	<string name="update_get_updater">Pobierz OI Updater.</string>
-	<string name="update_error">Aplikacja jest niedostępna.</string>
-	<string name="update">Sprawdź aktualizacje</string>
-
-    <!-- About -->
-    <string name="about">O aplikacji</string>
-	<string name="aboutapp_not_available">Wersja %s\n\nŻadne kompatybilne rozszerzenie nie jest dostępne (kontakt, autorzy, licencja)</string>
-    <string name="aboutapp_get">Pobierz OI About</string>
-
-
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    
 </resources>

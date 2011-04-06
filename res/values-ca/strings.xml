@@ -2,7 +2,6 @@
 <resources>
   <string name="about_translators">Crèdits de traducció</string>
   <string name="about_comments">OI File Manager és un gestor de fitxers que conviu sense problemes amb altres aplicacions.</string>
-  <string name="about_website_label">OI File Manager a OpenIntents</string>
   <string name="app_name">Gestor de fitxers</string>
   <string name="menu_new_folder">Directori nou</string>
   <string name="menu_delete">Suprimeix</string>
@@ -47,15 +46,4 @@
   <string name="error_media_scan">No s\'han pogut canviar els paràmetres d\'escaneig de suports.</string>
   <string name="send_not_available">No hi ha cap aplicació disponible per a enviar.</string>
   <string name="application_not_available">Aplicació no disponible</string>
-  <string name="eula_title">CLUF de OI File Manager</string>
-  <string name="eula_accept">Accepta</string>
-  <string name="eula_refuse">Cancel·la</string>
-  <string name="update_box_text">Si us plau, comproveu manualment si hi ha actualitzacions o bé instal·leu OI Update per a rebre notificacions automàtiques. Versió actual: %s  </string>
-  <string name="update_check_now">Comprova-ho ara.</string>
-  <string name="update_get_updater">Obtenir Updater OI.</string>
-  <string name="update_error">L\'aplicació no està disponible per a descarregar.</string>
-  <string name="update">Comprova si hi ha actualitzacions</string>
-  <string name="about">Quant a</string>
-  <string name="aboutapp_not_available">Versió %s\n\nNo hi ha cap extensió disponible per a mostrar la informació completa (contacte, crèdits, llicència).</string>
-  <string name="aboutapp_get">Descarregar OI About</string>
 </resources>

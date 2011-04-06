@@ -63,4 +63,11 @@ public final class FileManagerIntents {
 	 */
 	public static final String EXTRA_BUTTON_TEXT = "org.openintents.extra.BUTTON_TEXT";
 
+	/**
+	 * Flag indicating to show only writeable files and folders.
+     *
+	 * <p>Constant Value: "org.openintents.extra.WRITEABLE_ONLY"</p>
+	 */
+	public static final String EXTRA_WRITEABLE_ONLY = "org.openintents.extra.WRITEABLE_ONLY";
+
 }

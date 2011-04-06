@@ -1,5 +1,5 @@
 /* 
- * Copyright (C) 2007-2008 OpenIntents.org
+ * Copyright (C) 2007-2011 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.openintents.distribution;
+package org.openintents.filemanager;
 
 import org.openintents.intents.AboutMiniIntents;
 import org.openintents.util.IntentUtils;
@@ -31,21 +31,26 @@ import android.content.Intent;
  * @author Peli
  *
  */
-public class AboutDialog extends GetFromMarketDialog {
+public class AboutDialog extends DownloadAppDialog {
 	private static final String TAG = "About";
-    
+	private static final boolean DEBUG_NO_OI_ABOUT = false;
+	
 	public AboutDialog(Context context) {
 		super(context,
-				RD.string.aboutapp_not_available,
-				RD.string.aboutapp_get,
-				RD.string.aboutapp_market_uri,
-				RD.string.aboutapp_developer_uri);
-		
-		String version = VersionUtils.getVersionNumber(context);
-		String name = VersionUtils.getApplicationName(context);
+				R.string.oi_distribution_aboutapp_not_available,
+				R.string.oi_distribution_aboutapp,
+				R.string.oi_distribution_aboutapp_package,
+				R.string.oi_distribution_aboutapp_website);
 
-		setTitle(name);
-		setMessage(context.getString(RD.string.aboutapp_not_available, version));
+		String version = VersionUtils.getVersionNumber(mContext);
+        String appname = VersionUtils.getApplicationName(mContext);
+        String appnameversion = mContext.getString(R.string.oi_distribution_name_and_version, appname, version);
+        
+        StringBuilder sb = new StringBuilder();
+        sb.append(appnameversion);
+        sb.append("\n\n");
+        sb.append(mMessageText);
+        setMessage(sb.toString());
 	}
 	
 	public static void showDialogOrStartActivity(Activity activity, int dialogId) {

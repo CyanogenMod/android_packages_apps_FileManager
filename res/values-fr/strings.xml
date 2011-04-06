@@ -22,15 +22,18 @@
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
   Abdessamad Derraz https://launchpad.net/~derraz
+  Anges https://launchpad.net/~az24
+  Peli https://launchpad.net/~peli0101
   kawazzzzzz@yahoo.fr https://launchpad.net/~kawazzzzzz</string>
 	
+    <!-- Short explanation of the application -->
     <string name="about_comments">OI File Manager est un gestionnaire de fichiers qui interagit avec les autres applications.</string>  
-	<string name="about_website_label">OI File Manager chez OpenIntents</string> 
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
-    <string name="app_name">OI File Manager</string>
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">File Manager</string>
     
     <string name="menu_new_folder">Nouveau dossier</string>
     <string name="menu_delete">Supprimer</string>
@@ -39,6 +42,8 @@
     <string name="menu_open">Ouvrir</string>
     <string name="menu_move">Déplacer</string>
     <string name="menu_copy">Copier</string>
+    <string name="menu_include_in_media_scan">Inclure dans les recherches</string>
+    <string name="menu_exclude_from_media_scan">Exclure des recherches</string>
     
     <string name="create_new_folder">Créer un nouveau dossier</string>
     <string name="folder_name">Nom du dossier</string>
@@ -56,10 +61,16 @@
     <string name="move_button">Déplacer ici</string>
     <string name="copy_title">Sélectionner le dossier à copier sur</string>
     <string name="copy_button">Copier ici</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Copie de %s</string>
-    <string name="copied_file_name_2">Copie de %1$s sur %2$s</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">Ce dossier sera inclus dans la prochaine recherche</string>
+    <string name="media_scan_excluded">Ce dossier sera exclus de la prochaine recherche</string>
+    
     <string name="error_creating_new_folder">Impossible de créer le nouveau dossier.</string>
     <string name="error_deleting_file">Impossible de supprimer le fichier.</string>
     <string name="error_deleting_folder">Impossible de supprimer le dossier «%s».</string>
@@ -70,31 +81,23 @@
     <string name="error_copying_file">Impossible de copier le fichier.</string>
     <string name="error_file_does_not_exists">Le fichier n\'existe pas.</string>
     <string name="error_deleting_child_file">Impossible de supprimer le fichier enfant «%s».</string>
-
-    <string name="send_not_available">Pas d\'application disponible pour l\'envoi</string>
-
-    <string name="application_not_available">Application non disponible</string>
-
-	<!-- ***************************
-	     Distribution
-	     *************************** -->
-	
-	<!-- EULA -->
-	<string name="eula_title">OI File Manager EULA</string>
-	<string name="eula_accept">Accepter</string>
-	<string name="eula_refuse">Annuler</string>
-	
-	<!-- Update -->
-	<string name="update_box_text">Veuillez vérifier manuellement les mises à jour ou installer OI Update pour les notifications automatique. Version actuelle: %s</string>
-	<string name="update_check_now">Vérifier maintenant.</string>
-	<string name="update_get_updater">Obtenir OI Updater.</string>
-	<string name="update_error">Application téléchargée non disponible</string>
-	<string name="update">Vérifier les mises à jour</string>
-	
-    <!-- About -->
-    <string name="about">À propos de</string>
-	<string name="aboutapp_not_available">Version %s\n\nAucune extension disponible pour afficher la totalité des informations (contact, crédits, licence).</string>
-    <string name="aboutapp_get">Obtenir OI About</string>
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
     
+    <string name="send_not_available">Pas d\'application disponible pour l\'envoi</string>
+    
+    <string name="application_not_available">Application non disponible</string>
+    
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclure des recherches</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
     
 </resources>
