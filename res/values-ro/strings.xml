@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
+<!-- 
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,20 +18,21 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-
+	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
   Peli https://launchpad.net/~peli0101
   iulargsb https://launchpad.net/~iulargsb</string>
-
-    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>
-	<string name="about_website_label">OI File Manager pe OpenIntents</string>
-
+	
+    <!-- Short explanation of the application -->
+    <string name="about_comments">OI File Manager is an open file manager that seamlessly cooperates with other applications.</string>  
+	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
     <string name="app_name">OI File Manager</string>
-
+    
     <string name="menu_new_folder">Dosar nou</string>
     <string name="menu_delete">Șterge</string>
     <string name="menu_rename">Redenumește</string>
@@ -39,7 +40,9 @@
     <string name="menu_open">Deschide</string>
     <string name="menu_move">Mută</string>
     <string name="menu_copy">Copy</string>
-
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    
     <string name="create_new_folder">Crează un dosar nou</string>
     <string name="folder_name">Numele dosarului</string>
     <string name="file_name">Numele dosarului</string>
@@ -56,10 +59,16 @@
     <string name="move_button">Mută aici</string>
     <string name="copy_title">Selectați dosarul destinație</string>
     <string name="copy_button">Copiază aici</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Copie a %s</string>
-    <string name="copied_file_name_2">Copie %1$d a %2$2$s</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">Nu am putut crea un dosar nou.</string>
     <string name="error_deleting_file">Nu am putut șterge fișierul.</string>
     <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
@@ -70,31 +79,23 @@
     <string name="error_copying_file">Nu am putut copia fișierul.</string>
     <string name="error_file_does_not_exists">Fișierul nu există.</string>
     <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
-
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
+    
     <string name="send_not_available">Nu există aplicație pentru trimitere.</string>
-
+    
     <string name="application_not_available">Aplicație indisponibilă</string>
-
+    
 	<!-- ***************************
-	     Distribution
+	     Preferences
 	     *************************** -->
-
-	<!-- EULA -->
-	<string name="eula_title">OI File Manager ALUF</string>
-	<string name="eula_accept">Acceptă</string>
-	<string name="eula_refuse">Renunță</string>
-
-	<!-- Update -->
-	<string name="update_box_text">Verificați manual existența versiunilor noi sau instalați OI Update pentru noitificări automate. Versiunea curentă: %s</string>
-	<string name="update_check_now">Verifică acum</string>
-	<string name="update_get_updater">Instalează OI Updater</string>
-	<string name="update_error">Download application not available.</string>
-	<string name="update">Verifică versiuni noi</string>
-
-    <!-- About -->
-    <string name="about">Despre</string>
-	<string name="aboutapp_not_available">Version %s\n\nNo compatible extension available to display full info (contact, credits, license).</string>
-    <string name="aboutapp_get">Instalează OI About</string>
-
-
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    
 </resources>

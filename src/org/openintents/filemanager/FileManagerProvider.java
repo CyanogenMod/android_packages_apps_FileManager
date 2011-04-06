@@ -1,13 +1,5 @@
 package org.openintents.filemanager;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import org.openintents.filemanager.util.MimeTypeParser;
-import org.openintents.filemanager.util.MimeTypes;
-import org.xmlpull.v1.XmlPullParserException;
-
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.res.XmlResourceParser;
@@ -17,6 +9,13 @@ import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore.Images;
 import android.util.Log;
+import org.openintents.filemanager.util.MimeTypeParser;
+import org.openintents.filemanager.util.MimeTypes;
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class FileManagerProvider extends ContentProvider {
 
@@ -99,12 +98,11 @@ public class FileManagerProvider extends ContentProvider {
 			int m = ParcelFileDescriptor.MODE_READ_ONLY;
 			if (mode.equalsIgnoreCase("rw"))
 				m = ParcelFileDescriptor.MODE_READ_WRITE;
-
 			File f = new File(uri.toString().substring(20 + AUTHORITY.length()));
 			ParcelFileDescriptor pfd = ParcelFileDescriptor.open(f, m);
 			return pfd;
 		} else {
-			throw new RuntimeException("Unsupported uri");
+			throw new FileNotFoundException	("Unsupported uri: " + uri.toString());
 		}
 	}
 

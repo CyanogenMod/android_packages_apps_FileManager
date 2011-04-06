@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
- * Copyright (C) 2007-2008 OpenIntents.org
+ * Copyright (C) 2007-2009 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,15 +21,17 @@
     >
     	<TextView  
 			    android:id="@+id/text1"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content"
 				android:layout_width="fill_parent" 
-			    android:layout_height="34dip" 
-			    android:text="@string/eula_title"
+			    android:text="@string/oi_distribution_eula_title"
     			android:gravity="center"
 			    android:textStyle="bold"
 			    android:textColor="#ffffffff"
 			    android:layout_marginTop="10dip"
 			    android:layout_marginBottom="10dip"
-				/>
+				/><!-- 
+			    android:layout_height="34dip"  -->
 		<ScrollView
 				android:layout_width="fill_parent"
 				android:layout_height="0dip"
@@ -37,6 +39,28 @@
 			    android:layout_marginBottom="10dip"
 				android:layout_marginLeft="5dip"
 			>
+			<LinearLayout
+				android:id="@+id/container1"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				>
+				<ImageView android:id="@+id/imageview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					/>
+				<TextView  
+				    android:id="@+id/text2"
+					android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+			    	android:textStyle="bold"
+				    android:textColor="#ffffffff"
+				    android:layout_marginLeft="10dip"
+				    android:layout_marginRight="10dip"
+				    android:layout_marginTop="10dip"
+				    android:layout_marginBottom="10dip"
+					/>
 				<TextView  
 				    android:id="@+id/text"
 					android:layout_width="wrap_content" 
@@ -49,7 +73,8 @@
 				    android:layout_marginTop="10dip"
 				    android:layout_marginBottom="10dip"
 					/>
-			</ScrollView>
+			</LinearLayout>
+		</ScrollView>
 		<LinearLayout
 			android:id="@+id/container2"
 			android:orientation="horizontal"
@@ -61,8 +86,8 @@
 				android:layout_height="wrap_content" 				
 				android:layout_gravity="bottom"
 				android:layout_weight="1"
-				android:text="@string/eula_accept" />
-			<LinearLayout
+				android:text="@string/oi_distribution_eula_accept" />
+			<LinearLayout android:id="@+id/space"
 				android:orientation="horizontal"
 				android:layout_width="0dip"
 				android:layout_height="wrap_content"
@@ -73,7 +98,7 @@
 				android:layout_height="wrap_content" 				
 				android:layout_gravity="bottom"
 				android:layout_weight="1"
-				android:text="@string/eula_refuse" />
+				android:text="@string/oi_distribution_eula_refuse" />
 		</LinearLayout>
 		
 </LinearLayout>

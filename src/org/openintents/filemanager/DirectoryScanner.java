@@ -1,14 +1,5 @@
 package org.openintents.filemanager;
 
-import java.io.File;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.MimeTypes;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,6 +10,14 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 import android.util.Log;
+import org.openintents.filemanager.util.FileUtils;
+import org.openintents.filemanager.util.MimeTypes;
+
+import java.io.File;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class DirectoryScanner extends Thread {
 
@@ -32,6 +31,8 @@ public class DirectoryScanner extends Thread {
     private MimeTypes mMimeTypes;
 	private Handler handler;
 	private long operationStartTime;
+	private boolean mWriteableOnly;
+	private boolean mDirectoriesOnly;
 	
 	// Update progress bar every n files
 	static final private int PROGRESS_STEPS = 50;
@@ -45,13 +46,15 @@ public class DirectoryScanner extends Thread {
     
 
 
-	DirectoryScanner(File directory, Context context, Handler handler, MimeTypes mimeTypes, String sdCardPath) {
+	DirectoryScanner(File directory, Context context, Handler handler, MimeTypes mimeTypes, String sdCardPath, boolean writeableOnly, boolean directoriesOnly) {
 		super("Directory Scanner");
 		currentDirectory = directory;
 		this.context = context;
 		this.handler = handler;
 		this.mMimeTypes = mimeTypes;
 		this.mSdCardPath = sdCardPath;
+		this.mWriteableOnly = writeableOnly;
+		this.mDirectoriesOnly = directoriesOnly;
 	}
 	
 	private void clearData() {
@@ -121,9 +124,9 @@ public class DirectoryScanner extends Thread {
 				updateProgress(progress, totalCount);
 
 				/*
-		  if (currentFile.isHidden()) {
-			  continue;
-		  }
+				if (currentFile.isHidden()) {
+					continue;
+				}
 				 */
 				if (currentFile.isDirectory()) {
 					if (currentFile.getAbsolutePath().equals(mSdCardPath)) {
@@ -134,8 +137,10 @@ public class DirectoryScanner extends Thread {
 					} else {
 						currentIcon = folderIcon;
 
-						listDir.add(new IconifiedText(
-								currentFile.getName(), "", currentIcon));
+						if (!mWriteableOnly || currentFile.canWrite()){
+							listDir.add(new IconifiedText(
+									currentFile.getName(), "", currentIcon));
+						}
 					}
 				}else{
 					String fileName = currentFile.getName();
@@ -172,8 +177,10 @@ public class DirectoryScanner extends Thread {
 						// enough.
 					}
 
-					listFile.add(new IconifiedText(
+					if (!mDirectoriesOnly){
+						listFile.add(new IconifiedText( 
 							currentFile.getName(), size, currentIcon));
+					}
 				}
 			}
 		}
@@ -228,35 +235,35 @@ public class DirectoryScanner extends Thread {
      * @return
      */
     Drawable getDrawableForMimetype(File file, String mimetype) {
-     if (mimetype == null) {
-	 return null;
-     }
+		if (mimetype == null) {
+			return null;
+		}
 
-   	 PackageManager pm = context.getPackageManager();
+		PackageManager pm = context.getPackageManager();
    	 
-	 Uri data = FileUtils.getUri(file);
-
+   	 Uri data = FileUtils.getUri(file);
+   	
    	 Intent intent = new Intent(Intent.ACTION_VIEW);
-	 //intent.setType(mimetype);
+   	 //intent.setType(mimetype);
    	 
-	 // Let's probe the intent exactly in the same way as the VIEW action
-	 // is performed in FileManagerActivity.openFile(..)
+   	 // Let's probe the intent exactly in the same way as the VIEW action
+   	 // is performed in FileManagerActivity.openFile(..)
      intent.setDataAndType(data, mimetype);
-
+     
    	 final List<ResolveInfo> lri = pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
    	 
    	 if (lri != null && lri.size() > 0) {
-		 //Log.i(TAG, "lri.size()" + lri.size());
-
+   		 //Log.i(TAG, "lri.size()" + lri.size());
+   		 
    		 // return first element
-		 int index = 0;
-
-		 // Actually first element should be "best match",
-		 // but it seems that more recently installed applications
-		 // could be even better match.
-		 index = lri.size()-1;
-
-		 final ResolveInfo ri = lri.get(index);
+   		 int index = 0;
+   		 
+   		 // Actually first element should be "best match",
+   		 // but it seems that more recently installed applications
+   		 // could be even better match.
+   		 index = lri.size()-1;
+   		 
+   		 final ResolveInfo ri = lri.get(index);
    		 return ri.loadIcon(pm);
    	 }
    	 

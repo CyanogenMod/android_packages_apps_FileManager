@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
+<!-- 
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,21 +18,22 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-
+	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
   Diego Pierotto https://launchpad.net/~gringo
-  Federico Pontelli https://launchpad.net/~federico
+  Federico https://launchpad.net/~federico-deactivatedaccount
   Peli https://launchpad.net/~peli0101</string>
-
-    <string name="about_comments">OI Gestore File è un gestore di file che coopera senza soluzione di continuità con altre applicazioni.</string>
-	<string name="about_website_label">OI Gestore File di OpenIntents</string>
-
+	
+    <!-- Short explanation of the application -->
+    <string name="about_comments">OI Gestore File è un gestore di file che coopera senza soluzione di continuità con altre applicazioni.</string>  
+	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
-    <string name="app_name">Gestore File</string>
-
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">OI Gestore File</string>
+    
     <string name="menu_new_folder">Nuova cartella</string>
     <string name="menu_delete">Elimina</string>
     <string name="menu_rename">Rinomina</string>
@@ -40,7 +41,9 @@
     <string name="menu_open">Apri</string>
     <string name="menu_move">Sposta</string>
     <string name="menu_copy">Copia</string>
-
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    
     <string name="create_new_folder">Crea nuova cartella</string>
     <string name="folder_name">Nome cartella</string>
     <string name="file_name">Nome cartella</string>
@@ -57,10 +60,16 @@
     <string name="move_button">Sposta qui</string>
     <string name="copy_title">Seleziona la cartella dove copiare</string>
     <string name="copy_button">Copia qui</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Copia di %s</string>
-    <string name="copied_file_name_2">Copia %1$d di %2$s</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">Impossibile creare una nuova cartella.</string>
     <string name="error_deleting_file">Impossibile eliminare il file.</string>
     <string name="error_deleting_folder">Impossibile eliminare la cartella \'%s\'.</string>
@@ -71,31 +80,23 @@
     <string name="error_copying_file">Impossibile copiare il file.</string>
     <string name="error_file_does_not_exists">Il file non esiste.</string>
     <string name="error_deleting_child_file">Impossibile eliminare il sotto file \'%s\'.</string>
-
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
+    
     <string name="send_not_available">Nessuna applicazione disponibile per l\'invio</string>
-
+    
     <string name="application_not_available">Applicazione non disponibile</string>
-
+    
 	<!-- ***************************
-	     Distribution
+	     Preferences
 	     *************************** -->
-
-	<!-- EULA -->
-	<string name="eula_title">EULA OI Gestore File</string>
-	<string name="eula_accept">Accetto</string>
-	<string name="eula_refuse">Annulla</string>
-
-	<!-- Update -->
-	<string name="update_box_text">Controlla manualmente gli aggiornamenti o installa OI Aggiornamenti per le notifiche automatiche. Versione attuale: %s</string>
-	<string name="update_check_now">Controlla adesso.</string>
-	<string name="update_get_updater">Scarica OI Aggiornamenti.</string>
-	<string name="update_error">Scaricamento dell\'applicazione non disponibile.</string>
-	<string name="update">Controlla aggiornamenti</string>
-
-    <!-- About -->
-    <string name="about">Info</string>
-	<string name="aboutapp_not_available">Versione %s\n\nNessuna estensione compatibile disponibile per mostrare tutte le info (contatti, crediti, licenza).</string>
-    <string name="aboutapp_get">Scarica OI Info</string>
-
-
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    
 </resources>

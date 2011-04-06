@@ -16,10 +16,10 @@
 
 package org.openintents.filemanager.util;
 
+import android.webkit.MimeTypeMap;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import android.webkit.MimeTypeMap;
 
 public class MimeTypes {
 
@@ -55,6 +55,8 @@ public class MimeTypes {
 		extension = extension.toLowerCase();
 		
 		String mimetype = mMimeTypes.get(extension);
+		
+		if(mimetype==null) mimetype = "*/*";
 		
 		return mimetype;
 	}

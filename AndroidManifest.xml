@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
- * Copyright (C) 2007-2008 OpenIntents.org
+<!-- 
+ * Copyright (C) 2007-2011 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,39 +16,43 @@
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.openintents.filemanager"
-	android:versionName="1.1.4-rc1"
-	android:versionCode="10">
-	<!-- History:
+    android:installLocation="auto"
+	android:versionName="1.1.4"
+	android:versionCode="14">
+	<!-- History: 
+	 * * * UPDATE ATRACKDOG METADATA BELOW FOR RELEASE CANDIDATES * * *
+	[14] 1.1.4 :2011-02-05
+	[13] 1.1.4-rc4:2011-02-05
+	[12] 1.1.4-rc3:2010-09-14
+	[11] 1.1.4-rc2:2010-09-04
 	[10] 1.1.4-rc1:2010-06-23
-	[9] 1.1.3:     2010-05-29
-	[8] 1.1.2:     2010-05-29
-	[7] 1.1.1:     2009-12-26
-	[6] 1.1.1-rc1: 2009-12-19
-	[5] 1.1.0:     2009-10-30
-	[4] 1.1.0-rc1: 2009-10-24
-	[3] 1.0.2:     2009-10-15
-	[2] 1.0.1:     2009-01-16
-	[1] 1.0.0:     2008-12-10
+	[9] 1.1.3: 2010-05-29
+	[8] 1.1.2: 2010-05-29
+	[7] 1.1.1: 2009-12-26
+	[5] 1.1.0: 2009-10-30
+	[3] 1.0.2: 2009-10-15
+	[2] 1.0.1: 2009-01-16 
+	[1] 1.0.0: 2008-12-10
 	-->
-
-
+	
+	    
         <uses-sdk android:minSdkVersion="2"
-            android:targetSdkVersion="4" />
-        <!-- If targetSdkVersion is increased, the following needs to be adjusted:
-             * FileManagerActivity: onKeyDown(): New way how "back" key is handled. -->
-
-<supports-screens android:smallScreens="true"
-                  android:normalScreens="true"
-                  android:largeScreens="true"
-/>
-
-	    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            android:targetSdkVersion="9" />
+        <!-- If targetSdkVersion is increased from 4 to 5 or higher, 
+        	the following needs to be adjusted:
+             * FileManagerActivity: onKeyDown(): New way how "back" key is handled.
+            NOTE: Tested on target=9, and it works both on Android 2.3 and Android 1.6. -->
+     
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	    
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    
     <application android:icon="@drawable/ic_launcher_folder" android:label="@string/app_name">
-
+    
         <!-- aTrackDog metadata -->
         <meta-data android:name="com.a0soft.gphone.aTrackDog.testVersion"
-           android:value="6" />
-
+           android:value="13" />
+           
 		<meta-data android:name="org.openintents.metadata.COMMENTS"
                        android:value="@string/about_comments" />
         <meta-data android:name="org.openintents.metadata.COPYRIGHT"
@@ -62,7 +66,7 @@
         <meta-data android:name="org.openintents.metadata.ARTISTS"
                        android:resource="@array/about_artists" />
         <meta-data android:name="org.openintents.metadata.WEBSITE_LABEL"
-                       android:value="@string/about_website_label" />
+                       android:value="@string/app_name" />
         <meta-data android:name="org.openintents.metadata.WEBSITE_URL"
                        android:value="@string/about_website_url" />
         <meta-data android:name="org.openintents.metadata.LICENSE"
@@ -100,12 +104,13 @@
                 <category android:name="android.intent.category.OPENABLE" />
             </intent-filter>
         </activity>
-
-        <activity android:name="org.openintents.distribution.EulaActivity" android:label="@string/eula_title">
-        </activity>
-        <!--
-        <activity android:name=".PreferenceActivity" android:label="@string/preferences">
-        </activity>  -->
+        
+        <activity android:name=".PreferenceActivity" android:label="@string/settings" />
+        
     <provider android:name=".FileManagerProvider" android:authorities="org.openintents.filemanager"></provider>
+    
+		<!-- Activities from OI Distribution Library -->
+        <activity android:name="org.openintents.filemanager.EulaActivity" />
+        <activity android:name="org.openintents.filemanager.NewVersionActivity" />
 </application>
-</manifest>
+</manifest> 

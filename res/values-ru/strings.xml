@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
+<!-- 
  * Copyright (C) 2007-2008 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,20 +18,21 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-
+	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
   Peli https://launchpad.net/~peli0101
   Vasily Bogantsev https://launchpad.net/~bas-eurogym</string>
-
-    <string name="about_comments">OI File Manager - открытый менеджер файлов интегрирующийся с дргими приложениями.</string>
-	<string name="about_website_label">OI File Manager на OpenIntents</string>
-
+	
+    <!-- Short explanation of the application -->
+    <string name="about_comments">OI File Manager - открытый менеджер файлов интегрирующийся с дргими приложениями.</string>  
+	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
     <string name="app_name">OI File Manager</string>
-
+    
     <string name="menu_new_folder">Новая папка</string>
     <string name="menu_delete">Удалить</string>
     <string name="menu_rename">Переименовать</string>
@@ -39,9 +40,9 @@
     <string name="menu_open">Открыть</string>
     <string name="menu_move">Переместить</string>
     <string name="menu_copy">Копировать</string>
-	<string name="menu_include_in_media_scan">Включить в поиск медиа</string>
-    <string name="menu_exclude_from_media_scan">Исключить из поиска медиа</string>
-
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    
     <string name="create_new_folder">Создать новую папку</string>
     <string name="folder_name">Имя папки</string>
     <string name="file_name">Имя папки</string>
@@ -58,10 +59,16 @@
     <string name="move_button">Переместить сюда</string>
     <string name="copy_title">Выберите папку куда скопировать</string>
     <string name="copy_button">Скопировать сюда</string>
-
+    
+    <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Копия %s</string>
-    <string name="copied_file_name_2">Копия %1$d из %2$s</string>
-
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">Невозможно создать новую папку.</string>
     <string name="error_deleting_file">Невозможно удалить файл.</string>
     <string name="error_deleting_folder">Невозможно удалить папку \'%s\'.</string>
@@ -72,31 +79,23 @@
     <string name="error_copying_file">Невозможно скопировать файл.</string>
     <string name="error_file_does_not_exists">Файл не существует.</string>
     <string name="error_deleting_child_file">Невозможно удалить вложенный файл \'%s\'.</string>
-
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
+    
     <string name="send_not_available">Нет приложения для отправки.</string>
-
+    
     <string name="application_not_available">Приложение недоступно.</string>
-
+    
 	<!-- ***************************
-	     Distribution
+	     Preferences
 	     *************************** -->
-
-	<!-- EULA -->
-	<string name="eula_title">Лицензионное соглашение OI File Manager</string>
-	<string name="eula_accept">Принять</string>
-	<string name="eula_refuse">Отменить</string>
-
-	<!-- Update -->
-	<string name="update_box_text">Проверяйте обновления вручную или установите OI Update для автоматического уведомления. Текущая версия: %s</string>
-	<string name="update_check_now">Проверить сейчас</string>
-	<string name="update_get_updater">Получить OI Updater.</string>
-	<string name="update_error">Приложение загрузчик отсутствует</string>
-	<string name="update">Проверить обновления</string>
-
-    <!-- About -->
-    <string name="about">О программе</string>
-	<string name="aboutapp_not_available">Версия %s\n\n Отсутствует совместимое расширение для отображения полной информации (контакты, авторы, лицензия).</string>
-    <string name="aboutapp_get">Получить OI About</string>
-
-
+    <!-- Menu item for Settings -->
+	<string name="settings">Settings</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    
 </resources>
