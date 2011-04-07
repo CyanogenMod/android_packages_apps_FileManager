@@ -30,7 +30,7 @@
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">File Manager</string>
+    <string name="app_name">Gerenciador de Arquivos</string>
     
     <string name="menu_new_folder">Nova Pasta</string>
     <string name="menu_delete">Deletar</string>
@@ -89,12 +89,40 @@
 	     Preferences
 	     *************************** -->
     <!-- Menu item for Settings -->
-	<string name="settings">Settings</string>
+	<string name="settings">Configurações</string>
 	
     <!-- Category for preferences. -->
-    <string name="preference_advanced_features">Advanced features</string>
+    <string name="preference_advanced_features">Recursos avançados</string>
 	<string name="preference_mediascan_title">Remover do scanner de mídia.</string>
-    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
-    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_on">Mostrar item de menu para ignorar pastas ao varrer mídia.</string>
+    <string name="preference_mediascan_summary_off">Esconder item de menu para ignorar pastas ao varrer mídia.</string>
     
+ <string name="oi_distribution_eula_message">Leia por favor e aceite os seguinte Acordo de Licença do Utilizador Final (ALUF) para %s.</string>
+ <string name="oi_distribution_eula_accept">Aceitar</string>
+ <string name="oi_distribution_eula_refuse">Cancelar</string>
+ <string name="oi_distribution_eula_title">%s ALUF</string>
+ <string name="oi_distribution_app_name">OI Biblioteca de Distribuição</string>
+ <string name="oi_distribution_newversion_message">Bem Vindo a esta nova versão de %s.</string>
+ <string name="oi_distribution_newversion_recent_changes">Mudanças recentes:</string>
+ <string name="oi_distribution_menu_update">Verificar por atualizações</string>
+ <string name="oi_distribution_update_box_text">Verificar manualmente por atualizações ou instalar OI Atualizador para  notificações automáticas.</string>
+ <string name="oi_distribution_update_check_now">Verificar agora</string>
+ <string name="oi_distribution_update_get_updater">Obter Atualizador OI</string>
+ <string name="oi_distribution_update_error">Download de aplicação não está disponível.</string>
+ <string name="oi_distribution_update_app">OI Atualizador</string>
+ <string name="oi_distribution_about">Sobre</string>
+ <string name="oi_distribution_aboutapp_not_available">Nenhuma extensão compatível disponível para exibir informações completas (contato, créditos de licença).</string>
+ <string name="oi_distribution_aboutapp_get">Obter Sobre OI</string>
+ <string name="oi_distribution_aboutapp">Sobre OI</string>
+ <string name="oi_distribution_filemanager">Gerenciador de Arquivos OI</string>
+ <string name="oi_distribution_filemanager_not_available">Nenhum gerenciador de arquivos compatível está disponível.</string>
+ <string name="oi_distribution_safe">Segurança OI</string>
+ <string name="oi_distribution_safe_not_available">Nenhuma aplicação compatível para encriptação está disponível.</string>
+ <string name="oi_distribution_safe_not_available_decrypt">Nenhum aplicativo compatível para a desencriptação está disponível \ n\ nNota:. Você tem que restaurar a chave mestra de um arquivo de backup para acesso a dados criptografados anteriormente.</string>
+ <string name="oi_distribution_download_market_message">Favor baixe %s pelo Market ou pelo website OpenIntents.</string>
+ <string name="oi_distribution_download_message">Por favor baixe %s pelo website OpenIntents.</string>
+ <string name="oi_distribution_download_market">Baixar pelo Market</string>
+ <string name="oi_distribution_download_web">Baixar pela Web</string>
+ <string name="oi_distribution_download_title">Baixar</string>
+ <string name="oi_distribution_newversion_continue">Continue</string>
 </resources>
