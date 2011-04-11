@@ -166,7 +166,7 @@
     <string name="oi_distribution_safe">OI Safe</string>
     <!-- Dialog message. -->
     <string name="oi_distribution_safe_not_available">Приложение для шифровки не доступно.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">Приложение для шифровки не доступно.\n\nПримечание: Вы должны восстановить главный ключ из резервное копии, что бы получить доступ к ранее зашифрованным данным.</string>
+    <string name="oi_distribution_safe_not_available_decrypt">Приложение для шифровки не доступно.\n\nПримечание: Вы должны восстановить главный ключ из резервной копии, что бы получить доступ к ранее зашифрованным данным.</string>
 
     <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
     <string name="oi_distribution_download_market_message">Пожалуйста, загрузите %s из Маркера или с веб-сайта OpenIntents.</string>
