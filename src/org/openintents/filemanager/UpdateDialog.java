@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import org.openintents.util.VersionUtils;
 

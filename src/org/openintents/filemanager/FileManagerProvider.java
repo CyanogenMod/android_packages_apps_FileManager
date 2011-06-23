@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -9,8 +9,8 @@ import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore.Images;
 import android.util.Log;
-import org.openintents.filemanager.util.MimeTypeParser;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.util.MimeTypeParser;
+import org.openintents.cmfilemanager.util.MimeTypes;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.File;
@@ -19,9 +19,9 @@ import java.io.IOException;
 
 public class FileManagerProvider extends ContentProvider {
 
-	static final String MIME_TYPE_PREFIX = "content://org.openintents.filemanager/mimetype/";
+	static final String MIME_TYPE_PREFIX = "content://org.openintents.cmfilemanager/mimetype/";
 	private static final String TAG = "FileManagerProvider";
-	public static final String AUTHORITY = "org.openintents.filemanager";
+	public static final String AUTHORITY = "org.openintents.cmfilemanager";
 	private MimeTypes mMimeTypes;
 
 	@Override

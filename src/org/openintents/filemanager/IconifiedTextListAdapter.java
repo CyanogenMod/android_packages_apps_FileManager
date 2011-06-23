@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 /* $Id: BulletedTextListAdapter.java 57 2007-11-21 18:31:52Z steven $ 
  * 

@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 import android.util.Log;
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypes;
 
 import java.io.File;
 import java.lang.reflect.Method;

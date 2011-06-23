@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,9 +8,9 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.Gravity;
-import org.openintents.filemanager.compatibility.BitmapDrawable_Compatible;
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.compatibility.BitmapDrawable_Compatible;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypes;
 
 import java.io.File;
 import java.util.List;

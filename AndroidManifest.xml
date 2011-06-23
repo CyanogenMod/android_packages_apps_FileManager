@@ -15,7 +15,7 @@
  * limitations under the License.
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.openintents.filemanager"
+    package="org.openintents.cmfilemanager"
     android:installLocation="auto"
 	android:versionName="1.1.4"
 	android:versionCode="14">
@@ -107,10 +107,10 @@
         
         <activity android:name=".PreferenceActivity" android:label="@string/settings" />
         
-    <provider android:name=".FileManagerProvider" android:authorities="org.openintents.filemanager"></provider>
+    <provider android:name=".FileManagerProvider" android:authorities="org.openintents.cmfilemanager"></provider>
     
 		<!-- Activities from OI Distribution Library -->
-        <activity android:name="org.openintents.filemanager.EulaActivity" />
-        <activity android:name="org.openintents.filemanager.NewVersionActivity" />
+        <activity android:name="org.openintents.cmfilemanager.EulaActivity" />
+        <activity android:name="org.openintents.cmfilemanager.NewVersionActivity" />
 </application>
 </manifest> 
