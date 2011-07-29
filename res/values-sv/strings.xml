@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="about_translators">Översättares medverkarlista</string>
+    <string name="about_comments">OI File Manager är en öppen filhanterare som sömlöst samarbetar med andra applikationer.</string>
+    <string name="app_name">Filhanterare</string>
+
+    <string name="menu_new_folder">Ny Mapp</string>
+    <string name="menu_delete">Ta bort</string>
+    <string name="menu_rename">Döp om</string>
+    <string name="menu_send">Skicka</string>
+    <string name="menu_open">Öppna</string>
+    <string name="menu_move">Flytta</string>
+    <string name="menu_copy">Kopiera</string>
+    <string name="menu_include_in_media_scan">Inkludera i mediaavsökning</string>
+    <string name="menu_exclude_from_media_scan">Exkludera från mediaavsökning</string>
+
+    <string name="create_new_folder">Skapa ny mapp</string>
+    <string name="folder_name">Mappnamn</string>
+    <string name="file_name">Mappnamn</string>
+    <string name="this_folder_is_empty">Denna mapp är tom.</string>
+    <string name="really_delete">Vill du verkligen ta bort %s?</string>
+    <string name="file_deleted">Fil borttagen.</string>
+    <string name="folder_deleted">Mapp borttagen.</string>
+    <string name="file_renamed">Fil omdöpt.</string>
+    <string name="folder_renamed">Mapp omdöpt.</string>
+    <string name="file_moved">Fil flyttad.</string>
+    <string name="folder_moved">Mapp flyttad.</string>
+    <string name="file_copied">Fil kopierad.</string>
+    <string name="move_title">Välj mapp att flytta till</string>
+    <string name="move_button">Flytta hit</string>
+    <string name="copy_title">Välj mapp att kopiera till</string>
+    <string name="copy_button">Kopiera hit</string>
+
+    <string name="copied_file_name">Kopia av %s</string>
+    <string name="copied_file_name_2">Kopia %1$d av %2$s</string>
+
+    <string name="media_scan_included">Denna mapp kommer inkluderas i nästa mediaavsökning.</string>
+    <string name="media_scan_excluded">Denna mapp kommer exkluderas från nästa mediaavsökning.</string>
+
+    <string name="error_creating_new_folder">Kunde inte skapa ny mapp.</string>
+    <string name="error_deleting_file">Kunde inte ta bort fil.</string>
+    <string name="error_deleting_folder">Kunde inte ta bort mapp \'%s\'.</string>
+    <string name="error_renaming_file">Kunde inte döpa om fil.</string>
+    <string name="error_renaming_folder">Kunde inte döpa om mapp.</string>
+    <string name="error_moving_file">Kunde inte flytta fil.</string>
+    <string name="error_moving_folder">Kunde inte flytta mapp.</string>
+    <string name="error_copying_file">Kunde inte kopiera fil.</string>
+    <string name="error_file_does_not_exists">Filen finns inte.</string>
+    <string name="error_deleting_child_file">Kunde inte ta bort underfil \'%s\'.</string>
+    <string name="error_generic">Ett fel inträffade: </string>
+    <string name="error_media_scan">Kunde inte ändra inställningar för mediaavsökning.</string>
+
+    <string name="send_not_available">Ingen applikation tillgänglig för sändning.</string>
+
+    <string name="application_not_available">Applikation ej tillgänglig</string>
+
+	<string name="settings">Inställningar</string>
+
+    <string name="preference_advanced_features">Avancerade funktioner</string>
+	<string name="preference_mediascan_title">Exkludera från mediaavsökning</string>
+    <string name="preference_mediascan_summary_on">Visa menyval att exkludera mappar från mediaavsökning.</string>
+    <string name="preference_mediascan_summary_off">Göm menyval att exkludera mappar från mediaavsökning.</string>
+
+    <string name="oi_distribution_app_name">OI Distribution Library</string>
+
+	<string name="oi_distribution_eula_title">%s EULA</string>
+	<string name="oi_distribution_eula_message">Var god läs och acceptera följande licensgodkännande för slutanvändare (EULA) för %s.</string>
+	<string name="oi_distribution_eula_accept">Acceptera</string>
+	<string name="oi_distribution_eula_refuse">Avbryt</string>
+
+	<string name="oi_distribution_name_and_version">%1$s %2$s</string>
+	<string name="oi_distribution_newversion_message">Välkommen till denna nya version av %s.</string>
+
+	<string name="oi_distribution_newversion_recent_changes">De senaste förändringarna:</string>
+	<string name="oi_distribution_newversion_continue">Fortsätt</string>
+
+    <string name="oi_distribution_menu_update">Sök efter uppdateringar</string>
+	<string name="oi_distribution_update_box_text">Sök manuellt efter uppdateringar eller installera OI Update för automatiska aviseringar.</string>
+	<string name="oi_distribution_update_check_now">Sök nu</string>
+	<string name="oi_distribution_update_get_updater">Hämta OI Updater</string>
+	<string name="oi_distribution_update_error">Nerladdningsprogram ej tillgängligt.</string>
+    <string name="oi_distribution_update_app">OI Update</string>
+
+    <string name="oi_distribution_about">Om</string>
+	<string name="oi_distribution_aboutapp_not_available">Inget kompatibelt tillägg tillgängligt för att visa komplett information (kontakt, medverkande, licens).</string>
+    <string name="oi_distribution_aboutapp_get">Hämta OI About</string>
+    <string name="oi_distribution_aboutapp">OI About</string>
+
+    <string name="oi_distribution_filemanager">OI File Manager</string>
+    <string name="oi_distribution_filemanager_not_available">Ingen kompatibel filhanterare är tillgänglig.</string>
+
+    <string name="oi_distribution_safe">OI Safe</string>
+    <string name="oi_distribution_safe_not_available">Ingen kompatibel krypteringsapplikation är tillgänglig.</string>
+    <string name="oi_distribution_safe_not_available_decrypt">Ingen kompatibel dekrypteringsapplikation är tillgänglig.\n\nNotera: Du behöver återställa huvudnyckeln från en säkerhetskopia för att få åtkomst till tidigare krypterat data.</string>
+
+    <string name="oi_distribution_download_market_message">Ladda ner %s från Market eller OpenIntents hemsida.</string>
+    <string name="oi_distribution_download_message">Ladda ner %s från OpenIntents hemsida.</string>
+    <string name="oi_distribution_download_market">Market-nerladdning</string>
+    <string name="oi_distribution_download_web">Nerladdning från webben</string>
+    <string name="oi_distribution_download_title">Ladda ner %s</string>
+</resources>
