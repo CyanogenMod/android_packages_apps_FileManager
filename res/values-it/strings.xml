@@ -42,7 +42,7 @@
     <string name="menu_move">Sposta</string>
     <string name="menu_copy">Copia</string>
     <string name="menu_include_in_media_scan">Include in media scan</string>
-    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    <string name="menu_exclude_from_media_scan">Esclude da media scan</string>
 
     <string name="create_new_folder">Crea nuova cartella</string>
     <string name="folder_name">Nome cartella</string>
@@ -56,9 +56,9 @@
     <string name="file_moved">Il file è stato spostato.</string>
     <string name="folder_moved">La cartella è stata spostata.</string>
     <string name="file_copied">Il file è stato copiato.</string>
-    <string name="move_title">Seleziona la cartella dove spostare</string>
+    <string name="move_title">Seleziona la cartella da spostare</string>
     <string name="move_button">Sposta qui</string>
-    <string name="copy_title">Seleziona la cartella dove copiare</string>
+    <string name="copy_title">Seleziona la cartella da copiare</string>
     <string name="copy_button">Copia qui</string>
 
     <!-- Construct a unique file name of a file called %s. -->
@@ -81,7 +81,7 @@
     <string name="error_file_does_not_exists">Il file non esiste.</string>
     <string name="error_deleting_child_file">Impossibile eliminare il sotto file \'%s\'.</string>
     <string name="error_generic">Si è verificato un errore: </string>
-    <string name="error_media_scan">Non è stato possibile modificare le impostatzioni del media scanner.</string>
+    <string name="error_media_scan">Non è stato possibile modificare le impostazioni del media scanner.</string>
 
     <string name="send_not_available">Nessuna applicazione disponibile per l\'invio</string>
 
