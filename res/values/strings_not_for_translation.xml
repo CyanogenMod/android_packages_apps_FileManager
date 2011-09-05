@@ -73,11 +73,7 @@
     <string name="oi_distribution_aboutapp_website">http://www.openintents.org/en/node/202</string><!-- 202 = OI About -->
 	
     <!-- File Manager -->
-    <string name="oi_distribution_filemanager_package">org.openintents.cmfilemanager</string>
-    <string name="oi_distribution_filemanager_website">http://www.openintents.org/en/filemanager</string>
 	
 	<!-- Safe -->
-    <string name="oi_distribution_safe_package">org.openintents.safe</string>
-    <string name="oi_distribution_safe_website">http://www.openintents.org/en/safe</string>
 	
 </resources> 

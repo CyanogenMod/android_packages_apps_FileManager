@@ -65,7 +65,6 @@
   <string name="preference_mediascan_title">Викл. з пошуку мультимедіа</string>
   <string name="preference_mediascan_summary_on">Пункт меню “Виключити з пошуку мультимедіа” відображатиметься.</string>
   <string name="preference_mediascan_summary_off">Пункт меню “Виключити з пошуку мультимедіа” не відображатиметься.</string>
-  <string name="oi_distribution_app_name">OI Distribution Library</string>
   <string name="oi_distribution_eula_title">Ліц. угода %s</string>
   <string name="oi_distribution_eula_message">Будь ласка, прочитайте та прийміть ліцензійну угоду (EULA) %s.</string>
   <string name="oi_distribution_eula_accept">Прийняти</string>
@@ -77,18 +76,11 @@
   <string name="oi_distribution_menu_update">Перевірити оновлення</string>
   <string name="oi_distribution_update_box_text">Перевірте самостійно наявність оновлення або встановіть OI Update щоб отримувати автоматичні сповіщення.</string>
   <string name="oi_distribution_update_check_now">Перевірити зараз</string>
-  <string name="oi_distribution_update_get_updater">Завантажити ОІ Updater</string>
   <string name="oi_distribution_update_error">Завантаження програми недоступно.</string>
   <string name="oi_distribution_update_app">OI Update</string>
   <string name="oi_distribution_about">Про програму</string>
   <string name="oi_distribution_aboutapp_not_available">Не встановлено жодного розширення для відображення повної інформації (контакти, подяки, ліцензія).</string>
-  <string name="oi_distribution_aboutapp_get">Завантажити OI About</string>
   <string name="oi_distribution_aboutapp">OI About</string>
-  <string name="oi_distribution_filemanager">OI File Manager</string>
-  <string name="oi_distribution_filemanager_not_available">Не встановлено жодного сумісного файлового менеджера.</string>
-  <string name="oi_distribution_safe">OI Safe</string>
-  <string name="oi_distribution_safe_not_available">Не встановлено жодної сумісної програми для шифрування.</string>
-  <string name="oi_distribution_safe_not_available_decrypt">Не встановлено жодної сумісної програми для дешифрування.\n\nПримітка: щоб отримати доступ до раніше зашифрованих даних необхідно відновити з резервної копії головний ключ.</string>
   <string name="oi_distribution_download_market_message">Будь ласка, завантажте %s з маркету чи веб-сайту OpenIntents.</string>
   <string name="oi_distribution_download_message">Будь ласка, завантажте %s з веб-сайту OpenIntents.</string>
   <string name="oi_distribution_download_market">Завантаження з маркету</string>

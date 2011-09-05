@@ -138,7 +138,6 @@
         <!-- %s is the version number (e.g. "1.2.1") -->
         <string name="oi_distribution_update_box_text">Controlla manualmente o installa OI Update per notifiche automatiche.</string>
         <string name="oi_distribution_update_check_now">Controlla ora</string>
-        <string name="oi_distribution_update_get_updater">Installa OI Updater</string>
         <string name="oi_distribution_update_error">Download applicazione non disponibile.</string>
 
     <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
@@ -150,23 +149,8 @@
     <!-- %s is the version number (e.g. "1.2.1") -->
     <string name="oi_distribution_aboutapp_not_available">Non è disponibile l\'estensione per visualizzare le info complete (contatti, crediti, licenza).</string>
 
-    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp_get">Installa OI Info</string>
-
     <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
     <string name="oi_distribution_aboutapp">OI Info</string>
-
-    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_filemanager">Gestore file</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_filemanager_not_available">Non è disponibile un gestore file compatibile.</string>
-
-    <!-- Safe -->
-    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_safe">OI Safe</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_safe_not_available">Non è disponibile un\' applicazione compatibile per la cifratura.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">Non è disponibile un\' applicazione compatibile per la decifratura.\n\nNota: devi ripristinare la chiave da un backup per essere in grado di accedere ai dati precedentemente cifrati.</string>
 
     <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
     <string name="oi_distribution_download_market_message">Scarica %s dal Market o dal sito OpenIntents.</string>

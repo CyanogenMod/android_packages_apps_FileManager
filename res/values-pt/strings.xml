@@ -83,7 +83,6 @@
     <string name="preference_mediascan_title">Excluir da buscar de mídia</string>
     <string name="preference_mediascan_summary_on">Mostrar item de menu para exclusão de pastas da buscar de mídia.</string>
     <string name="preference_mediascan_summary_off">Esconder ítem de menu para exclusão de pastas da buscar de mídia.</string>
-    <string name="oi_distribution_app_name">OI Biblioteca de Distribuição</string>
     <string name="oi_distribution_eula_message">Favor ler e aceitar as seguintes Acordo de Licença para Usuário Final (EULA) for %s.</string>
     <string name="oi_distribution_eula_accept">Aceitar</string>
     <string name="oi_distribution_eula_refuse">Cancelar</string>
@@ -93,18 +92,11 @@
     <string name="oi_distribution_menu_update">Verificar atualizações</string>
     <string name="oi_distribution_update_box_text">Checar manualmente por atualizações ou instalar OI Update para notificações automáticas.</string>
     <string name="oi_distribution_update_check_now">Checar agora</string>
-    <string name="oi_distribution_update_get_updater">Baixar OI Updater</string>
     <string name="oi_distribution_update_error">Download de aplicação não disponível.</string>
     <string name="oi_distribution_update_app">OI Update</string>
     <string name="oi_distribution_about">Sobre</string>
     <string name="oi_distribution_aboutapp_not_available">Nenhuma extensão compatível disponível para mostrar informação completa (contato, créditos, licença).</string>
-    <string name="oi_distribution_aboutapp_get">Get OI Sobre</string>
     <string name="oi_distribution_aboutapp">OI Sobre</string>
-    <string name="oi_distribution_filemanager">OI Gerenciador de Arquivos</string>
-    <string name="oi_distribution_filemanager_not_available">Nenhum gerenciador de arquivos compatível está disponível.</string>
-    <string name="oi_distribution_safe">OI Cofre</string>
-    <string name="oi_distribution_safe_not_available">Nenhuma aplicação compatível para encriptação está disponível.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">Nenhuma aplicação para decriptação compatível está disponível. \n\nNota: Você tem que restaurar a chave mestre para um arquivo de backup para poder acessar dados encriptados previamente.</string>
     <string name="oi_distribution_download_market_message">Favor baixar de %s pelo Market ou pelo website OpenIntents.</string>
     <string name="oi_distribution_download_message">Favor baixar de %s pelo website OpenIntents.</string>
     <string name="oi_distribution_download_market">Baixar pelo Market</string>

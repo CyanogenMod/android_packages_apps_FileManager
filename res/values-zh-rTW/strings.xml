@@ -97,7 +97,6 @@
     <string name="preference_mediascan_summary_on">顯示將資料夾排除自媒體掃描的選項</string>
     <string name="preference_mediascan_summary_off">隱藏將資料夾排除自媒體掃描的選項</string>
 
-    <string name="oi_distribution_app_name">OI 發行的程式庫</string>
 
     <!-- ***************************
 	     Distribution
@@ -137,7 +136,6 @@
     <!-- %s is the version number (e.g. "1.2.1") -->
     <string name="oi_distribution_update_box_text">手動檢查更新，或安裝 OI 更新程式來自動得到更新通知。</string>
     <string name="oi_distribution_update_check_now">立刻檢查</string>
-    <string name="oi_distribution_update_get_updater">取得 OI 更新程式</string>
     <string name="oi_distribution_update_error">無應用程式可下載。</string>
 
     <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
@@ -149,23 +147,8 @@
     <!-- %s is the version number (e.g. "1.2.1") -->
     <string name="oi_distribution_aboutapp_not_available">無相容的附加元件可用以顯示完整資訊（聯絡方式、功勞和授權）。</string>
 
-    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp_get">取得 OI 關於頁</string>
-
     <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
     <string name="oi_distribution_aboutapp">OI 關於頁</string>
-
-    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_filemanager">OI 檔案總管</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_filemanager_not_available">無相容的檔案總管可用。</string>
-
-    <!-- Safe -->
-    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_safe">OI 保險庫</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_safe_not_available">無相容的加密應用程式可用。</string>
-    <string name="oi_distribution_safe_not_available_decrypt">無相容的加密應用程式可用。\n\n註：您需要從備份檔還原加密金鑰來存取之前已加密的資料。</string>
 
     <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
     <string name="oi_distribution_download_market_message">請從 Market 或 OpenIntents 網站下載 %s。</string>
