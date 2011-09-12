@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  * Copyright (C) 2007-2008 OpenIntents.org
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  * http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+-->
+<resources>
+  <!-- About information -->
+  <string name="about_translators">Překlad: Ondřej Zima</string>
+  <string name="about_comments">OI File Manager je otevřený správce souborů, který spolupracuje i s ostatními aplikacemi.</string>
+
+  <!-- Application-specific strings -->
+  <string name="app_name">Správce souborů</string>
+
+  <string name="menu_new_folder">Nový adresář</string>
+  <string name="menu_delete">Smazat</string>
+  <string name="menu_rename">Přejmenovat</string>
+  <string name="menu_send">Sdílet</string>
+  <string name="menu_open">Otevřít</string>
+  <string name="menu_move">Přesunout</string>
+  <string name="menu_copy">Kopírovat</string>
+  <string name="menu_include_in_media_scan">Zahrnout v prohledávání médií</string>
+  <string name="menu_exclude_from_media_scan">Vyloučit z prohledávání médií</string>
+
+  <string name="create_new_folder">Vytvořit nový adresář</string>
+  <string name="folder_name">Jméno adresáře</string>
+  <string name="file_name">Jméno souboru</string>
+  <string name="this_folder_is_empty">Tento adresář je prázdný.</string>
+  <string name="really_delete">Opravdu chcete smazat %s?</string>
+  <string name="file_deleted">Soubor smazán.</string>
+  <string name="folder_deleted">Adresář smazán.</string>
+  <string name="file_renamed">Soubor přejmenován.</string>
+  <string name="folder_renamed">Adresář přejmenován.</string>
+  <string name="file_moved">Soubor přesunut.</string>
+  <string name="folder_moved">Adresář přesunut.</string>
+  <string name="file_copied">Soubor zkopírován.</string>
+  <string name="move_title">Zvolte cílový adresář pro přesunutí</string>
+  <string name="move_button">Přesunout sem</string>
+  <string name="copy_title">Zvolte cílový adresář pro kopírování</string>
+  <string name="copy_button">Kopírovat sem</string>
+
+  <string name="copied_file_name">Kopie %s</string>
+  <string name="copied_file_name_2">Kopie %1$d souboru %2$s</string>
+
+  <string name="media_scan_included">Tento adresář bude zahrnutý v dalším prohledávání médií.</string>
+  <string name="media_scan_excluded">Tento adresář bude vyloučený v dalším prohledávání médií.</string>
+
+  <string name="error_creating_new_folder">Nelze vytvořit nový adresář.</string>
+  <string name="error_deleting_file">Nelze smazat soubor.</string>
+  <string name="error_deleting_folder">Nelze smazat adresář \'%s\'.</string>
+  <string name="error_renaming_file">Nelze přejmenovat soubor.</string>
+  <string name="error_renaming_folder">Nelze přejmenovat adresář.</string>
+  <string name="error_moving_file">Nelze přesunout soubor.</string>
+  <string name="error_moving_folder">Nelze přesunout adresář.</string>
+  <string name="error_copying_file">Nelze kopírovat soubor.</string>
+  <string name="error_file_does_not_exists">Soubor neexistuje.</string>
+  <string name="error_deleting_child_file">Nelze smazat potomek souboru \'%s\'.</string>
+  <string name="error_generic">Nastala chyba: </string>
+  <string name="error_media_scan">Nelze změnit nastavení prohledávání médií.</string>
+  <string name="send_not_available">Není dostupná žádná aplikace pro sdílení.</string>
+  <string name="application_not_available">Aplikace nedostupná</string>
+
+  <!-- Preferences -->
+  <string name="settings">Nastavení</string>
+  <string name="preference_advanced_features">Pokročilé vlastnosti</string>
+  <string name="preference_mediascan_title">Vyloučit z prohledávání médií</string>
+  <string name="preference_mediascan_summary_on">Zobrazit položku nabídky pro vyloučení adresářů z prohledávání médií.</string>
+  <string name="preference_mediascan_summary_off">Skrýt položku nabídky pro vyloučení adresářů z prohledávání médií.</string>
+
+  <!-- Distribution -->
+  <string name="oi_distribution_app_name">OI knihovna distribuce</string>
+  <string name="oi_distribution_eula_message">Prosím přečtěte si a přijměte následující licenční ujednání (EULA) pro aplikaci %s.</string>
+  <string name="oi_distribution_eula_accept">Přijmout</string>
+  <string name="oi_distribution_eula_refuse">Zrušit</string>
+  <string name="oi_distribution_newversion_message">Vítá Vás nová verze aplikace %s.</string>
+  <string name="oi_distribution_newversion_recent_changes">Nedávné změny:</string>
+  <string name="oi_distribution_newversion_continue">Pokračovat</string>
+
+  <string name="oi_distribution_menu_update">Zkontrolovat aktualizace</string>
+  <string name="oi_distribution_update_box_text">Zkontrolovat aktualizace ručně nebo provést instalaci Aktualizace OI pro automatické upozorňování.</string>
+  <string name="oi_distribution_update_check_now">Zkontrolovat nyní</string>
+  <string name="oi_distribution_update_get_updater">Stáhnout Aktualizace OI</string>
+  <string name="oi_distribution_update_error">Není dostupné stahování aplikace.</string>
+  <string name="oi_distribution_update_app">Aktualizace OI</string>
+
+  <!-- About -->
+  <string name="oi_distribution_about">O aplikaci</string>
+  <string name="oi_distribution_aboutapp_not_available">Není dostupné rozšíření pro zobrazení informací o aplikaci (kontakt, zásluhy, licence).</string>
+  <string name="oi_distribution_aboutapp_get">Stáhnout O aplikaci OI</string>
+  <string name="oi_distribution_aboutapp">O aplikaci OI</string>
+
+  <string name="oi_distribution_filemanager">Správce souborů OI</string>
+  <string name="oi_distribution_filemanager_not_available">Není dostupný žádný kompatibilní správce souborů.</string>
+  <string name="oi_distribution_safe">Sejf OI</string>
+  <string name="oi_distribution_safe_not_available">Není dostupná žádná aplikace pro šifrování.</string>
+  <string name="oi_distribution_safe_not_available_decrypt">Není dostupná žádná aplikace pro dešifrování.\n\nPoznámka: Pokud chcete číst dříve zašifrovaná data, je nutné nejprve obnovit hlavní šifrovací klíč ze zálohy.</string>
+  <string name="oi_distribution_download_market_message">Prosím stáhněte %s z Marketu nebo z domovské stránky OpenIntents.</string>
+  <string name="oi_distribution_download_message">Prosím stáhněte %s z domovské stránky OpenIntents.</string>
+  <string name="oi_distribution_download_market">Použít Market</string>
+  <string name="oi_distribution_download_web">Použít domovskou stránku</string>
+  <string name="oi_distribution_download_title">Stáhnout %s</string>
+
+</resources>
