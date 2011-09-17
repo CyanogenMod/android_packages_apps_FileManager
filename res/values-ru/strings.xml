@@ -98,7 +98,6 @@
     <string name="preference_mediascan_summary_on">Показывать пункт меню для исключения из поиска медиа.</string>
     <string name="preference_mediascan_summary_off">Скрывать пункт меню для исключения из поиска медиа.</string>
 
-    <string name="oi_distribution_app_name">OI Distribution Library</string>
 
 	<!-- ***************************
 	     Distribution
@@ -138,7 +137,6 @@
 	<!-- %s is the version number (e.g. "1.2.1") -->
 	<string name="oi_distribution_update_box_text">Проверяйте обновления вручную или установите OI Update для автоматического уведомления.</string>
 	<string name="oi_distribution_update_check_now">Проверить сейчас</string>
-	<string name="oi_distribution_update_get_updater">Получить OI Updater</string>
 	<string name="oi_distribution_update_error">Приложение загрузчик отсутствует.</string>
 
     <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
@@ -150,23 +148,8 @@
     <!-- %s is the version number (e.g. "1.2.1") -->
 	<string name="oi_distribution_aboutapp_not_available">Отсутствует совместимое расширение для отображения полной информации (контакты, авторы, лицензия).</string>
 
-    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp_get">Получить OI About</string>
-
     <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
     <string name="oi_distribution_aboutapp">OI About</string>
-
-    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_filemanager">OI File Manager</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_filemanager_not_available">Совместимый файл менеджер не доступен.</string>
-
-    <!-- Safe -->
-    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_safe">OI Safe</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_safe_not_available">Приложение для шифровки не доступно.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">Приложение для дешифровки не доступно.\n\nПримечание: Вы должны восстановить главный ключ из резервной копии, чтобы получить доступ к ранее зашифрованным данным.</string>
 
     <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
     <string name="oi_distribution_download_market_message">Пожалуйста, загрузите %s из Маркера или с веб-сайта OpenIntents.</string>

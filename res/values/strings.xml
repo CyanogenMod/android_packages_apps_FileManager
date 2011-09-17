@@ -96,7 +96,6 @@
     <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
     <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
 
-    <string name="oi_distribution_app_name">OI Distribution Library</string>
 
 	<!-- ***************************
 	     Distribution
@@ -136,7 +135,6 @@
 	<!-- %s is the version number (e.g. "1.2.1") -->
 	<string name="oi_distribution_update_box_text">Check manually for updates or install OI Update for automatic notifications.</string>
 	<string name="oi_distribution_update_check_now">Check now</string>
-	<string name="oi_distribution_update_get_updater">Get OI Updater</string>
 	<string name="oi_distribution_update_error">Download application not available.</string>
 
     <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
@@ -148,23 +146,8 @@
     <!-- %s is the version number (e.g. "1.2.1") -->
 	<string name="oi_distribution_aboutapp_not_available">No compatible extension available to display full info (contact, credits, license).</string>
 
-    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp_get">Get OI About</string>
-
     <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
     <string name="oi_distribution_aboutapp">OI About</string>
-
-    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_filemanager">OI File Manager</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_filemanager_not_available">No compatible file manager is available.</string>
-
-    <!-- Safe -->
-    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_safe">OI Safe</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_safe_not_available">No compatible application for encryption is available.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">No compatible application for decryption is available.\n\nNote: You have to restore the master key from a backup file in order to access previously encrypted data.</string>
 
     <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
     <string name="oi_distribution_download_market_message">Please download %s from the Market or the OpenIntents website.</string>
@@ -176,5 +159,4 @@
     <string name="oi_distribution_download_web">Web download</string>
 	<!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
     <string name="oi_distribution_download_title">Download %s</string>
-
 </resources>

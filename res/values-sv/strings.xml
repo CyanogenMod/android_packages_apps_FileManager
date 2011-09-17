@@ -61,7 +61,6 @@
     <string name="preference_mediascan_summary_on">Visa menyval att exkludera mappar från mediaavsökning.</string>
     <string name="preference_mediascan_summary_off">Göm menyval att exkludera mappar från mediaavsökning.</string>
 
-    <string name="oi_distribution_app_name">OI Distribution Library</string>
 
 	<string name="oi_distribution_eula_title">%s EULA</string>
 	<string name="oi_distribution_eula_message">Var god läs och acceptera följande licensgodkännande för slutanvändare (EULA) för %s.</string>
@@ -77,21 +76,14 @@
     <string name="oi_distribution_menu_update">Sök efter uppdateringar</string>
 	<string name="oi_distribution_update_box_text">Sök manuellt efter uppdateringar eller installera OI Update för automatiska aviseringar.</string>
 	<string name="oi_distribution_update_check_now">Sök nu</string>
-	<string name="oi_distribution_update_get_updater">Hämta OI Updater</string>
 	<string name="oi_distribution_update_error">Nerladdningsprogram ej tillgängligt.</string>
     <string name="oi_distribution_update_app">OI Update</string>
 
     <string name="oi_distribution_about">Om</string>
 	<string name="oi_distribution_aboutapp_not_available">Inget kompatibelt tillägg tillgängligt för att visa komplett information (kontakt, medverkande, licens).</string>
-    <string name="oi_distribution_aboutapp_get">Hämta OI About</string>
     <string name="oi_distribution_aboutapp">OI About</string>
 
-    <string name="oi_distribution_filemanager">OI File Manager</string>
-    <string name="oi_distribution_filemanager_not_available">Ingen kompatibel filhanterare är tillgänglig.</string>
 
-    <string name="oi_distribution_safe">OI Safe</string>
-    <string name="oi_distribution_safe_not_available">Ingen kompatibel krypteringsapplikation är tillgänglig.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">Ingen kompatibel dekrypteringsapplikation är tillgänglig.\n\nNotera: Du behöver återställa huvudnyckeln från en säkerhetskopia för att få åtkomst till tidigare krypterat data.</string>
 
     <string name="oi_distribution_download_market_message">Ladda ner %s från Market eller OpenIntents hemsida.</string>
     <string name="oi_distribution_download_message">Ladda ner %s från OpenIntents hemsida.</string>
