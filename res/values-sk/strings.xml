@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2007-2008 OpenIntents.org
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+	<!-- ***************************
+	     About information
+	     *************************** -->
+
+	<!-- Automatically filled in by Launchpad: -->
+	<string name="about_translators">Preklad do slovenčiny: jjsan (www.jjsan.eu)</string>
+
+    <!-- Short explanation of the application -->
+    <string name="about_comments">OI File Manager je otvorený správca súborov, ktorý bezproblémovo spolupracuje s inými aplikáciami.</string>
+
+	<!-- ***************************
+	     Application-specific strings
+	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">Správca Súborov</string>
+
+    <string name="menu_new_folder">Nový Adresár</string>
+    <string name="menu_delete">Zmazať</string>
+    <string name="menu_rename">Premenovať</string>
+    <string name="menu_send">Odoslať</string>
+    <string name="menu_open">Otvoriť</string>
+    <string name="menu_move">Presunúť</string>
+    <string name="menu_copy">Kopírovať</string>
+    <string name="menu_include_in_media_scan">Zahrnúť do prehľadávania médií</string>
+    <string name="menu_exclude_from_media_scan">Vynechať pri prehľadávaní médií</string>
+
+    <string name="create_new_folder">Vytvoriť novú zložku</string>
+    <string name="folder_name">Názov zložky</string>
+    <string name="file_name">Názov zložky</string>
+    <string name="this_folder_is_empty">Táto zložka je prázdna.</string>
+    <string name="really_delete">Naozaj si prajete zmazať %s?</string>
+    <string name="file_deleted">Súbor zmazaný.</string>
+    <string name="folder_deleted">Zložka zmazaná.</string>
+    <string name="file_renamed">Súbor premenovaný.</string>
+    <string name="folder_renamed">Zložka premenovaná.</string>
+    <string name="file_moved">Súbor presunutý.</string>
+    <string name="folder_moved">Zložka presunutá.</string>
+    <string name="file_copied">Súbor skopírovaný.</string>
+    <string name="move_title">Vyberte cieľovú zložku</string>
+    <string name="move_button">Presunúť sem</string>
+    <string name="copy_title">Vyberte cieľovú zložku</string>
+    <string name="copy_button">Skopírovať sem</string>
+
+    <!-- Construct a unique file name of a file called %s. -->
+    <string name="copied_file_name">Kopírovanie %s</string>
+
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Kopírovanie %1$d z %2$s</string>
+
+    <string name="media_scan_included">Táto zložka bude zahrnutá do ďalšieho prehľadávania médií.</string>
+    <string name="media_scan_excluded">Táto zložka bude vynechaná z ďalšieho prehľadávania médií.</string>
+
+    <string name="error_creating_new_folder">Nemožno vytvoriť novú zložku.</string>
+    <string name="error_deleting_file">Súbor nemožno zmazať.</string>
+    <string name="error_deleting_folder">Nemožno zmazať zložku \'%s\'.</string>
+    <string name="error_renaming_file">Súbor nemožno premenovať.</string>
+    <string name="error_renaming_folder">Zložku nemožno premenovať.</string>
+    <string name="error_moving_file">Súbor nemožno presunúť.</string>
+    <string name="error_moving_folder">Zložku nemožno presunúť.</string>
+    <string name="error_copying_file">Súbor nemožno skopírovať.</string>
+    <string name="error_file_does_not_exists">Súbor neexistuje.</string>
+    <string name="error_deleting_child_file">Nemožno zmazať podriadený súbor \'%s\'.</string>
+    <string name="error_generic">Nastala chyba: </string>
+    <string name="error_media_scan">Nemožno zmeniť nastavenia prehľadávania médií.</string>
+
+    <string name="send_not_available">Žiadna aplikácia pre odoslanie.</string>
+
+    <string name="application_not_available">Aplikácia nie je dostupná</string>
+
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Nastavenia</string>
+
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Rozšírené funkcie</string>
+	<string name="preference_mediascan_title">Vynechať z prehľadávania médií</string>
+    <string name="preference_mediascan_summary_on">Zobraziť položku menu pre vynechanie z prehľadávania médií.</string>
+    <string name="preference_mediascan_summary_off">Skryť položku menu pre vynechanie zložky z prehľadávania médií.</string>
+
+    <string name="oi_distribution_app_name">Distribučná Knižnica OI</string>
+
+	<!-- ***************************
+	     Distribution
+	     *************************** -->
+
+	<!-- EULA -->
+	<!-- EULA (End user license agreement). %s is an application name, e.g. "OI Notepad EULA".
+		Translation should be short, since this is a title. -->
+	<string name="oi_distribution_eula_title">%s EULA</string>
+
+	<!-- EULA welcome message. %s is an application name, e.g. "... (EULA) for OI Notepad".
+		Translation can be as long as required. -->
+	<string name="oi_distribution_eula_message">Prosím prečítajte a prijmite nasledujúcu Licenčnú Dohodu s Koncovým Užívateľom (EULA) pre %s.</string>
+
+	<!-- Button: Accept terms of EULA. -->
+	<string name="oi_distribution_eula_accept">Prijať</string>
+
+	<!-- Button: Refuse terms of EULA. -->
+	<string name="oi_distribution_eula_refuse">Odmietnuť</string>
+
+	<!-- New version -->
+	<!-- Application name and version. %1$s is the application name (e.g. "OI Notepad") and %2$s is the version number (e.g. "1.2.0").
+	Keep unmodified, unless your language requires that the version number is displayed first. -->
+	<string name="oi_distribution_name_and_version">%1$s %2$s</string>
+
+	<!-- Welcome message. %s is an application name. -->
+	<string name="oi_distribution_newversion_message">Vitajte v tejto novej verzii %s.</string>
+
+	<string name="oi_distribution_newversion_recent_changes">Posledné zmeny:</string>
+
+	<!-- Button: Continue to main application. -->
+	<string name="oi_distribution_newversion_continue">Pokračovať</string>
+
+	<!-- Update -->
+	<!-- Menu command to look for updates. -->
+    <string name="oi_distribution_menu_update">Skontrolovať aktualizácie</string>
+	<!-- %s is the version number (e.g. "1.2.1") -->
+	<string name="oi_distribution_update_box_text">Ručná kontrola aktualizácií, alebo nainštalujte OI Updater pre automatické upozornenia.</string>
+	<string name="oi_distribution_update_check_now">Skontrolovať teraz</string>
+	<string name="oi_distribution_update_get_updater">Získať OI Updater</string>
+	<string name="oi_distribution_update_error">Stiahnutie aplikácie nie je dostupné.</string>
+
+    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_update_app">OI Update</string>
+
+    <!-- About -->
+    <!-- Menu command to open the "about" or "info" dialog. -->
+    <string name="oi_distribution_about">O programe</string>
+    <!-- %s is the version number (e.g. "1.2.1") -->
+	<string name="oi_distribution_aboutapp_not_available">Žiadne kompatibilné rozšírenie pre zobrazenie všetkých informácií (kontakt, poďakovanie, licencia).</string>
+
+    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_aboutapp_get">Získať OI About</string>
+
+    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_aboutapp">OI About</string>
+
+    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
+    <string name="oi_distribution_filemanager">OI Správca Súborov</string>
+    <!-- Dialog message. -->
+    <string name="oi_distribution_filemanager_not_available">Žiadny kompatibilný správca súborov.</string>
+
+    <!-- Safe -->
+    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
+    <string name="oi_distribution_safe">OI Zabezpečenie</string>
+    <!-- Dialog message. -->
+    <string name="oi_distribution_safe_not_available">Žiadne kompatibilná aplikácia pre zašifrovanie.</string>
+    <string name="oi_distribution_safe_not_available_decrypt">Žiadne kompatibilná aplikácia pre odšifrovanie.\n\nPoznámka: Musíte obnoviť hlavný kľúč zo súboru zálohy pre prístup ku predtým zašifrovaným dátam.</string>
+
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_market_message">Prosím stiahnite %s z Marketu alebo zo stránky OpenIntents.</string>
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_message">Prosím stiahnite %s zo stránky OpenIntents.</string>
+    <!-- Dialog button: download the suggested application from Android Market. -->
+    <string name="oi_distribution_download_market">Stiahnuť z Marketu</string>
+    <!-- Dialog button: download the suggested application from the developer web site. -->
+    <string name="oi_distribution_download_web">Stiahnuť zo stránky</string>
+	<!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_title">Stiahnuť %s</string>
+
+</resources>
