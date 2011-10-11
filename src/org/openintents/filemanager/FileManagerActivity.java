@@ -25,6 +25,7 @@ import android.app.Dialog;
 import android.content.*;
 import android.content.DialogInterface.OnClickListener;
 import android.content.res.XmlResourceParser;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -60,7 +61,8 @@ public class FileManagerActivity extends DistributionLibraryListActivity {
 	private static final int STATE_BROWSE = 1;
 	private static final int STATE_PICK_FILE = 2;
 	private static final int STATE_PICK_DIRECTORY = 3;
-	
+	private static final int STATE_CREATE_SHORTCUT = 4;
+
 	protected static final int REQUEST_CODE_MOVE = 1;
 	protected static final int REQUEST_CODE_COPY = 2;
 
@@ -225,6 +227,8 @@ public class FileManagerActivity extends DistributionLibraryListActivity {
         		  mButtonPick.setLayoutParams(new LinearLayout.LayoutParams(
         				  LinearLayout.LayoutParams.FILL_PARENT,
         				  LinearLayout.LayoutParams.WRAP_CONTENT));
+        	  } else if (action.equals(Intent.ACTION_CREATE_SHORTCUT)) {
+        		  mState = STATE_CREATE_SHORTCUT;
         	  }
           }
           
@@ -777,6 +781,21 @@ public class FileManagerActivity extends DistributionLibraryListActivity {
             	   if (clickedFile.isDirectory()) {
             		   // If we click on folders, we can return later by the "back" key.
             		   mStepsBack++;
+            	   } else if (mState == STATE_CREATE_SHORTCUT) {
+            		   String filename = clickedFile.getName();
+            		   Intent shortcutIntent = new Intent(Intent.ACTION_VIEW);
+            		   shortcutIntent.setFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+            		   Uri data = FileUtils.getUri(clickedFile);
+            		   String type = mMimeTypes.getMimeType(filename);
+            		   shortcutIntent.setDataAndType(data, type);
+            		   Intent intent = new Intent();
+            		   BitmapDrawable bd = (BitmapDrawable) text.getIcon();
+            		   intent.putExtra(Intent.EXTRA_SHORTCUT_ICON,  bd.getBitmap());
+            		   intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
+            		   intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, filename);
+            		   setResult(RESULT_OK, intent);
+            		   finish();
+            		   return;
             	   }
                     browseTo(clickedFile);
                }
