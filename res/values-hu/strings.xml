@@ -79,4 +79,65 @@
 
     <string name="application_not_available">Az alkalmazás nem elérhető</string>
 
+    <string name="settings">Beállítások</string>
+    <string name="preference_advanced_features">Részletes jellemzők</string>
+    <string name="preference_mediascan_title">Kizárás a média-keresésből</string>
+    <string name="preference_mediascan_summary_on">Mutasson menüpontot a mappa kizárására a média-keresésből.</string>
+    <string name="preference_mediascan_summary_off">Ne mutasson menüpontot a mappa kizárására a média-keresésből.</string>
+
+	<string name="oi_distribution_eula_title">%s EULA</string>
+
+	<!-- EULA welcome message. %s is an application name, e.g. "... (EULA) for OI Notepad".
+		Translation can be as long as required. -->
+	<string name="oi_distribution_eula_message">Kérjük, olvassa el és fogadja el a következő Végfelhasználói licencszerződést (EULA) az %s használatához.</string>
+
+	<!-- Button: Accept terms of EULA. -->
+	<string name="oi_distribution_eula_accept">Elfogadom</string>
+
+	<!-- Button: Refuse terms of EULA. -->
+	<string name="oi_distribution_eula_refuse">Mégsem</string>
+
+	<!-- New version -->
+	<!-- Application name and version. %1$s is the application name (e.g. "OI Notepad") and %2$s is the version number (e.g. "1.2.0").
+	Keep unmodified, unless your language requires that the version number is displayed first. -->
+	<string name="oi_distribution_name_and_version">%1$s %2$s</string>
+
+	<!-- Welcome message. %s is an application name. -->
+	<string name="oi_distribution_newversion_message">Üdvözöljük az %s új verziójában.</string>
+
+	<string name="oi_distribution_newversion_recent_changes">Új változások:</string>
+
+	<!-- Button: Continue to main application. -->
+	<string name="oi_distribution_newversion_continue">Folytatás</string>
+
+	<!-- Update -->
+	<!-- Menu command to look for updates. -->
+    <string name="oi_distribution_menu_update">Frissítés keresés</string>
+	<!-- %s is the version number (e.g. "1.2.1") -->
+	<string name="oi_distribution_update_box_text">Ellenőrízze manuálisan a frissítéseket, vagy telepítse az OI Frissítő-t az automatikus értesítésekhez.</string>
+	<string name="oi_distribution_update_check_now">Ellenőrzés</string>
+	<string name="oi_distribution_update_error">Letöltési hiba</string>
+
+    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_update_app">OI Frissítő</string>
+
+    <!-- About -->
+    <!-- Menu command to open the "about" or "info" dialog. -->
+    <string name="oi_distribution_about">Névjegy</string>
+    <!-- %s is the version number (e.g. "1.2.1") -->
+	<string name="oi_distribution_aboutapp_not_available">Nincs kompatibilis megjelenítő a teljes információkhoz (Kapcsolat, Licensz).</string>
+
+    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_aboutapp">OI Névjegy</string>
+
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_market_message">Töltse le a %s alkalmazást a Market-ből vagy az OpenIntents weboldaláról.</string>
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_message">Töltse le a %s alkalmazást az OpenIntents weboldaláról.</string>
+    <!-- Dialog button: download the suggested application from Android Market. -->
+    <string name="oi_distribution_download_market">Market letöltés</string>
+    <!-- Dialog button: download the suggested application from the developer web site. -->
+    <string name="oi_distribution_download_web">Web letöltés</string>
+	<!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_title">%s letöltése</string>
 </resources>
