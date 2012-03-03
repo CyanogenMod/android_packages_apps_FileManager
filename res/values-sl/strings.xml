@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007-2008 OpenIntents.org
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+	<!-- ***************************
+	     About information
+	     *************************** -->
+	
+	<!-- Automatically filled in by Launchpad: -->
+	<string name="about_translators">Launchpad Contributions:
+  OpenIntents devs https://launchpad.net/~openintents-devs
+  met https://launchpad.net/~dot-cis</string>
+	
+    <!-- Short explanation of the application. Max. 80 characters. -->
+    <string name="about_comments">Upravljajte z dokumenti na SD kartici.</string>  
+	
+	<!-- ***************************
+	     Applicatio-specific strings
+	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">File Manager</string>
+    
+    <string name="menu_new_folder">Nova mapa</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Izberi več</string>
+
+    <string name="menu_delete">Izbriši</string>
+    <string name="menu_rename">Preimenuj</string>
+    <string name="menu_send">Pošlji</string>
+    <string name="menu_open">Odpri</string>
+    <string name="menu_move">Prestavi</string>
+    <string name="menu_copy">Kopiraj</string>
+    <string name="menu_include_in_media_scan">Vključi v pregled datotek</string>
+    <string name="menu_exclude_from_media_scan">Izključi iz pregleda datotek</string>
+    
+    <string name="create_new_folder">Ustvari novo mapo</string>
+    <string name="folder_name">Ime mape</string>
+    <string name="file_name">Ime mape</string>
+    <string name="this_folder_is_empty">Ta mapa je prazna.</string>
+    <string name="really_delete">Res želiš izbrisati datoteko %s?</string>
+    <string name="file_deleted">Datoteka je izbrisana.</string>
+    <string name="folder_deleted">Mapa je izbrisana.</string>
+    <string name="file_renamed">Datoteka je preimenovana.</string>
+    <string name="folder_renamed">Mapa je preimenovana.</string>
+    <string name="file_moved">Datoteka je prestavljena.</string>
+    <string name="folder_moved">Mapa je prestavljena.</string>
+    <string name="file_copied">Datoteka je skopirana.</string>
+    <string name="move_title">Izberi mapo, kamor bo datoteka prestavljena</string>
+    <string name="move_button">Prestavi sem</string>
+    <string name="copy_title">Izberi mapo, kamor bo datoteka skopirana</string>
+    <string name="copy_button">Skopiraj sem</string>
+	<string name="deleting_files">Deleting files...</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Res želiš izbrisati datoteke %d?</string>
+    <string name="move_button_multiselect">Prestavi</string>
+    <string name="copy_button_multiselect">Kopiraj</string>
+    <string name="delete_button_multiselect">Izbriši</string>
+    <string name="multiselect_title">Izberi več datotek</string>
+    <string name="error_selection">Prosim izberi eno ali več datotek.</string>
+    
+    <!-- Construct a unique file name of a file called %s. -->
+    <string name="copied_file_name">%s - kopija</string>
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Kopija %1$d datoteke %2$s</string>
+    
+    <string name="media_scan_included">Ta mapa bo vključena v naslednji pregled datotek.</string>
+    <string name="media_scan_excluded">Ta mapa bo izključena iz naslednjega pregleda datotek.</string>
+    
+    <string name="error_creating_new_folder">Ne morem ustvariti nove mape.</string>
+    <string name="error_deleting_file">Ne morem izbrisati datoteke.</string>
+    <string name="error_deleting_folder">Ne morem izbrisati mape \'%s\'.</string>
+    <string name="error_renaming_file">Ne morem preimenovati datoteke.</string>
+    <string name="error_renaming_folder">Ne morem preimenovati mape.</string>
+    <string name="error_moving_file">Ne morem prestaviti datoteke.</string>
+    <string name="error_moving_folder">Ne morem prestaviti mape.</string>
+    <string name="error_copying_file">Ne morem kopirati datoteke.</string>
+    <string name="error_file_does_not_exists">Datoteka ne obstaja.</string>
+    <string name="error_deleting_child_file">Ne morem izbrisati poddatoteke \'%s\'.</string>
+    <string name="error_generic">Napaka:</string>
+    <string name="error_media_scan">Ne morem spremeniti nastavitev pregleda datotek.</string>
+    
+    <string name="send_not_available">Ni aplikacije za pošiljanje.</string>
+    
+    <string name="application_not_available">Aplikacija ni dosegljiva</string>
+    
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Nastavitve</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Napredne možnosti</string>
+	<string name="preference_mediascan_title">Izključi iz pregleda datotek</string>
+    <string name="preference_mediascan_summary_on">Pokaži meni za izključitev map iz pregleda datotek.</string>
+    <string name="preference_mediascan_summary_off">Skrij meni za izključitev map iz pregleda datotek.</string>
+    
+    <!-- ***************************
+	     Distribution
+	     *************************** -->
+	
+	<!-- EULA -->	
+	<!-- EULA (End user license agreement). %s is an application name, e.g. "OI Notepad EULA". 
+		Translation should be short, since this is a title. -->
+	<string name="oi_distribution_eula_title">Pogoji uporabe aplikacije %s</string>
+	
+	<!-- EULA welcome message. %s is an application name, e.g. "... (EULA) for OI Notepad".
+		Translation can be as long as required. -->
+	<string name="oi_distribution_eula_message">Prosimo preberite in potrdite pogoje uporabe za aplikacijo %s.</string>
+	
+	<!-- Button: Accept terms of EULA. -->
+	<string name="oi_distribution_eula_accept">Sprejmi</string>
+	
+	<!-- Button: Refuse terms of EULA. -->
+	<string name="oi_distribution_eula_refuse">Zavrni</string>
+	
+	<!-- New version -->
+	<!-- Application name and version. %1$s is the application name (e.g. "OI Notepad") and %2$s is the version number (e.g. "1.2.0").
+	Keep unmodified, unless your language requires that the version number is displayed first. -->
+	<string name="oi_distribution_name_and_version">%1$s %2$s</string>
+	
+	<!-- Welcome message. %s is an application name. -->
+	<string name="oi_distribution_newversion_message">Dobrodošli v novi različici aplikacije %s.</string>
+	
+	<string name="oi_distribution_newversion_recent_changes">Zadnje spremembe:</string>
+	
+	<!-- Button: Continue to main application. -->
+	<string name="oi_distribution_newversion_continue">Nadaljuj</string>
+	
+	<!-- Update -->
+	<!-- Menu command to look for updates. -->
+    <string name="oi_distribution_menu_update">Preveri za posodobitve</string>
+	<string name="oi_distribution_update_box_text">Za posodobitve preverite sami ali pa namestite OI Update za avtomatska opozorila.</string>
+	<string name="oi_distribution_update_check_now">Preveri zdaj</string>
+	<string name="oi_distribution_update_get_updater">Naloži OI Updater</string>
+	<string name="oi_distribution_update_error">Aplikacije ne morete prenesti.</string>
+	
+    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_update_app">OI Update</string>
+    
+    <!-- About -->
+    <!-- Menu command to open the "about" or "info" dialog. -->
+    <string name="oi_distribution_about">O aplikaciji</string>
+    <!-- %s is the version number (e.g. "1.2.1") -->
+	<string name="oi_distribution_aboutapp_not_available">Ni združljivega vstavka za prikaz vseh informacij (kontakt, zasluge, licenca).</string>
+    
+    
+    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_aboutapp_get">Naloži OI About</string>
+    
+    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
+    <string name="oi_distribution_aboutapp">OI About</string>
+    
+    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
+    <string name="oi_distribution_filemanager">OI File Manager</string>
+    <!-- Dialog message. -->
+    <string name="oi_distribution_filemanager_not_available">Ni združljivega urejevalca dokumentov.</string>
+    
+    <!-- Safe -->
+    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
+    <string name="oi_distribution_safe">OI Safe</string>
+    <!-- Dialog message. -->
+    <string name="oi_distribution_safe_not_available">Ni združljive aplikacije za šifriranje.</string>
+    <string name="oi_distribution_safe_not_available_decrypt">Ni zružljive aplikacije za šifriranje.\n\nOpomba: Za dostop do šifriranih podatkov potrebujete glavni ključ z varnostne kopije.</string>
+    
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_market_message">Prosimo prenesite aplikacijo %s z Android Market-a ali z domače strani OpenIntents.</string>
+    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_message">Prosimo prenesite aplikacijo %s z domače strani OpenIntents.</string>
+    <!-- Dialog button: download the suggested application from Android Market. -->
+    <string name="oi_distribution_download_market">Prenos z Android Market-a</string>
+    <!-- Dialog button: download the suggested application from the developer web site. -->
+    <string name="oi_distribution_download_web">Prenos z domače strani</string>
+	<!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
+    <string name="oi_distribution_download_title">Prenesi %s</string>
+	
+	<!-- %s is an application name (e.g. "OI About can be used with the following applications:") -->
+	<string name="oi_distribution_info_activity_text">%s lahko uporabiš z naslednjimi aplikacijami:</string>
+	<!-- %s is an application name (e.g. "Launch OI Notepad") -->
+    <string name="oi_distribution_info_launch">Zaženi %s</string>
+    <!-- %1$s is the current application name. %2$s is another application name, and %3$s is the other application\'s version name
+    (e.g. "OI About requires OI Notepad 1.2.0 or higher.") -->
+	<string name="oi_distribution_info_not_available">%1$s potrebuje aplikacijo %2$s %3$s ali novejšo različico.</string>
+	<!-- Title of a dialog. -->
+	<string name="oi_distribution_info_instructions">Navodila</string>
+	<!-- Error message -->
+	<string name="oi_distribution_launch_error">Aplikacije ni možno zagnati</string>
+
+</resources>

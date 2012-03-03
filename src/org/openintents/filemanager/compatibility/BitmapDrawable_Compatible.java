@@ -5,12 +5,12 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 
 public class BitmapDrawable_Compatible {
-
+	
 	private static boolean use_SDK_1_6 = true;
-
+	
 	/**
 	 * Replaces "new BitmapDrawable(context.getResources(), bitmap)" available only in SDK 1.6 and higher.
-	 *
+	 * 
 	 * @param resources
 	 * @param bitmap
 	 * @return

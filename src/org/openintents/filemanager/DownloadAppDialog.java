@@ -30,17 +30,16 @@ import android.widget.Toast;
 
 /**
  * @version 2009-02-04
+ * @version 2011-02-07: Allow for string arguments.
  * @author Peli
- *
  */
 public class DownloadAppDialog extends AlertDialog implements OnClickListener {
 	private static final String TAG = "StartSaveActivity";
 
     Context mContext;
-    int mDownloadPackage;
-    int mDownloadWebsite;
     String mDownloadAppName;
     String mDownloadPackageName;
+    String mDownloadWebsite;
     String mMessageText;
     
     boolean mMarketAvailable;
@@ -50,24 +49,37 @@ public class DownloadAppDialog extends AlertDialog implements OnClickListener {
         mContext = context;
     }
     
-    public DownloadAppDialog(Context context, int message, int download_name, int download_package, int download_website) {
+    public DownloadAppDialog(Context context, int message_id, int download_name_id, int download_package_id, int download_website_id) {
+        super(context);
+        mContext = context;
+        set(message_id, download_name_id, download_package_id, download_website_id);
+    }
+    
+    public DownloadAppDialog(Context context, String message, String download_name, String download_package, String download_website) {
         super(context);
         mContext = context;
         set(message, download_name, download_package, download_website);
     }
 
-	protected void set(int message, int download_name,
-			int download_package, int download_website) {
-		mDownloadPackage = download_package;
+	protected void set(int message_id, int download_name_id,
+			int download_package_id, int download_website_id) {
+		String message = mContext.getString(message_id);
+		String download_name = mContext.getString(download_name_id);
+		String download_package = mContext.getString(download_package_id);
+		String download_website = mContext.getString(download_website_id);
+		set(message, download_name, download_package, download_website);
+	}
+	
+	protected void set(String message, String download_name,
+			String download_package, String download_website) {
+        mDownloadAppName = download_name;
+        mDownloadPackageName = download_package;
         mDownloadWebsite = download_website;
-
-        mDownloadAppName = mContext.getString(download_name);
-        mDownloadPackageName = mContext.getString(mDownloadPackage);
         
         mMarketAvailable = MarketUtils.isMarketAvailable(mContext, mDownloadPackageName);
         
         StringBuilder sb = new StringBuilder();
-        sb.append(mContext.getString(message));
+        sb.append(message);
         sb.append(" ");
         if (mMarketAvailable) {
         	sb.append(mContext.getString(R.string.oi_distribution_download_market_message, 
@@ -94,7 +106,7 @@ public class DownloadAppDialog extends AlertDialog implements OnClickListener {
 			startSaveActivity(intent);
     	} else if (which == BUTTON2) {
     		intent  = new Intent(Intent.ACTION_VIEW);
-    		Uri uri= Uri.parse(mContext.getString(mDownloadWebsite));
+    		Uri uri= Uri.parse(mDownloadWebsite);
 			intent.setData(uri);
 			startSaveActivity(intent);
     	}
@@ -105,8 +117,6 @@ public class DownloadAppDialog extends AlertDialog implements OnClickListener {
 		
 		boolean has_android_market = MarketUtils.isMarketAvailable(context, d.mDownloadPackageName);
 
-		//Log.d(TAG, "has_android_market? " + has_android_market);
-		
 		dialog.findViewById(android.R.id.button1).setVisibility(
 				has_android_market ? View.VISIBLE : View.GONE);
 	}

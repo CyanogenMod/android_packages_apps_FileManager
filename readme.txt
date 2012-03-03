@@ -23,6 +23,20 @@ To obtain the current release, visit
 
 
 ---------------------------------------------------------
+release: 1.1.6
+date: 2011-06-02
+- fix bug that prevented sending attachments through menu "Send" (patch by Alex)
+
+---------------------------------------------------------
+release: 1.1.5
+date: 2011-05-28
+- new menu item for multiselect: copy, move or delete multiple files at once (patch by John Doe).
+- case insensitive sort order (issue 334, patch by Vishrut Patel).
+- handle projections in the provider (issue 324, patch by Dominik Pretzsch).
+- drop "mimetype" from provider path.
+- delete files and folders in background (issue 294, patch by Damienix).
+
+---------------------------------------------------------
 release: 1.1.4
 date: 2011-02-05
 - new application icon for Android 2.0 or higher.

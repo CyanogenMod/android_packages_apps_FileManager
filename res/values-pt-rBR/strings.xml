@@ -21,19 +21,24 @@
 	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
+  André Gondim https://launchpad.net/~andregondim
   DanielElias https://launchpad.net/~danielelias</string>
 	
-    <!-- Short explanation of the application -->
-    <string name="about_comments">OI File Manager é um gerenciador de arquivos que coopera facilmente com outras aplicações.</string>  
+    <!-- Short explanation of the application. Max. 80 characters. -->
+    <string name="about_comments">Manage files on the SD card.</string>  
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">Gerenciador de Arquivos</string>
+    <string name="app_name">File Manager</string>
     
     <string name="menu_new_folder">Nova Pasta</string>
-    <string name="menu_delete">Deletar</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Multi Select</string>
+
+    <string name="menu_delete">Apagar</string>
     <string name="menu_rename">Renomear</string>
     <string name="menu_send">Enviar</string>
     <string name="menu_open">Abrir</string>
@@ -58,6 +63,15 @@
     <string name="move_button">Mover aqui</string>
     <string name="copy_title">Escolha a pasta para onde deseja copiar</string>
     <string name="copy_button">Copiar aqui</string>
+	<string name="deleting_files">Deleting files...</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Do you really want to delete %d files?</string>
+    <string name="move_button_multiselect">Mover</string>
+    <string name="copy_button_multiselect">Copiar</string>
+    <string name="delete_button_multiselect">Apagar</string>
+    <string name="multiselect_title">Select multiple files</string>
+    <string name="error_selection">Please select one or more file(s).</string>
     
     <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Cópia de %s</string>
@@ -89,32 +103,13 @@
 	     Preferences
 	     *************************** -->
     <!-- Menu item for Settings -->
-	<string name="settings">Configurações</string>
+	<string name="settings">Settings</string>
 	
     <!-- Category for preferences. -->
-    <string name="preference_advanced_features">Recursos avançados</string>
+    <string name="preference_advanced_features">Advanced features</string>
 	<string name="preference_mediascan_title">Remover do scanner de mídia.</string>
-    <string name="preference_mediascan_summary_on">Mostrar item de menu para ignorar pastas ao varrer mídia.</string>
-    <string name="preference_mediascan_summary_off">Esconder item de menu para ignorar pastas ao varrer mídia.</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
     
- <string name="oi_distribution_eula_message">Leia por favor e aceite os seguinte Acordo de Licença do Utilizador Final (ALUF) para %s.</string>
- <string name="oi_distribution_eula_accept">Aceitar</string>
- <string name="oi_distribution_eula_refuse">Cancelar</string>
- <string name="oi_distribution_eula_title">%s ALUF</string>
- <string name="oi_distribution_newversion_message">Bem Vindo a esta nova versão de %s.</string>
- <string name="oi_distribution_newversion_recent_changes">Mudanças recentes:</string>
- <string name="oi_distribution_menu_update">Verificar por atualizações</string>
- <string name="oi_distribution_update_box_text">Verificar manualmente por atualizações ou instalar OI Atualizador para  notificações automáticas.</string>
- <string name="oi_distribution_update_check_now">Verificar agora</string>
- <string name="oi_distribution_update_error">Download de aplicação não está disponível.</string>
- <string name="oi_distribution_update_app">OI Atualizador</string>
- <string name="oi_distribution_about">Sobre</string>
- <string name="oi_distribution_aboutapp_not_available">Nenhuma extensão compatível disponível para exibir informações completas (contato, créditos de licença).</string>
- <string name="oi_distribution_aboutapp">Sobre OI</string>
- <string name="oi_distribution_download_market_message">Favor baixe %s pelo Market ou pelo website OpenIntents.</string>
- <string name="oi_distribution_download_message">Por favor baixe %s pelo website OpenIntents.</string>
- <string name="oi_distribution_download_market">Baixar pelo Market</string>
- <string name="oi_distribution_download_web">Baixar pela Web</string>
- <string name="oi_distribution_download_title">Baixar</string>
- <string name="oi_distribution_newversion_continue">Continue</string>
+    
 </resources>

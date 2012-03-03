@@ -19,6 +19,8 @@ package org.openintents.util;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.os.Build;
 import android.util.Log;
 
 /**
@@ -99,5 +101,46 @@ public class VersionUtils {
 			Log.e(TAG, "Package name not found", e);
 		};
 		return icon;
+	}
+
+	/**
+	 * Indicates whether a specific package with minimum version code is available.
+	 */
+	public static boolean isPackageAvailable(final Context context, final String packageName,
+			final int minVersionCode) {
+		boolean result = false;
+		try {
+			PackageInfo pi = context.getPackageManager().getPackageInfo(
+					packageName, 0);
+			if (pi.versionCode >= minVersionCode) {
+				result = true;
+			}
+	    } catch (PackageManager.NameNotFoundException e) {
+	    	
+	    }
+	    return result;
+	}
+	
+	public static int getAndroidSDKLevel() {
+      int sdkInt;
+	  try {
+		  
+		  // this is the non-deprecated way to get the version: 
+		  //
+		  // sdkInt = Build.VERSION.SDK_INT;
+		  //
+		  // ... but on Cupcake it will cause a VerifyError exception 
+		  // the first time any class references anything in VersionUtils. 
+		  //
+	      // So for now we use the deprecated string version. However we should switch to
+		  // just referencing Build.VERSION.SDK if we ever have other reasons to 
+	      // stop supporting Android 1.5.
+		  //
+	      sdkInt = Integer.parseInt(Build.VERSION.SDK);
+	    } catch (NumberFormatException nfe) {
+	      // Just to be safe
+	      sdkInt = 10000;
+	    }
+	    return sdkInt;
 	}
 }

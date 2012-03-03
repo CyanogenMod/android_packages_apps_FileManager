@@ -21,49 +21,59 @@ package org.openintents.cmfilemanager;
  * Dec 7, 2008: Peli: Use inflated layout.
  */
 
-import android.content.Context;
-import android.graphics.drawable.Drawable;
+import android.content.Context; 
+import android.graphics.Color;
+import android.graphics.drawable.Drawable; 
+import android.util.Log;
 import android.view.LayoutInflater;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ImageView; 
+import android.widget.LinearLayout; 
 import android.widget.TextView; 
 
-public class IconifiedTextView extends LinearLayout {
-
-    private TextView mText;
-    private TextView mInfo;
-     private ImageView mIcon;
-
-     public IconifiedTextView(Context context, IconifiedText aIconifiedText) {
-          super(context);
-
+public class IconifiedTextView extends LinearLayout { 
+      
+    private TextView mText; 
+    private TextView mInfo; 
+     private ImageView mIcon; 
+      
+     public IconifiedTextView(Context context, IconifiedText aIconifiedText) { 
+          super(context); 
+		
 		// inflate rating
 		LayoutInflater inflater = (LayoutInflater) context
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
+		
 		inflater.inflate(
 				R.layout.filelist_item, this, true);
-
+		
 		mIcon = (ImageView) findViewById(R.id.icon);
 		mText = (TextView) findViewById(R.id.text);
 		mInfo = (TextView) findViewById(R.id.info);
-     }
+     } 
 
-     public void setText(String words) {
-         mText.setText(words);
+     public void setText(String words) { 
+         mText.setText(words); 
 
          int height = getHeight();
-
+         
          if (height > 0) {
         	 ThumbnailLoader.setThumbnailHeight(height);
          }
-    }
-
-     public void setInfo(String info) {
+    } 
+     
+     public void setInfo(String info) { 
          mInfo.setText(info);
+    } 
+     
+     public void setIcon(Drawable bullet) { 
+          mIcon.setImageDrawable(bullet); 
+     }
+
+	public void setTextColor(int color) {
+		mText.setTextColor(color); 
     }
 
-     public void setIcon(Drawable bullet) {
-          mIcon.setImageDrawable(bullet);
-     }
+	public void setInfoColor(int color) {
+		mInfo.setTextColor(color); 
+    } 
 }

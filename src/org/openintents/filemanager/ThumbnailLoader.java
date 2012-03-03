@@ -1,5 +1,12 @@
 package org.openintents.cmfilemanager;
 
+import java.io.File;
+import java.util.List;
+
+import org.openintents.cmfilemanager.compatibility.BitmapDrawable_Compatible;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypes;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,12 +15,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.Gravity;
-import org.openintents.cmfilemanager.compatibility.BitmapDrawable_Compatible;
-import org.openintents.cmfilemanager.util.FileUtils;
-import org.openintents.cmfilemanager.util.MimeTypes;
-
-import java.io.File;
-import java.util.List;
 
 public class ThumbnailLoader extends Thread {
 
@@ -104,9 +105,9 @@ public class ThumbnailLoader extends Thread {
 						
 						// SDK 1.6 and higher only:
 						// BitmapDrawable drawable = new BitmapDrawable(context.getResources(), bitmap);
-
+						
 						BitmapDrawable drawable = BitmapDrawable_Compatible.getNewBitmapDrawable(context.getResources(), bitmap);
-
+						
 						drawable.setGravity(Gravity.CENTER);
 						drawable.setBounds(0, 0, thumbnailWidth, thumbnailHeight);
 						

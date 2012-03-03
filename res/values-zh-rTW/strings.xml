@@ -15,33 +15,37 @@
  * limitations under the License.
  -->
 <resources>
-    <!-- ***************************
+	<!-- ***************************
 	     About information
 	     *************************** -->
-
-    <!-- Automatically filled in by Launchpad: -->
-    <string name="about_translators">Launchpad Contributions:
+	
+	<!-- Automatically filled in by Launchpad: -->
+	<string name="about_translators">Launchpad Contributions:
   Chih-Wei Huang https://launchpad.net/~cwhuang</string>
-
-    <!-- Short explanation of the application -->
-    <string name="about_comments">OI 檔案總管是一個開放源碼計劃，可與其它的應用程式良好的整合。</string>
-
-    <!-- ***************************
-	     Application-specific strings
+	
+    <!-- Short explanation of the application. Max. 80 characters. -->
+    <string name="about_comments">Manage files on the SD card.</string>  
+	
+	<!-- ***************************
+	     Applicatio-specific strings
 	     *************************** -->
-    <!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
     <string name="app_name">檔案總管</string>
-
+    
     <string name="menu_new_folder">新增資料夾</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Multi Select</string>
+
     <string name="menu_delete">刪除</string>
     <string name="menu_rename">重新命名</string>
     <string name="menu_send">傳送</string>
     <string name="menu_open">開啟</string>
     <string name="menu_move">移動</string>
     <string name="menu_copy">複製</string>
-    <string name="menu_include_in_media_scan">包含於媒體掃描</string>
-    <string name="menu_exclude_from_media_scan">排除自媒體掃描</string>
-
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    
     <string name="create_new_folder">新增資料夾</string>
     <string name="folder_name">資料夾名稱</string>
     <string name="file_name">資料夾名稱</string>
@@ -58,107 +62,53 @@
     <string name="move_button">移動到這裡</string>
     <string name="copy_title">選擇要複製的資料夾</string>
     <string name="copy_button">複製到這裡</string>
-
+	<string name="deleting_files">Deleting files...</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Do you really want to delete %d files?</string>
+    <string name="move_button_multiselect">移動</string>
+    <string name="copy_button_multiselect">複製</string>
+    <string name="delete_button_multiselect">刪除</string>
+    <string name="multiselect_title">Select multiple files</string>
+    <string name="error_selection">Please select one or more file(s).</string>
+    
     <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">複製 %s</string>
-
+    
     <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
-    <string name="copied_file_name_2">複製 %1$d 個 %2$s</string>
-
-    <string name="media_scan_included">此資料夾會被包含在下一次媒體掃描。</string>
-    <string name="media_scan_excluded">此資料夾會在下一次媒體掃描中被排除。</string>
-
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    
     <string name="error_creating_new_folder">無法建立新資料夾。</string>
     <string name="error_deleting_file">無法刪除檔案。</string>
-    <string name="error_deleting_folder">無法刪除資料夾“%s”。</string>
+    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
     <string name="error_renaming_file">檔案無法重新命名。</string>
     <string name="error_renaming_folder">資料夾無法重新命名。</string>
     <string name="error_moving_file">無法移動檔案。</string>
     <string name="error_moving_folder">無法移動資料夾。</string>
     <string name="error_copying_file">無法複製檔案。</string>
     <string name="error_file_does_not_exists">檔案不存在。</string>
-    <string name="error_deleting_child_file">無法刪除當中檔案“%s”。</string>
-    <string name="error_generic">發生錯誤：</string>
-    <string name="error_media_scan">無法變更媒體掃描設定。</string>
-
+    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
+    
     <string name="send_not_available">找不到傳送用的應用程式。</string>
-
+    
     <string name="application_not_available">找不到應用程式。</string>
-
-    <!-- ***************************
+    
+	<!-- ***************************
 	     Preferences
 	     *************************** -->
     <!-- Menu item for Settings -->
-    <string name="settings">設定</string>
-
+	<string name="settings">Settings</string>
+	
     <!-- Category for preferences. -->
-    <string name="preference_advanced_features">進階功能</string>
-    <string name="preference_mediascan_title">排除自媒體掃描</string>
-    <string name="preference_mediascan_summary_on">顯示將資料夾排除自媒體掃描的選項</string>
-    <string name="preference_mediascan_summary_off">隱藏將資料夾排除自媒體掃描的選項</string>
-
-
-    <!-- ***************************
-	     Distribution
-	     *************************** -->
-
-    <!-- EULA -->
-    <!-- EULA (End user license agreement). %s is an application name, e.g. "OI Notepad EULA".
-		Translation should be short, since this is a title. -->
-    <string name="oi_distribution_eula_title">%s 用戶協議</string>
-
-    <!-- EULA welcome message. %s is an application name, e.g. "... (EULA) for OI Notepad".
-		Translation can be as long as required. -->
-    <string name="oi_distribution_eula_message">請細閱並接受版本 %s 於下列的用戶協議。</string>
-
-    <!-- Button: Accept terms of EULA. -->
-    <string name="oi_distribution_eula_accept">接受</string>
-
-    <!-- Button: Refuse terms of EULA. -->
-    <string name="oi_distribution_eula_refuse">取消</string>
-
-    <!-- New version -->
-    <!-- Application name and version. %1$s is the application name (e.g. "OI Notepad") and %2$s is the version number (e.g. "1.2.0").
-	Keep unmodified, unless your language requires that the version number is displayed first. -->
-    <string name="oi_distribution_name_and_version">%1$s %2$s</string>
-
-    <!-- Welcome message. %s is an application name. -->
-    <string name="oi_distribution_newversion_message">歡迎使用這新的 %s 版本。</string>
-
-    <string name="oi_distribution_newversion_recent_changes">近期變更：</string>
-
-    <!-- Button: Continue to main application. -->
-    <string name="oi_distribution_newversion_continue">繼續</string>
-
-    <!-- Update -->
-    <!-- Menu command to look for updates. -->
-    <string name="oi_distribution_menu_update">檢查更新</string>
-    <!-- %s is the version number (e.g. "1.2.1") -->
-    <string name="oi_distribution_update_box_text">手動檢查更新，或安裝 OI 更新程式來自動得到更新通知。</string>
-    <string name="oi_distribution_update_check_now">立刻檢查</string>
-    <string name="oi_distribution_update_error">無應用程式可下載。</string>
-
-    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_update_app">OI 更新程式</string>
-
-    <!-- About -->
-    <!-- Menu command to open the "about" or "info" dialog. -->
-    <string name="oi_distribution_about">關於</string>
-    <!-- %s is the version number (e.g. "1.2.1") -->
-    <string name="oi_distribution_aboutapp_not_available">無相容的附加元件可用以顯示完整資訊（聯絡方式、功勞和授權）。</string>
-
-    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp">OI 關於頁</string>
-
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_market_message">請從 Market 或 OpenIntents 網站下載 %s。</string>
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_message">請從 OpenIntents 網站下載 %s。</string>
-    <!-- Dialog button: download the suggested application from Android Market. -->
-    <string name="oi_distribution_download_market">Market 下載</string>
-    <!-- Dialog button: download the suggested application from the developer web site. -->
-    <string name="oi_distribution_download_web">網站下載</string>
-    <!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_title">下載 %s</string>
-
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    
+    
 </resources>

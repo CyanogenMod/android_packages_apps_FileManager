@@ -41,7 +41,7 @@ public class EulaOrNewVersion {
 	
 	public static final String PREFERENCES_EULA_ACCEPTED = "eula_accepted";
 
-	public static final String PREFERENCES_VERSION_NUMBER = "org.openintents.distribution.version_number_check";
+	public static final String PREFERENCES_VERSION_NUMBER = "org.openintents.cmfilemanager.version_number_check";
 	
 	/**
 	 * Extra for main intent.

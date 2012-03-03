@@ -1,5 +1,13 @@
 package org.openintents.cmfilemanager;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.openintents.cmfilemanager.util.MimeTypeParser;
+import org.openintents.cmfilemanager.util.MimeTypes;
+import org.xmlpull.v1.XmlPullParserException;
+
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.res.XmlResourceParser;
@@ -7,19 +15,12 @@ import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
-import android.provider.MediaStore.Images;
+import android.provider.MediaStore;
 import android.util.Log;
-import org.openintents.cmfilemanager.util.MimeTypeParser;
-import org.openintents.cmfilemanager.util.MimeTypes;
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class FileManagerProvider extends ContentProvider {
 
-	static final String MIME_TYPE_PREFIX = "content://org.openintents.cmfilemanager/mimetype/";
+	static final String FILE_PROVIDER_PREFIX = "content://org.openintents.cmfilemanager";
 	private static final String TAG = "FileManagerProvider";
 	public static final String AUTHORITY = "org.openintents.cmfilemanager";
 	private MimeTypes mMimeTypes;
@@ -30,23 +31,15 @@ public class FileManagerProvider extends ContentProvider {
 		return true;
 	}
 
-	/**
-	 *
-	 */
 	private void getMimeTypes() {
 		MimeTypeParser mtp = new MimeTypeParser();
-
-		XmlResourceParser in = getContext().getResources().getXml(
-				R.xml.mimetypes);
+		XmlResourceParser in = 
+			getContext().getResources().getXml(R.xml.mimetypes);
 
 		try {
 			mMimeTypes = mtp.fromXmlResource(in);
 		} catch (XmlPullParserException e) {
-			Log
-					.e(
-							TAG,
-							"PreselectedChannelsActivity: XmlPullParserException",
-							e);
+			Log.e(TAG, "PreselectedChannelsActivity: XmlPullParserException", e);
 			throw new RuntimeException(
 					"PreselectedChannelsActivity: XmlPullParserException");
 		} catch (IOException e) {
@@ -75,30 +68,81 @@ public class FileManagerProvider extends ContentProvider {
 	}
 
 	@Override
-	public Cursor query(Uri uri, String[] as, String s, String[] as1, String s1) {
-		if (uri.toString().startsWith(
-				MIME_TYPE_PREFIX)) {
-			MatrixCursor c = new MatrixCursor(new String[] { Images.Media.DATA,
-					Images.Media.MIME_TYPE });
-			// data = absolute path = uri - content://authority/mimetype
-			String data = uri.toString().substring(20 + AUTHORITY.length());
+	public Cursor query(Uri uri, String[] projection, String s, 
+			String[] as1, String s1) {
+		if (uri.toString().startsWith(FILE_PROVIDER_PREFIX)) {
+			if (projection == null || projection.length == 0) {
+				// Standard projection including all supported rows
+				projection = new String [] {
+								MediaStore.MediaColumns.DATA,
+								MediaStore.MediaColumns.MIME_TYPE,
+								MediaStore.MediaColumns.DISPLAY_NAME,
+								MediaStore.MediaColumns.SIZE};
+			} 
+			
+			MatrixCursor c = new MatrixCursor(projection);
+			MatrixCursor.RowBuilder row = c.newRow();
+			
+			// data = absolute path to file
+			String data = uri.getPath();
+			
+			int fromIndex = data.lastIndexOf(File.separatorChar) + 1;
+			if (fromIndex >= data.length()) {
+				// Last character was '/' or data is empty, so no file name 
+				// was specified and we don't want to raise an 
+				// IndexOutOfBoundsException
+				throw new RuntimeException("No file name specified: ".concat(data));
+			}
+			
+			// According to Android docs, DISPLAY_NAME should be
+			// the last segment of Uri
+			String displayName = 
+				(fromIndex > 0) ? data.substring(fromIndex) : data;
+			
 			String mimeType = mMimeTypes.getMimeType(data);
-			c.addRow(new String[] { data, mimeType });
+				
+			long size = -1;
+			File file = new File(data);			
+			if (file.exists() && file.isFile()) {
+				size = file.length();
+			}
+			
+			for (String col : projection) {
+				if (col.equals(MediaStore.MediaColumns.DATA)) {
+					row.add(data);
+				} else if (col.equals(MediaStore.MediaColumns.MIME_TYPE)) {
+					row.add(mimeType);
+				} else if (col.equals(MediaStore.MediaColumns.DISPLAY_NAME)) {
+					row.add(displayName);
+				} else if (col.equals(MediaStore.MediaColumns.SIZE)) {
+					if (size >= 0)
+						row.add(size);
+					else {
+						// According to Android docs for unknown size.
+						// Standard getLong() won't throw exception and
+						// value will be 0.
+						row.add(null);
+					}
+				} else {
+					// Unsupported or unknown columns are filled up with null
+					row.add(null);
+				}
+			}
+			
 			return c;
 		} else {
 			throw new RuntimeException("Unsupported uri");
 		}
 	}
-
+	
 	@Override
 	public ParcelFileDescriptor openFile(Uri uri, String mode)
 			throws FileNotFoundException {
-		if (uri.toString().startsWith(
-				MIME_TYPE_PREFIX)) {
+		if (uri.toString().startsWith(FILE_PROVIDER_PREFIX)) {
 			int m = ParcelFileDescriptor.MODE_READ_ONLY;
 			if (mode.equalsIgnoreCase("rw"))
 				m = ParcelFileDescriptor.MODE_READ_WRITE;
-			File f = new File(uri.toString().substring(20 + AUTHORITY.length()));
+			File f = new File(uri.getPath());
 			ParcelFileDescriptor pfd = ParcelFileDescriptor.open(f, m);
 			return pfd;
 		} else {
@@ -107,8 +151,7 @@ public class FileManagerProvider extends ContentProvider {
 	}
 
 	@Override
-	public int update(Uri uri, ContentValues contentvalues, String s,
-			String[] as) {
+	public int update(Uri uri, ContentValues contentvalues, String s, String[] as) {
 		// not supported
 		return 0;
 	}

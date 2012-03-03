@@ -23,24 +23,28 @@
 	<string name="about_translators">Launchpad Contributions:
   Swandle https://launchpad.net/~swandle</string>
 	
-    <!-- Short explanation of the application -->
-    <string name="about_comments">OI文件管理器是一个开源的文件管理软件，它可以与其它应用程序进行无缝整合。</string>  
+    <!-- Short explanation of the application. Max. 80 characters. -->
+    <string name="about_comments">Manage files on the SD card.</string>  
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">OI文件管理器</string>
+    <string name="app_name">文件管理器</string>
     
     <string name="menu_new_folder">新建文件夹</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Multi Select</string>
+
     <string name="menu_delete">删除</string>
     <string name="menu_rename">重命名</string>
     <string name="menu_send">发送</string>
     <string name="menu_open">打开</string>
     <string name="menu_move">移动</string>
     <string name="menu_copy">复制</string>
-    <string name="menu_include_in_media_scan">包含在媒体扫描中</string>
-    <string name="menu_exclude_from_media_scan">从媒体扫描中排除</string>
+    <string name="menu_include_in_media_scan">Include in media scan</string>
+    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
     
     <string name="create_new_folder">新建文件夹</string>
     <string name="folder_name">文件夹名</string>
@@ -58,28 +62,37 @@
     <string name="move_button">移动到此处</string>
     <string name="copy_title">选择要复制的文件夹</string>
     <string name="copy_button">复制到此处</string>
+	<string name="deleting_files">Deleting files...</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Do you really want to delete %d files?</string>
+    <string name="move_button_multiselect">移动</string>
+    <string name="copy_button_multiselect">复制</string>
+    <string name="delete_button_multiselect">删除</string>
+    <string name="multiselect_title">Select multiple files</string>
+    <string name="error_selection">Please select one or more file(s).</string>
     
     <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">复制 %s</string>
     
     <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
-    <string name="copied_file_name_2">复制 %1$d of %2$s</string>
-
-    <string name="media_scan_included">该文件夹将包含在下一次媒体扫描中.</string>
-    <string name="media_scan_excluded">该文件夹将在下一次媒体扫描中排除.</string>
+    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    
+    <string name="media_scan_included">This folder will be included in the next media scan.</string>
+    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
     
     <string name="error_creating_new_folder">无法建立新文件夹</string>
     <string name="error_deleting_file">无法删除文件</string>
-    <string name="error_deleting_folder">无法删除文件夹\'%s\'.</string>
+    <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
     <string name="error_renaming_file">无法重命名文件</string>
     <string name="error_renaming_folder">无法重命名文件夹</string>
     <string name="error_moving_file">无法移动文件</string>
     <string name="error_moving_folder">无法移动文件夹</string>
     <string name="error_copying_file">无法复制文件</string>
     <string name="error_file_does_not_exists">文件不存在</string>
-    <string name="error_deleting_child_file">无法删除子文件\'%s\'.</string>
-    <string name="error_generic">发生错误: </string>
-    <string name="error_media_scan">无法改变媒体扫描设置.</string>
+    <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
+    <string name="error_generic">An error occurred: </string>
+    <string name="error_media_scan">Could not change media scan settings.</string>
     
     <string name="send_not_available">无法找到用于传送的应用程序</string>
     
@@ -89,63 +102,13 @@
 	     Preferences
 	     *************************** -->
     <!-- Menu item for Settings -->
-    <string name="settings">设置</string>
+	<string name="settings">Settings</string>
 	
     <!-- Category for preferences. -->
-    <string name="preference_advanced_features">高级特性</string>
-    <string name="preference_mediascan_title">从媒体扫描排除</string>
-    <string name="preference_mediascan_summary_on">显示从媒体扫描中排除的菜单项</string>
-    <string name="preference_mediascan_summary_off">隐藏从媒体扫描中排除的菜单项</string>
-
-    <!-- ***************************
-	  Distribution
-	  *************************** -->
-    <!-- EULA -->
-    <string name="oi_distribution_eula_title">%s用户协议</string>
-    <string name="oi_distribution_eula_message">请仔细阅读并接受版本%s在下面的用户协议</string>
-
-    <!-- Button: Accept terms of EULA. -->
-    <string name="oi_distribution_eula_accept">接受</string>
-
-    <!-- Button: Refuse terms of EULA. -->
-    <string name="oi_distribution_eula_refuse">取消</string>
-
-    <!-- Welcome message. %s is an application name. -->
-    <string name="oi_distribution_newversion_message">欢迎使用新的%s版本</string>
-
-    <string name="oi_distribution_newversion_recent_changes">近期变更：</string>
-
-    <!-- Button: Continue to main application. -->
-    <string name="oi_distribution_newversion_continue">继续</string>
-
-    <!-- Update -->
-    <!-- Menu command to look for updates. -->
-    <string name="oi_distribution_menu_update">检查更新</string>
-    <!-- %s is the version number (e.g. "1.2.1") -->
-    <string name="oi_distribution_update_box_text">手动检查更新，或安装OI更新程序来自动得到更新通知</string>
-    <string name="oi_distribution_update_check_now">立刻检查</string>
-    <string name="oi_distribution_update_error">无应用程序可下载</string>
-
-    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_update_app">OI更新程序</string>
-    <!-- About -->
-    <!-- Menu command to open the "about" or "info" dialog. -->
-    <string name="oi_distribution_about">关于</string>
-    <!-- %s is the version number (e.g. "1.2.1") -->
-    <string name="oi_distribution_aboutapp_not_available">无兼容的附加组件可用来显示完整信息（联系方式、贡献者和授权）</string>
-
-    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp">关于OI</string>
-
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_market_message">请从Android Market或OpenIntents网站下载 %s</string>
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_message">请从OpenIntents网站下载%s</string>
-    <!-- Dialog button: download the suggested application from Android Market. -->
-    <string name="oi_distribution_download_market">请从Android Market下载</string>
-    <!-- Dialog button: download the suggested application from the developer web site. -->
-    <string name="oi_distribution_download_web">网站下载</string>
-    <!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_title">下载%s</string>
-
+    <string name="preference_advanced_features">Advanced features</string>
+	<string name="preference_mediascan_title">Exclude from media scan</string>
+    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    
+    
 </resources>

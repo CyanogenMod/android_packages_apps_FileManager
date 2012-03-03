@@ -1,5 +1,15 @@
 package org.openintents.cmfilemanager;
 
+import java.io.File;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypes;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -10,14 +20,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 import android.util.Log;
-import org.openintents.cmfilemanager.util.FileUtils;
-import org.openintents.cmfilemanager.util.MimeTypes;
-
-import java.io.File;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class DirectoryScanner extends Thread {
 
@@ -31,7 +33,9 @@ public class DirectoryScanner extends Thread {
     private MimeTypes mMimeTypes;
 	private Handler handler;
 	private long operationStartTime;
+
 	private boolean mWriteableOnly;
+
 	private boolean mDirectoriesOnly;
 	
 	// Update progress bar every n files
@@ -86,7 +90,7 @@ public class DirectoryScanner extends Thread {
 		} else {
 			totalCount = files.length;
 		}
-
+		
 		operationStartTime = SystemClock.uptimeMillis();
 		
 		Log.v(TAG, "Counting files... (total count=" + totalCount + ")");
@@ -101,7 +105,7 @@ public class DirectoryScanner extends Thread {
 
 		/** SD card separate for sorting */
 		List<IconifiedText> listSdCard = new ArrayList<IconifiedText>(3);
-
+		
 		boolean noMedia = false;
 
 		// Cache some commonly used icons.
@@ -110,9 +114,9 @@ public class DirectoryScanner extends Thread {
 		Drawable genericFileIcon = context.getResources().getDrawable(R.drawable.icon_file);
 
 		Drawable currentIcon = null; 
-
+		
 		if (files != null) {
-			for (File currentFile : files){
+			for (File currentFile : files){ 
 				if (cancel) {
 					// Abort!
 					Log.v(TAG, "Scan aborted while checking files");
@@ -124,27 +128,28 @@ public class DirectoryScanner extends Thread {
 				updateProgress(progress, totalCount);
 
 				/*
-				if (currentFile.isHidden()) {
-					continue;
-				}
-				 */
-				if (currentFile.isDirectory()) {
+        	  if (currentFile.isHidden()) {
+        		  continue;
+        	  }
+				 */				
+				
+				if (currentFile.isDirectory()) { 
 					if (currentFile.getAbsolutePath().equals(mSdCardPath)) {
 						currentIcon = sdIcon;
 
-						listSdCard.add(new IconifiedText(
-								currentFile.getName(), "", currentIcon));
+						listSdCard.add(new IconifiedText( 
+								currentFile.getName(), "", currentIcon)); 
 					} else {
 						currentIcon = folderIcon;
-
+						
 						if (!mWriteableOnly || currentFile.canWrite()){
-							listDir.add(new IconifiedText(
+							listDir.add(new IconifiedText( 
 									currentFile.getName(), "", currentIcon));
 						}
 					}
-				}else{
-					String fileName = currentFile.getName();
-
+				}else{ 
+					String fileName = currentFile.getName(); 
+					
 					// Is this the ".nomedia" file?
 					if (!noMedia) {
 						if (fileName.equalsIgnoreCase(".nomedia")) {
@@ -181,15 +186,15 @@ public class DirectoryScanner extends Thread {
 						listFile.add(new IconifiedText( 
 							currentFile.getName(), size, currentIcon));
 					}
-				}
+				} 
 			}
 		}
 		
 		Log.v(TAG, "Sorting results...");
 		
 		//Collections.sort(mListSdCard); 
-		Collections.sort(listDir); 
-		Collections.sort(listFile); 
+		Collections.sort(listDir, new ICComparator()); 
+		Collections.sort(listFile, new ICComparator()); 
 
 		if (!cancel) {
 			Log.v(TAG, "Sending data back to main thread");
@@ -235,11 +240,11 @@ public class DirectoryScanner extends Thread {
      * @return
      */
     Drawable getDrawableForMimetype(File file, String mimetype) {
-		if (mimetype == null) {
-			return null;
-		}
-
-		PackageManager pm = context.getPackageManager();
+     if (mimetype == null) {
+    	 return null;
+     }
+     
+   	 PackageManager pm = context.getPackageManager();
    	 
    	 Uri data = FileUtils.getUri(file);
    	
@@ -279,4 +284,15 @@ public class DirectoryScanner extends Thread {
         }
     }
 }
-	
+
+class ICComparator implements Comparator{
+	public int compare(Object o1, Object o2) {
+		IconifiedText it1 = (IconifiedText) o1;
+		IconifiedText it2 = (IconifiedText) o2;
+
+	    String s1 = it1.getText();
+	    String s2 = it2.getText();
+	    return s1.toLowerCase().compareTo(s2.toLowerCase());
+	  }
+	}
+
