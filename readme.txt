@@ -1,5 +1,5 @@
- ****************************************************************************
- * Copyright (C) 2008-2011 OpenIntents.org                                  *
+﻿ ****************************************************************************
+ * Copyright (C) 2008-2012 OpenIntents.org                                  *
  *                                                                          *
  * Licensed under the Apache License, Version 2.0 (the "License");          *
  * you may not use this file except in compliance with the License.         *
@@ -22,12 +22,47 @@ To obtain the current release, visit
   http://www.openintents.org
 
 
----------------------------------------------------------
+----------------
+release: 1.2
+date: 2012-02-18
+
+Thanks to Google Code-in for many of the following patches:
+(see http://www.google-melange.com/gci/homepage/google/gci2011 )
+
+- Limit icon size in file list (issue 319, patch by John Doe)
+- Hide optional commands in context menu (issue 329, patch by John Doe).
+- "Save as" integration for Google Mail (Google Code-in task by Matěj Konečný)
+- Option to hide hidden files (Google Code-In task by Matěj Konečný)
+- Filter by file type (issue 166, Google Code-in task by Aviral Dasgupta)
+- Show file details through context menu (Google Code-in task by Aviral Dasgupta)
+- Option to sort files (Google Code-In task by Matěj Konečný)
+- Keep list position after delete (Google Code-in task by Chickenbellyfinn)
+- Show correct toast when deleting file (issue 365, Google Code-in task by Chickenbellyfinn)
+- Apk icon support (Google Code-in task by Philip Hayes)
+- Bookmarks of folder locations (Google Code-In task by Matěj Konečný)
+- Details dialog shows size of folder contents (Google Code-In task by Philip Hayes)
+- Fixed bug with details dialog on API 7 and earlier (Google Code-In task by Philip Hayes)
+- Fixed bug with More option (issue 330, Google Code-In task by Matěj Konečný)
+- Select/Deselect all in multi-select (Google Code-In task by Philip Hayes)
+- remember previous directory when attaching files (Google Code-in task by Matěj Konečný)
+- Better visibility for multi-select selection (issue 460, Google Code-in task by Philip Hayes)
+- support for ZIP compression (patch by Evgeniy Berlog)
+- warning dialog for file extension changes (issue 397, patch by Evgeniy Berlog)
+- Refresh menu item (Google Code-in task by Aviral Dasgupta)
+- Lazy loading of thumbnails (issue 271, Google Code-in task by Philip Hayes)
+- Use custom icons for certain file types (issue 333, Google Code-in task by Matěj Konečný)
+- Accept return key for entering a path (issue 461, Google Code-in task by Matěj Konečný)
+- Support View Intent to open the filemanager (issue 396, Google Code-in task by Chickenbellyfinn)
+- support for multi-select ZIP compression (patch by Evgeniy Berlog)
+
+- new icons and translations by Google Code-in students
+
+----------------
 release: 1.1.6
 date: 2011-06-02
 - fix bug that prevented sending attachments through menu "Send" (patch by Alex)
 
----------------------------------------------------------
+----------------
 release: 1.1.5
 date: 2011-05-28
 - new menu item for multiselect: copy, move or delete multiple files at once (patch by John Doe).
@@ -36,7 +71,7 @@ date: 2011-05-28
 - drop "mimetype" from provider path.
 - delete files and folders in background (issue 294, patch by Damienix).
 
----------------------------------------------------------
+----------------
 release: 1.1.4
 date: 2011-02-05
 - new application icon for Android 2.0 or higher.
@@ -47,24 +82,24 @@ date: 2011-02-05
 - translations into various languages.
 - bug fixes (issue 308, 318).
 
----------------------------------------------------------
+----------------
 release: 1.1.3
 date: 2010-05-29
 - backward compatibility with Android 1.5.
 
----------------------------------------------------------
+----------------
 release: 1.1.2
 date: 2010-05-29
 - fix thumbnail size on high-density devices.
 - translations: Occitan (post 1500), Polish, Russian
 
----------------------------------------------------------
+----------------
 release: 1.1.1
 date: 2009-12-26
 - recursive delete
 - translations: Dutch, Faroese, Korean, Lao, Romanian
 
----------------------------------------------------------
+----------------
 release: 1.1.0
 date: 2009-10-30
 - display file size.
@@ -81,7 +116,7 @@ date: 2009-10-30
 - encode file URIs properly
 - translations: Chinese, French, German, Japanese, Spanish
 
----------------------------------------------------------
+----------------
 release: 1.0.0
 date: 2008-12-10
 

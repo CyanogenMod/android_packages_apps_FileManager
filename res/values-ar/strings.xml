@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007-2008 OpenIntents.org
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+	<!-- ***************************
+	     About information
+	     *************************** -->
+	
+	<!-- Automatically filled in by Launchpad: -->
+	<string name="about_translators">Launchpad Contributions:
+  OpenIntents devs https://launchpad.net/~openintents-devs
+  kenn dhia https://launchpad.net/~kendhia</string>
+	
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">ادارة الملفات على بطاقة SD باستعمال مدير المفات .OI</string>  
+	
+	<!-- ***************************
+	     Applicatio-specific strings
+	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">مدير الملفات OI</string>
+    
+    <string name="menu_new_folder">مجلد جديد</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">اختيار متعدد</string>
+
+    <string name="menu_delete">حذف</string>
+    <string name="menu_rename">اعادة تسمية</string>
+    <string name="menu_send">ارسال</string>
+    <string name="menu_open">فتح</string>
+    <string name="menu_move">نقل</string>
+    <string name="menu_copy">نسخ</string>
+    <string name="menu_details">تفاصيل</string>
+    <string name="menu_more">مزيد</string>
+    <string name="menu_compress">ظغط(ZIP)</string>
+    <string name="menu_extract">فك الظغط (ZIP)</string>
+    <string name="menu_filter">تصفية</string>
+    <string name="menu_include_in_media_scan">ادراج في فحص الميديا</string>
+    <string name="menu_exclude_from_media_scan">استبعاد من فحص الميديا</string>
+    <string name="menu_bookmark">اضافة الى المفضلات</string>
+    <string name="menu_refresh">Refresh</string>
+    
+    <string name="create_new_folder">انشاء مجلد جديد</string>
+    <string name="folder_name">اسم المجلد</string>
+    <string name="file_name">اسم المجلد</string>
+    <string name="extension">الامتداد(بـ\'.\')</string>
+    <string name="this_folder_is_empty">هذا المجلد فارغ.</string>
+    <string name="really_delete">هل أنت متأكد من رغبتك في حذف %s؟</string>
+    <string name="file_deleted">تم حذف الملف.</string>
+    <string name="folder_deleted">تم حذف المجلد.</string>
+    <string name="file_renamed">تم اعادة تسمية الملف.</string>
+    <string name="folder_renamed">تم اعادة تسمية المجلد.</string>
+    <string name="file_moved">تم  نقل الملف.</string>
+    <string name="folder_moved">تم نقل المجلد.</string>
+    <string name="file_copied">تم نسخ الملف.</string>
+    <string name="move_title">اختر مجلد للنقل اليه</string>
+    <string name="move_button">انقل هنا</string>
+    <string name="copy_title">اختر مجلد للنسخ اليه</string>
+    <string name="copy_button">انسخ هنا</string>
+	<string name="deleting_files">حذف الملفات...</string>
+    <string name="title_warning_some_may_not_work">تحذير</string>
+    <string name="warning_some_may_not_work">مجموعة من هته الخيارات قد لا تعمل</string>
+    <string name="show_warning_again">اظهار التحذير مرة أخرى</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">هل أنت متأكد من رغبتك في حذف الملفات %d؟</string>
+    <string name="move_button_multiselect">نقل</string>
+    <string name="copy_button_multiselect">نسخ</string>
+    <string name="delete_button_multiselect">حذف</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
+    <string name="multiselect_title">اختر ملفات متعددة</string>
+    <string name="error_selection">رجاءا اخر ملف  أو عدة ملفات</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">النوع</string>
+    <string name="details_type_folder">المجلد</string>
+    <string name="details_type_file">الملف</string>
+    <string name="details_type_other">أخرى</string>
+    <string name="details_size">الحجم</string>
+    <string name="details_permissions">الصلاحيات</string>
+    <string name="details_hidden">مخفية</string>
+    <string name="details_lastmodified">آخر تعديل</string>
+    <string name="details_yes">نعم</string>
+    <string name="details_no">لا</string>
+    
+    <!-- Construct a unique file name of a file called %s. -->
+    <string name="copied_file_name">انسخ من %s</string>
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">انسخ  %1$d من %2$s</string>
+    
+    <string name="media_scan_included">هذا المجلد سيكون مدرجا في فحص ميديا التالي</string>
+    <string name="media_scan_excluded">سيتم استبعاد المجلد خلال فحص الميديا التالي.</string>
+    
+    <string name="error_creating_new_folder">لا يمكن انشاء مجلد جديد.</string>
+    <string name="error_deleting_file">لا يمكن حذف الملف.</string>
+    <string name="error_deleting_folder">لا يمكن حذف المجلد \'%s\'.</string>
+    <string name="error_renaming_file">لا يمكن اعادة تسمية الملف.</string>
+    <string name="error_renaming_folder">لا يمكن اعادة تسمية المجلد.</string>
+    <string name="error_moving_file">لا يمكن نقل الملف.</string>
+    <string name="error_moving_folder">لا يمكن نقل المجلد.</string>
+    <string name="error_copying_file">لا يمكن نسخ الملف.</string>
+    <string name="error_file_does_not_exists">ملف غير موجود.</string>
+    <string name="error_deleting_child_file">لا يمكن حذف الملف الطفل  \'%s\'.</string>
+    <string name="error_generic">حدث خطأ :</string>
+    <string name="error_media_scan">لا يمكن تغيير اعدادات فحص الميديا.</string>
+    
+    <string name="send_not_available">لا يوجد أي تطبيق متوفر للارسال.</string>
+    
+    <string name="application_not_available">التطبيق غير متوفر.</string>
+    
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">الاعدادات</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">مزايا متقدمة</string>
+	<string name="preference_mediascan_title">استبعاد من فحص الميديا</string>
+    <string name="preference_mediascan_summary_on">اظهار قائمة العناصر لاستبعاد المجلدات من فحص الميديا التالي.</string>
+    <string name="preference_mediascan_summary_off">اخفاء قائمة العناصر لاستبعاد المجلدات من فحص الميديا التالي.</string>
+    
+    <string name="preference_showallwarning_title">اظهار جميع التحذيرات</string>
+    <string name="preference_showallwarning_summary_on">اظهار جميع رسائل التحذيرات</string>
+    <string name="preference_showallwarning_summary_off">منع رسائل التحذير</string>
+       
+    <string name="preference_displayhiddenfiles_title">اظهار الملفات المخفية</string>
+    <string name="preference_displayhiddenfiles_summary_on">اظهار الملفات المخفية</string>
+    <string name="preference_displayhiddenfiles_summary_off">اخفاء الملفات المخفية</string>
+    
+    <string name="preference_sort_settings">اعدادات الفرز</string>
+    <string name="preference_sortby">ترتيب حسب</string>
+    <string name="preference_sortby_ascending">ترتيب تصاعدي</string>
+    <string name="preference_sortby_ascending_summary_on">ترتيب تصاعدي</string>
+    <string name="preference_sortby_ascending_summary_off">فرز  في ترتيب تصاعدي</string>
+    <string-array name="preference_sortby_names">
+        <item>الإسم</item>
+        <item>الحجم</item>
+        <item>آخر تعديل</item>
+    </string-array>
+
+        
+    <!-- ***************************
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">لم تختر أي ملف.</string>
+    <string name="saveas_error">حدث خطأ.</string>
+    <string name="saveas_file_saved">تم حفظ الملف بنجاح.</string>
+    
+        
+   
+    <string name="bookmarks">المفضلات</string>
+    <string name="bookmarks_cancel">الغاء</string>
+    <string name="bookmarks_delete">حذف</string>
+    <string name="bookmarks_select_to_delete">اختر المفضلات للحذف</string>
+    <string name="bookmarks_manage">ادارة المفضلات</string>
+    <string name="bookmark_added">تم اضافة المفضلة</string>
+    <string name="bookmark_not_found">لم يتم العثور على وجهة المفضلات.</string>
+    <string name="bookmarks_deleted">تم حذف المفضلات المحددة</string>
+    <string name="bookmark_already_exists">هذا الملف فضل مسبقا</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">ظغط العنصر بنجاح</string>
+    <string name="compressing_error">لا يمكن ظغط العنصر</string>
+    <string name="compress_into_archive">ظغط الى أرشيف:</string>
+    <string name="extracting_success">فك ظغط العنصر بنجاح</string>
+    <string name="extracting_error">لا يمكن فط ظغط العنصر</string>
+    <string name="extract_into_folder">فك الظغط الى مجلد:</string>
+    <string name="extract_title">اختر مجلد لفك الظغط فيه</string>
+    <string name="extract_button">فك الظغط هنا</string>
+    <string name="extracting">فك الظغط...</string>
+    <string name="compressing">الظغط...</string>
+    <string name="warning_overwrite">الملف %s موجود.هل تود الكتابة فوقه؟</string>
+
+    <string name="change_file_extension">هل تود تغيير ملحق الملف ؟</string>
+</resources>
