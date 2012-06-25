@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007-2008 OpenIntents.org
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+	<!-- ***************************
+	     About information
+	     *************************** -->
+	
+	<!-- Automatically filled in by Launchpad: -->
+	<string name="about_translators">Launchpad Contributions:
+  Arne Tobias Malkenes Ødegaard https://launchpad.net/~arne-tobias
+  OpenIntents devs https://launchpad.net/~openintents-devs</string>
+	
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">Administrer filer på SD-kortet med OI Filbehandler.</string>  
+	
+	<!-- ***************************
+	     Applicatio-specific strings
+	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">OI Filbehandler</string>
+    
+    <string name="menu_new_folder">Ny mappe</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Flervalg</string>
+
+    <string name="menu_delete">Slett</string>
+    <string name="menu_rename">Gi nytt navn</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_open">Åpne</string>
+    <string name="menu_move">Flytt</string>
+    <string name="menu_copy">Kopier</string>
+    <string name="menu_details">Detaljer</string>
+    <string name="menu_more">Mer</string>
+    <string name="menu_compress">Komprimer (ZIP)</string>
+    <string name="menu_extract">Pakk ut (ZIP)</string>
+    <string name="menu_filter">Filter</string>
+    <string name="menu_include_in_media_scan">Inkluder i mediaskanning</string>
+    <string name="menu_exclude_from_media_scan">Ekskulder fra mediaskanning</string>
+    <string name="menu_bookmark">Legg til bokmerker</string>
+    <string name="menu_refresh">Last på nytt</string>
+    
+    <string name="create_new_folder">Opprett ny mappe</string>
+    <string name="folder_name">Mappenavn</string>
+    <string name="file_name">Mappenavn</string>
+    <string name="extension">Utvidelse (med \'.\')</string>
+    <string name="this_folder_is_empty">Denne mappen er tom.</string>
+    <string name="really_delete">Vil du virkelig slette %s?</string>
+    <string name="file_deleted">Fil slettet.</string>
+    <string name="folder_deleted">Mappe slettet.</string>
+    <string name="file_renamed">Fil gitt nytt navn.</string>
+    <string name="folder_renamed">Mappe gitt nytt navn.</string>
+    <string name="file_moved">Fil flyttet.</string>
+    <string name="folder_moved">Mappe flyttet.</string>
+    <string name="file_copied">Fil kopiert.</string>
+    <string name="move_title">Velg mappe å flytte til</string>
+    <string name="move_button">Flytt hit</string>
+    <string name="copy_title">Velg mappe å kopiere til</string>
+    <string name="copy_button">Kopier hit</string>
+	<string name="deleting_files">Sletter filer...</string>
+    <string name="title_warning_some_may_not_work">Advarsel</string>
+    <string name="warning_some_may_not_work">Noen av de følgende mulighetene vil kanskje ikke fungere.</string>
+    <string name="show_warning_again">Vis advarsel igjen</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Vil du virkelig slette %d filer?</string>
+    <string name="move_button_multiselect">Flytt</string>
+    <string name="copy_button_multiselect">Kopier</string>
+    <string name="delete_button_multiselect">Slett</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
+    <string name="multiselect_title">Velg flere filer</string>
+    <string name="error_selection">Vennligst velg en eller flere fil(er).</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">Type</string>
+    <string name="details_type_folder">Mappe</string>
+    <string name="details_type_file">Fil</string>
+    <string name="details_type_other">Annen</string>
+    <string name="details_size">Størrelse</string>
+    <string name="details_permissions">Tillatelser</string>
+    <string name="details_hidden">Gjemt</string>
+    <string name="details_lastmodified">Siste endret</string>
+    <string name="details_yes">Ja</string>
+    <string name="details_no">Nei</string>
+    
+    <!-- Construct a unique file name of a file called %s. -->
+    <string name="copied_file_name">Kopi av %s</string>
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Kopi %1$d av %2$s</string>
+    
+    <string name="media_scan_included">Denne mappen vil bli inkludert i den neste mediaskanningen.</string>
+    <string name="media_scan_excluded">Denne mappen vil bli ekskludert under den neste mediaskanningen.</string>
+    
+    <string name="error_creating_new_folder">Kunne ikke opprette ny mappe.</string>
+    <string name="error_deleting_file">Kunne ikke slette fil.</string>
+    <string name="error_deleting_folder">Kunne ikke slette mappe \'%s\'.</string>
+    <string name="error_renaming_file">Kunne ikke gi fil nytt navn.</string>
+    <string name="error_renaming_folder">Kunne ikke gi mappe nytt navn.</string>
+    <string name="error_moving_file">Kunne ikke flytte fil.</string>
+    <string name="error_moving_folder">Kunne ikke flytte mappe.</string>
+    <string name="error_copying_file">Kunne ikke kopiere fil.</string>
+    <string name="error_file_does_not_exists">Fil eksisterer ikke.</string>
+    <string name="error_deleting_child_file">Kunne ikke slette barnefilen \'%s\'.</string>
+    <string name="error_generic">En feil oppstod:</string>
+    <string name="error_media_scan">Kunne ikke endre innstillinger for mediaskanning.</string>
+    
+    <string name="send_not_available">Ingen applikasjon tilgjengelig for sending.</string>
+    
+    <string name="application_not_available">Applikasjon ikke tilgjengelig</string>
+    
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Innstillinger</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Avanserte funksjoner</string>
+	<string name="preference_mediascan_title">Ekskulder fra mediaskanning</string>
+    <string name="preference_mediascan_summary_on">Vis menyelement for å ekskludere mapper fra mediaskanning.</string>
+    <string name="preference_mediascan_summary_off">Gjem menyelement for å ekskludere mapper fra mediaskanning.</string>
+    
+    <string name="preference_showallwarning_title">Vis alle advarsler</string>
+    <string name="preference_showallwarning_summary_on">Vis alle advarselsbeskjeder</string>
+    <string name="preference_showallwarning_summary_off">Undertrykk advarselbeskjeder</string>
+       
+    <string name="preference_displayhiddenfiles_title">Vis gjemte filer</string>
+    <string name="preference_displayhiddenfiles_summary_on">Vis gjemte filer</string>
+    <string name="preference_displayhiddenfiles_summary_off">Gjem gjemte filer</string>
+    
+    <string name="preference_sort_settings">Sorteringsinnstillinger</string>
+    <string name="preference_sortby">Sorter etter</string>
+    <string name="preference_sortby_ascending">I stigende rekkefølge</string>
+    <string name="preference_sortby_ascending_summary_on">Sorter i stigende rekkefølge</string>
+    <string name="preference_sortby_ascending_summary_off">Sorter i synkende rekkefølge</string>
+    <string-array name="preference_sortby_names">
+        <item>Navn</item>
+        <item>Størrelse</item>
+        <item>Sist endret</item>
+    </string-array>
+
+        
+    <!-- ***************************
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">Du har ikke valgt en fil.</string>
+    <string name="saveas_error">En feil oppstod.</string>
+    <string name="saveas_file_saved">Fil vellykket lagret!</string>
+    
+        
+   
+    <string name="bookmarks">Bokmerker</string>
+    <string name="bookmarks_cancel">Avbryt</string>
+    <string name="bookmarks_delete">Slett</string>
+    <string name="bookmarks_select_to_delete">Velg bokmerker å slette</string>
+    <string name="bookmarks_manage">Administrer bokmerker</string>
+    <string name="bookmark_added">Bokmerke lagt til</string>
+    <string name="bookmark_not_found">Bokmerket mål ikke funnet.</string>
+    <string name="bookmarks_deleted">Valgte bokmerker slettet</string>
+    <string name="bookmark_already_exists">Denne filen er allerede bokmerket</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">Punkt vellykket komprimert</string>
+    <string name="compressing_error">Kunne ikke komprimere punkt</string>
+    <string name="compress_into_archive">Komprimer inn i arkiv:</string>
+    <string name="extracting_success">Punkt vellykket pakket ut</string>
+    <string name="extracting_error">Kunne ikke pakke ut punktet</string>
+    <string name="extract_into_folder">Pakk ut til mappe:</string>
+    <string name="extract_title">Velg mappe å pakke ut til</string>
+    <string name="extract_button">Pakk ut her</string>
+    <string name="extracting">Pakker ut...</string>
+    <string name="compressing">Komprimerer...</string>
+    <string name="warning_overwrite">Fil %s finnes. Vil du overskrive den?</string>
+
+    <string name="change_file_extension">Vil du endre filutvidelsen?</string>
+</resources>

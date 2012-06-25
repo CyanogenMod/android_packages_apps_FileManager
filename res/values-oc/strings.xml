@@ -23,14 +23,14 @@
 	<string name="about_translators">Launchpad Contributions:
   Cédric VALMARY (Tot en òc) https://launchpad.net/~cvalmary</string>
 	
-    <!-- Short explanation of the application. Max. 80 characters. -->
-    <string name="about_comments">Manage files on the SD card.</string>  
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">Manage files on the SD card with OI File Manager.</string>  
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">File Manager</string>
+    <string name="app_name">OI File Manager</string>
     
     <string name="menu_new_folder">Dorsièr novèl</string>
     
@@ -43,12 +43,20 @@
     <string name="menu_open">Dobrir</string>
     <string name="menu_move">Desplaçar</string>
     <string name="menu_copy">Copiar</string>
+    <string name="menu_details">Details</string>
+    <string name="menu_more">More</string>
+    <string name="menu_compress">Compress (ZIP)</string>
+    <string name="menu_extract">Extract (ZIP)</string>
+    <string name="menu_filter">Filter</string>
     <string name="menu_include_in_media_scan">Include in media scan</string>
     <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    <string name="menu_bookmark">Add to bookmarks</string>
+    <string name="menu_refresh">Refresh</string>
     
     <string name="create_new_folder">Crear un dorsièr novèl</string>
     <string name="folder_name">Nom del dorsièr</string>
     <string name="file_name">Nom del dorsièr</string>
+    <string name="extension">Extension (with \'.\')</string>
     <string name="this_folder_is_empty">Aqueste dorsièr es void</string>
     <string name="really_delete">Sètz segur que volètz suprimir %s?</string>
     <string name="file_deleted">Fichièr suprimit.</string>
@@ -63,14 +71,30 @@
     <string name="copy_title">Seleccionar lo dorsièr de copiar sus</string>
     <string name="copy_button">Copiar aicí</string>
 	<string name="deleting_files">Deleting files...</string>
+    <string name="title_warning_some_may_not_work">Warning</string>
+    <string name="warning_some_may_not_work">Some of the following options may not work.</string>
+    <string name="show_warning_again">Show warning again</string>
     
     <!-- Strings for a multi select feature -->
 	<string name="really_delete_multiselect">Do you really want to delete %d files?</string>
     <string name="move_button_multiselect">Desplaçar</string>
     <string name="copy_button_multiselect">Copiar</string>
     <string name="delete_button_multiselect">Suprimir</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
     <string name="multiselect_title">Select multiple files</string>
     <string name="error_selection">Please select one or more file(s).</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">Type</string>
+    <string name="details_type_folder">Folder</string>
+    <string name="details_type_file">File</string>
+    <string name="details_type_other">Other</string>
+    <string name="details_size">Size</string>
+    <string name="details_permissions">Permissions</string>
+    <string name="details_hidden">Hidden</string>
+    <string name="details_lastmodified">Last Modified</string>
+    <string name="details_yes">Yes</string>
+    <string name="details_no">No</string>
     
     <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Còpia de %s</string>
@@ -110,5 +134,60 @@
     <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
     <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
     
+    <string name="preference_showallwarning_title">Show all warnings</string>
+    <string name="preference_showallwarning_summary_on">Show all warning messages</string>
+    <string name="preference_showallwarning_summary_off">Suppress warning messages</string>
+       
+    <string name="preference_displayhiddenfiles_title">Display hidden files</string>
+    <string name="preference_displayhiddenfiles_summary_on">Display hidden files</string>
+    <string name="preference_displayhiddenfiles_summary_off">Hide hidden files</string>
     
+    <string name="preference_sort_settings">Sort settings</string>
+    <string name="preference_sortby">Sort by</string>
+    <string name="preference_sortby_ascending">In ascending order</string>
+    <string name="preference_sortby_ascending_summary_on">Sort in ascending order</string>
+    <string name="preference_sortby_ascending_summary_off">Sort in descending order</string>
+    <string-array name="preference_sortby_names">
+        <item>Name</item>
+        <item>Size</item>
+        <item>Last modified</item>
+    </string-array>
+
+        
+    <!-- ***************************
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">You haven\'t picked any file.</string>
+    <string name="saveas_error">An error occured.</string>
+    <string name="saveas_file_saved">File successfully saved!</string>
+    
+        
+   
+    <string name="bookmarks">Bookmarks</string>
+    <string name="bookmarks_cancel">Cancel</string>
+    <string name="bookmarks_delete">Suprimir</string>
+    <string name="bookmarks_select_to_delete">Select bookmarks to delete</string>
+    <string name="bookmarks_manage">Manage bookmarks</string>
+    <string name="bookmark_added">Bookmark added</string>
+    <string name="bookmark_not_found">Bookmarked destination not found.</string>
+    <string name="bookmarks_deleted">Selected bookmarks deleted</string>
+    <string name="bookmark_already_exists">This file is already bookmarked</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">Item compressed successfully</string>
+    <string name="compressing_error">Could not compress the item</string>
+    <string name="compress_into_archive">Compress into archive:</string>
+    <string name="extracting_success">Item extracted successfully</string>
+    <string name="extracting_error">Could not extract the item</string>
+    <string name="extract_into_folder">Extract into folder:</string>
+    <string name="extract_title">Select folder to extract into</string>
+    <string name="extract_button">Extract here</string>
+    <string name="extracting">Extracting...</string>
+    <string name="compressing">Compressing...</string>
+    <string name="warning_overwrite">File %s exists. Do you want to overwrite it?</string>
+
+    <string name="change_file_extension">Do you want to change the file extension?</string>
 </resources>
