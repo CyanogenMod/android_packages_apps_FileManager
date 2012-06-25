@@ -17,10 +17,17 @@
 package org.openintents.cmfilemanager.util;
 
 import java.io.File;
+import java.lang.reflect.Method;
+import java.util.Date;
+import java.util.zip.ZipFile;
 
+import android.content.Context;
 import android.net.Uri;
 import android.provider.MediaStore.Audio;
 import android.provider.MediaStore.Video;
+import android.text.format.DateFormat;
+import android.text.format.Formatter;
+import android.util.Log;
 
 /**
  * @version 2009-07-03
@@ -29,8 +36,27 @@ import android.provider.MediaStore.Video;
  *
  */
 public class FileUtils {
+	
 	/** TAG for log messages. */
 	static final String TAG = "FileUtils";
+	private static final int X_OK = 1;
+	
+	private static boolean libLoadSuccess;
+	
+	static {
+		try {
+			System.loadLibrary("access");
+			libLoadSuccess = true;
+		} catch(UnsatisfiedLinkError e) {
+			libLoadSuccess = false;
+			Log.d(TAG, "libaccess.so failed to load.");
+		}
+	}
+
+    /**
+     * use it to calculate file count in the directory recursively
+     */
+    private static int fileCount = 0;
 
 	/**
 	 * Whether the filename is a video file.
@@ -170,4 +196,69 @@ public class FileUtils {
 	public static File getFile(File curdir, String file) {
 		return getFile(curdir.getAbsolutePath(), file);
 	}
+	
+	public static String formatSize(Context context, long sizeInBytes) {
+		return Formatter.formatFileSize(context, sizeInBytes);
+	}
+	
+	public static String formatDate(Context context, long dateTime) {
+		return DateFormat.getDateFormat(context).format(new Date(dateTime));
+	}
+
+    public static int getFileCount(File file){
+        fileCount = 0;
+        calculateFileCount(file);
+        return fileCount;
+    }
+
+    /**
+     * @param f  - file which need be checked
+     * @return if is archive - returns true othewise
+     */
+    public static boolean checkIfZipArchive(File f){
+        try {
+            new ZipFile(f);
+            return true;
+        } catch (Exception e){
+            return false;
+        }
+    }
+
+    private static void calculateFileCount(File file){
+        if (!file.isDirectory()){
+            fileCount++;
+            return;
+        }
+        if (file.list() == null){
+            return;
+        }
+        for (String fileName: file.list()){
+            File f = new File(file.getAbsolutePath()+File.separator+fileName);
+            calculateFileCount(f);
+        }
+    }    
+	
+	/**
+	 * Native helper method, returns whether the current process has execute privilages.
+	 * @param a File
+	 * @return returns TRUE if the current process has execute privilages.
+	 */
+	public static boolean canExecute(File mContextFile) {
+		try {
+			// File.canExecute() was introduced in API 9.  If it doesn't exist, then
+			// this will throw an exception and the NDK version will be used.
+			Method m = File.class.getMethod("canExecute", new Class[] {} );
+			Boolean result=(Boolean)m.invoke(mContextFile);
+			return result;
+		} catch (Exception e) {
+			if(libLoadSuccess){
+				return access(mContextFile.getPath(), X_OK);
+			} else {
+				return false;
+			}
+		}
+	}
+	
+	// Native interface to unistd.h's access(*char, int) method.
+	public static native boolean access(String path, int mode);
 }

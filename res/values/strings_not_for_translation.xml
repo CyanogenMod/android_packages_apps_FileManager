@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
- * Copyright (C) 2007-2008 OpenIntents.org
+ * Copyright (C) 2007-2012 OpenIntents.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 	<!-- ***************************
 	     About information
 	     *************************** -->
-	<string name="about_copyright">Copyright © 2008-2011 OpenIntents</string> 
+	<string name="about_copyright">Copyright © 2008-2012 OpenIntents</string> 
 	<string name="about_website_url">http://www.openintents.org/en/filemanager</string>
 	<string name="about_email">support@openintents.org</string>
 	
@@ -30,6 +30,8 @@
         <item>Steven Osborn</item>
         <item>"Michael 'EboMike' Krehan"</item>
         <item>John Doe</item>
+        <item>Matěj Konečný</item>
+        <item>Philip Hayes</item>
     </string-array>
     
     <string-array name="about_documenters"><!-- Add your name here if you helped out -->
@@ -45,7 +47,18 @@
         <item>Androidicons www.androidicons.com</item>
     </string-array>
     
-    <!-- ***************************
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+	
+    <string-array name="sortby_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	
+	
+	<!-- ***************************
 	     Distribution
 	     *************************** -->
 	<!-- Update -->
@@ -55,6 +68,10 @@
 	<!-- About -->
     <string name="oi_distribution_aboutapp_package">org.openintents.about</string>
     <string name="oi_distribution_aboutapp_website">http://www.openintents.org/en/node/202</string><!-- 202 = OI About -->
+	
+    <!-- Barcode plugin -->
+    <string name="oi_distribution_barcodescanner_package">org.openintents.barcodescanner</string>
+    <string name="oi_distribution_barcodescanner_website">http://www.openintents.org/en/node/679</string>
 	
     <!-- File Manager -->
     <string name="oi_distribution_filemanager_package">org.openintents.filemanager</string>

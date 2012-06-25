@@ -21,27 +21,31 @@
 	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
+  Alfredo Hernández https://launchpad.net/~aldomann
   DiegoJ https://launchpad.net/~diegojromerolopez
+  Donal Estrada https://launchpad.net/~donalestrada
+  Fitoschido https://launchpad.net/~fitoschido
   Javier Martínez Arrieta https://launchpad.net/~javote87
+  Martín González https://launchpad.net/~mgonzlezgmz
   OpenIntents devs https://launchpad.net/~openintents-devs
   Paco Molinero https://launchpad.net/~franciscomol
   Peli https://launchpad.net/~peli0101
   miwie https://launchpad.net/~mw-miwie
-  simon https://launchpad.net/~hurtadosimon</string>
+  simon https://launchpad.net/~sianhulo</string>
 	
-    <!-- Short explanation of the application. Max. 80 characters. -->
-    <string name="about_comments">Gestionar archivos en la tarjeta SD.</string>  
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">Administrar archivos en la tarjeta SD con OI File Manager</string>  
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">File Manager</string>
+    <string name="app_name">OI File Manager</string>
     
     <string name="menu_new_folder">Carpeta nueva</string>
     
     <!-- Multi select option menu -->
-    <string name="menu_multi_select">Multi Select</string>
+    <string name="menu_multi_select">Selección multiple</string>
 
     <string name="menu_delete">Borrar</string>
     <string name="menu_rename">Renombrar</string>
@@ -49,34 +53,58 @@
     <string name="menu_open">Abrir</string>
     <string name="menu_move">Mover</string>
     <string name="menu_copy">Copiar</string>
+    <string name="menu_details">Mostrar detalles</string>
+    <string name="menu_more">Más</string>
+    <string name="menu_compress">Comprimir (ZIP)</string>
+    <string name="menu_extract">Extraer (ZIP)</string>
+    <string name="menu_filter">Filtro</string>
     <string name="menu_include_in_media_scan">Incluir en la exploración de archivos multimedia</string>
     <string name="menu_exclude_from_media_scan">Excluir de la exploración de archivos multimedia</string>
+    <string name="menu_bookmark">Añadir a marcadores</string>
+    <string name="menu_refresh">Refresh</string>
     
     <string name="create_new_folder">Crear nueva carpeta</string>
     <string name="folder_name">Nombre de carpeta</string>
     <string name="file_name">Nombre de carpeta</string>
-    <string name="this_folder_is_empty">Esta carpeta es vacia.</string>
+    <string name="extension">Complemento (con \'.\')</string>
+    <string name="this_folder_is_empty">Esta carpeta está vacía.</string>
     <string name="really_delete">Verdaderamente quiere borrar %s?</string>
     <string name="file_deleted">Archivo borrado.</string>
     <string name="folder_deleted">Carpeta borrada.</string>
-    <string name="file_renamed">Fichero cambiado de nombre.</string>
-    <string name="folder_renamed">Carpeta cambiado de nombre.</string>
-    <string name="file_moved">Fichero movido.</string>
-    <string name="folder_moved">Carpeta movido.</string>
+    <string name="file_renamed">Archivo cambiado de nombre.</string>
+    <string name="folder_renamed">Carpeta cambiada de nombre.</string>
+    <string name="file_moved">Archivo movido.</string>
+    <string name="folder_moved">Carpeta movida.</string>
     <string name="file_copied">Archivo copiado.</string>
     <string name="move_title">Seleccionar carpeta de destino</string>
-    <string name="move_button">Mover acá</string>
-    <string name="copy_title">Seleccione carpeta a copiar a</string>
+    <string name="move_button">Mover aquí</string>
+    <string name="copy_title">Seleccione carpeta de destino</string>
     <string name="copy_button">Copiar aquí</string>
-	<string name="deleting_files">Deleting files...</string>
+	<string name="deleting_files">Borrando archivos...</string>
+    <string name="title_warning_some_may_not_work">Advertencia</string>
+    <string name="warning_some_may_not_work">Algunas de las siguientes opciones pueden no funcionar</string>
+    <string name="show_warning_again">Mostrar advertencia de nuevo</string>
     
     <!-- Strings for a multi select feature -->
-	<string name="really_delete_multiselect">¿Realmente quiere eliminar los archivos %d?</string>
+	<string name="really_delete_multiselect">¿Realmente quiere borrar los archivos %d?</string>
     <string name="move_button_multiselect">Mover</string>
     <string name="copy_button_multiselect">Copiar</string>
     <string name="delete_button_multiselect">Borrar</string>
-    <string name="multiselect_title">Sleccione varios archivos</string>
-    <string name="error_selection">Por favor, selecciona uno o mas archivos</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
+    <string name="multiselect_title">Seleccione varios archivos</string>
+    <string name="error_selection">Por favor, seleccione uno o mas archivos</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">Tipo</string>
+    <string name="details_type_folder">Carpeta</string>
+    <string name="details_type_file">Archivo</string>
+    <string name="details_type_other">Otro</string>
+    <string name="details_size">Tamaño</string>
+    <string name="details_permissions">Permisos</string>
+    <string name="details_hidden">Oculto</string>
+    <string name="details_lastmodified">Ultima modificación</string>
+    <string name="details_yes">Si</string>
+    <string name="details_no">No</string>
     
     <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Copia de %s</string>
@@ -113,98 +141,63 @@
     <!-- Category for preferences. -->
     <string name="preference_advanced_features">Características avanzadas</string>
 	<string name="preference_mediascan_title">Excluir de la exploración de archivos multimedia</string>
-    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
-    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    <string name="preference_mediascan_summary_on">Muestra el elemento del menú para excluir carpetas del escaneo del medio</string>
+    <string name="preference_mediascan_summary_off">Esconde el elemento del menú para excluir carpetas del escaneo del medio</string>
     
+    <string name="preference_showallwarning_title">Mostrar todos los avisos</string>
+    <string name="preference_showallwarning_summary_on">Mostrar todos los mensajes de aviso</string>
+    <string name="preference_showallwarning_summary_off">Suprimir mensajes de aviso</string>
+       
+    <string name="preference_displayhiddenfiles_title">Mostrar archivos ocultos</string>
+    <string name="preference_displayhiddenfiles_summary_on">Mostrar archivos ocultos</string>
+    <string name="preference_displayhiddenfiles_summary_off">Ocultar archivos ocultos</string>
+    
+    <string name="preference_sort_settings">Opciones de ordenado</string>
+    <string name="preference_sortby">Ordenar por</string>
+    <string name="preference_sortby_ascending">Orden ascendente</string>
+    <string name="preference_sortby_ascending_summary_on">Ordenar ascendentemente</string>
+    <string name="preference_sortby_ascending_summary_off">Ordenar descendentemente</string>
+    <string-array name="preference_sortby_names">
+        <item>Nombre</item>
+        <item>Tamaño</item>
+        <item>Última modificación</item>
+    </string-array>
+
+        
     <!-- ***************************
-	     Distribution
-	     *************************** -->
-	
-	<!-- EULA -->	
-	<!-- EULA (End user license agreement). %s is an application name, e.g. "OI Notepad EULA". 
-		Translation should be short, since this is a title. -->
-	<string name="oi_distribution_eula_title">%s EULA</string>
-	
-	<!-- EULA welcome message. %s is an application name, e.g. "... (EULA) for OI Notepad".
-		Translation can be as long as required. -->
-	<string name="oi_distribution_eula_message">Lea y acepte el siguiente acuerdo de licencia de usuario final (EULA) para %s.</string>
-	
-	<!-- Button: Accept terms of EULA. -->
-	<string name="oi_distribution_eula_accept">Aceptar</string>
-	
-	<!-- Button: Refuse terms of EULA. -->
-	<string name="oi_distribution_eula_refuse">Cancelar</string>
-	
-	<!-- New version -->
-	<!-- Application name and version. %1$s is the application name (e.g. "OI Notepad") and %2$s is the version number (e.g. "1.2.0").
-	Keep unmodified, unless your language requires that the version number is displayed first. -->
-	<string name="oi_distribution_name_and_version">%1$s %2$s</string>
-	
-	<!-- Welcome message. %s is an application name. -->
-	<string name="oi_distribution_newversion_message">Bienvenido/a a esta nueva versión de %s.</string>
-	
-	<string name="oi_distribution_newversion_recent_changes">Cambios recientes</string>
-	
-	<!-- Button: Continue to main application. -->
-	<string name="oi_distribution_newversion_continue">Continuar</string>
-	
-	<!-- Update -->
-	<!-- Menu command to look for updates. -->
-    <string name="oi_distribution_menu_update">Comprobar actualizaciones</string>
-	<string name="oi_distribution_update_box_text">Comprobar manualmente actualizaciones o instalar OI Update para las notificaciones automáticas.</string>
-	<string name="oi_distribution_update_check_now">Verificar ahora</string>
-	<string name="oi_distribution_update_get_updater">Conseguir OI Updater</string>
-	<string name="oi_distribution_update_error">Descarga de aplicación no disponible.</string>
-	
-    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_update_app">OI Update</string>
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">No ha elegido ningún archivo.</string>
+    <string name="saveas_error">Ocurrió un error</string>
+    <string name="saveas_file_saved">El archivo se guardó correctamente.</string>
     
-    <!-- About -->
-    <!-- Menu command to open the "about" or "info" dialog. -->
-    <string name="oi_distribution_about">Acerca de</string>
-    <!-- %s is the version number (e.g. "1.2.1") -->
-	<string name="oi_distribution_aboutapp_not_available">No hay extensión compatibles disponible  para mostrar toda la información (de contacto, créditos, licencia).</string>
-    
-    
-    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp_get">Obtener OI About</string>
-    
-    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp">OI About</string>
-    
-    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_filemanager">OI File Manager</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_filemanager_not_available">No hay un gestor de archivos compatible disponible.</string>
-    
-    <!-- Safe -->
-    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_safe">OI Safe</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_safe_not_available">No hay aplicación compatible de cifrado disponible.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">No hay ninguna aplicación compatible para el descifrado disponible.\n\nNota:. Usted tiene que restaurar la clave maestra desde una copia de seguridad para acceder a los datos previamente codificados.</string>
-    
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_market_message">Por favor, descargue %s del sitio web de OpenIntents.</string>
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_message">Por favor, descargue %s desde el sitio web OpenIntents.</string>
-    <!-- Dialog button: download the suggested application from Android Market. -->
-    <string name="oi_distribution_download_market">Market de descargas</string>
-    <!-- Dialog button: download the suggested application from the developer web site. -->
-    <string name="oi_distribution_download_web">Web de descarga</string>
-	<!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_title">Descargar %s</string>
-	
-	<!-- %s is an application name (e.g. "OI About can be used with the following applications:") -->
-	<string name="oi_distribution_info_activity_text">%s se puede ser utilizado con las siguientes aplicaciones:</string>
-	<!-- %s is an application name (e.g. "Launch OI Notepad") -->
-    <string name="oi_distribution_info_launch">Iniciar %s</string>
-    <!-- %1$s is the current application name. %2$s is another application name, and %3$s is the other application\'s version name
-    (e.g. "OI About requires OI Notepad 1.2.0 or higher.") -->
-	<string name="oi_distribution_info_not_available">%1$s requiere %2$s %3$s o superior.</string>
-	<!-- Title of a dialog. -->
-	<string name="oi_distribution_info_instructions">Instrucciones</string>
-	<!-- Error message -->
-	<string name="oi_distribution_launch_error">La aplicación no podría ser iniciada</string>
-    
+        
+   
+    <string name="bookmarks">Marcadores</string>
+    <string name="bookmarks_cancel">Cancelar</string>
+    <string name="bookmarks_delete">Borrar</string>
+    <string name="bookmarks_select_to_delete">Elija los marcadores a eliminar</string>
+    <string name="bookmarks_manage">Gestionar marcadores</string>
+    <string name="bookmark_added">Marcador añadido</string>
+    <string name="bookmark_not_found">No se encontró el destino del marcador.</string>
+    <string name="bookmarks_deleted">Se eliminaron los marcadores seleccionados</string>
+    <string name="bookmark_already_exists">Este archivo ya está en marcadores</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">Archivo comprimido satisfactoriamente</string>
+    <string name="compressing_error">No se puede comprimir el archivo</string>
+    <string name="compress_into_archive">Comprimir en un archivo:</string>
+    <string name="extracting_success">Archivo extraído satisfactoriamente</string>
+    <string name="extracting_error">No se puede extraer el archivo</string>
+    <string name="extract_into_folder">Extraer en una carpeta:</string>
+    <string name="extract_title">Seleccionar carpeta donde extraer</string>
+    <string name="extract_button">Extraer aquí</string>
+    <string name="extracting">Extrayendo...</string>
+    <string name="compressing">Comprimiendo...</string>
+    <string name="warning_overwrite">El archivo %s existe. ¿Le gustaría sobreescribirlo?</string>
+
+    <string name="change_file_extension">¿Le gustaría cambiar la extensión del archivo?</string>
 </resources>
