@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007-2008 OpenIntents.org
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+	<!-- ***************************
+	     About information
+	     *************************** -->
+	
+	<!-- Automatically filled in by Launchpad: -->
+	<string name="about_translators">Launchpad Contributions:
+  Dariel Kremov https://launchpad.net/~dkremov
+  OpenIntents devs https://launchpad.net/~openintents-devs
+  Stefani Soyanova https://launchpad.net/~stefi-stoyanova95
+  Tsvetelina https://launchpad.net/~ts-borisova
+  Valentin Kirilov https://launchpad.net/~val-kirilov
+  kosyo https://launchpad.net/~kosyokk</string>
+	
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">Управлявайте файловете на SD картата с OI Файл Мениджър.</string>  
+	
+	<!-- ***************************
+	     Applicatio-specific strings
+	     *************************** -->
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">OI Файлов Мениджър</string>
+    
+    <string name="menu_new_folder">Нова директория</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Избиране на много</string>
+
+    <string name="menu_delete">Изтрий</string>
+    <string name="menu_rename">Преименувай</string>
+    <string name="menu_send">Изпрати</string>
+    <string name="menu_open">Отвори</string>
+    <string name="menu_move">Премести</string>
+    <string name="menu_copy">Копирай</string>
+    <string name="menu_details">Подробности</string>
+    <string name="menu_more">Повече</string>
+    <string name="menu_compress">Компресирай (ZIP)</string>
+    <string name="menu_extract">Извлечи (ZIP)</string>
+    <string name="menu_filter">Филтриране</string>
+    <string name="menu_include_in_media_scan">Включване в сканирането на медийни приложения</string>
+    <string name="menu_exclude_from_media_scan">Изключване от сканирането на медийни приложения</string>
+    <string name="menu_bookmark">Добави в отметки</string>
+    <string name="menu_refresh">Refresh</string>
+    
+    <string name="create_new_folder">Създаване на нова папка</string>
+    <string name="folder_name">Име на папка</string>
+    <string name="file_name">Име на папка</string>
+    <string name="extension">Разширение (с \'.\')</string>
+    <string name="this_folder_is_empty">Директорията е празна.</string>
+    <string name="really_delete">Наистина ли искате да изтриете %s?</string>
+    <string name="file_deleted">Файлът е изтрит=</string>
+    <string name="folder_deleted">Директорията е изтрита.</string>
+    <string name="file_renamed">Файлът е преименуван.</string>
+    <string name="folder_renamed">Директорията е преименувана.</string>
+    <string name="file_moved">Файлът е преместен.</string>
+    <string name="folder_moved">Директорията е преместена.</string>
+    <string name="file_copied">Файлът е копиран.</string>
+    <string name="move_title">Избери директория за преместване в</string>
+    <string name="move_button">Премести тук</string>
+    <string name="copy_title">Избери директория за копиране в</string>
+    <string name="copy_button">Копиране тук</string>
+	<string name="deleting_files">Изтриване на файлове...</string>
+    <string name="title_warning_some_may_not_work">Внимание</string>
+    <string name="warning_some_may_not_work">Някои от следните опции може да не работят.</string>
+    <string name="show_warning_again">Покажи предупреждението отново</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Наистина ли искате да изтриете %d файла?</string>
+    <string name="move_button_multiselect">Премести</string>
+    <string name="copy_button_multiselect">Копирай</string>
+    <string name="delete_button_multiselect">Изтрий</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
+    <string name="multiselect_title">Изберете много файлове.</string>
+    <string name="error_selection">Моля, изберете един или повече файла.</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">Вид</string>
+    <string name="details_type_folder">Директория</string>
+    <string name="details_type_file">Файл</string>
+    <string name="details_type_other">Други</string>
+    <string name="details_size">Размер</string>
+    <string name="details_permissions">Права</string>
+    <string name="details_hidden">Скрит</string>
+    <string name="details_lastmodified">Последно променен</string>
+    <string name="details_yes">Да</string>
+    <string name="details_no">Не</string>
+    
+    <!-- Construct a unique file name of a file called %s. -->
+    <string name="copied_file_name">Копие на %s</string>
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Копие %1$d от %2$s</string>
+    
+    <string name="media_scan_included">Тази директория ще бъде включена в следващото сканиране на паметта.</string>
+    <string name="media_scan_excluded">Тази директория ще бъде изключена при следващото сканиране на паметта.</string>
+    
+    <string name="error_creating_new_folder">Не може да бъде създадена нова папка.</string>
+    <string name="error_deleting_file">Файлът не може да бъде изтрит.</string>
+    <string name="error_deleting_folder">Не може да изтриете директорията \'%s\'.</string>
+    <string name="error_renaming_file">Файлът не може да бъде преименуван.</string>
+    <string name="error_renaming_folder">Директорията не може да бъде преименувана.</string>
+    <string name="error_moving_file">Файлът не може да бъде преместен.</string>
+    <string name="error_moving_folder">Директорията не може да бъде преместена.</string>
+    <string name="error_copying_file">Файлът не може да бъде копиран.</string>
+    <string name="error_file_does_not_exists">Файлът не съществува.</string>
+    <string name="error_deleting_child_file">Дъщерния файл \'%s\' не може да бъде изтрит.</string>
+    <string name="error_generic">Появи се грешка:</string>
+    <string name="error_media_scan">Не може да промените настройките за сканиране на паметта.</string>
+    
+    <string name="send_not_available">Не е открито приложение за изпращане.</string>
+    
+    <string name="application_not_available">Приложението не е налично.</string>
+    
+	<!-- ***************************
+	     Preferences
+	     *************************** -->
+    <!-- Menu item for Settings -->
+	<string name="settings">Настройки</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Функции за напреднали</string>
+	<string name="preference_mediascan_title">Изключване от сканирането на медийни приложения</string>
+    <string name="preference_mediascan_summary_on">Покажи елементите на менюто за да изключиш директориите от сканирането на паметта.</string>
+    <string name="preference_mediascan_summary_off">Скрий менюто за да изключиш директориите от сканирането на паметта.</string>
+    
+    <string name="preference_showallwarning_title">Покажи всички предупреждения.</string>
+    <string name="preference_showallwarning_summary_on">Покажи всички съобщения с предупреждения.</string>
+    <string name="preference_showallwarning_summary_off">Не показвай съобщенията за предупреждение.</string>
+       
+    <string name="preference_displayhiddenfiles_title">Показване на скритите файлове</string>
+    <string name="preference_displayhiddenfiles_summary_on">Показване на скритите файлове</string>
+    <string name="preference_displayhiddenfiles_summary_off">Скрии скритите файлове</string>
+    
+    <string name="preference_sort_settings">Настройки на сортирането</string>
+    <string name="preference_sortby">Сортирай по</string>
+    <string name="preference_sortby_ascending">Във възходящ ред</string>
+    <string name="preference_sortby_ascending_summary_on">Сортирай във възходящ ред</string>
+    <string name="preference_sortby_ascending_summary_off">Сортирай във низходящ ред</string>
+    <string-array name="preference_sortby_names">
+        <item>Име</item>
+        <item>Размер</item>
+        <item>Последна промяна</item>
+    </string-array>
+
+        
+    <!-- ***************************
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">Не сте избрали файл.</string>
+    <string name="saveas_error">Появи се грешка.</string>
+    <string name="saveas_file_saved">Файлът е запазен успешно.</string>
+    
+        
+   
+    <string name="bookmarks">Отметки</string>
+    <string name="bookmarks_cancel">Отказ</string>
+    <string name="bookmarks_delete">Изтрий</string>
+    <string name="bookmarks_select_to_delete">Изберете отметки за изтриване</string>
+    <string name="bookmarks_manage">Управление на отметки</string>
+    <string name="bookmark_added">Отметката е добавена</string>
+    <string name="bookmark_not_found">Дестинацията на отметката не е открита.</string>
+    <string name="bookmarks_deleted">Избраните отметки са изтрити</string>
+    <string name="bookmark_already_exists">Този файл вече е добавен в отметки.</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">Успешно компресиране на файла</string>
+    <string name="compressing_error">Неуспешно компресиране на файла</string>
+    <string name="compress_into_archive">Компресирай в архив:</string>
+    <string name="extracting_success">Успешно разархивиране на файла</string>
+    <string name="extracting_error">Неуспешно разархивиране на файла</string>
+    <string name="extract_into_folder">Разархивирай във папка:</string>
+    <string name="extract_title">Избери папка за разархивиране</string>
+    <string name="extract_button">Разархивирай тук</string>
+    <string name="extracting">Разархивиране...</string>
+    <string name="compressing">Компресиране...</string>
+    <string name="warning_overwrite">Файлът %s съществува. Желаете ли да го препокриете?</string>
+
+    <string name="change_file_extension">Желаете ли да промените разширението на файла?</string>
+</resources>

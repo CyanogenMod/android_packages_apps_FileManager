@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- 
  * Copyright (C) 2007-2008 OpenIntents.org
  *
@@ -15,112 +15,180 @@
  * limitations under the License.
  -->
 <resources>
-  <!-- ***************************
+	<!-- ***************************
 	     About information
 	     *************************** -->
-  <!-- Automatically filled in by Launchpad: -->
-  <string name="about_translators">translator-credits</string>
-  <!-- Short explanation of the application. Max. 80 characters. -->
-  <string name="about_comments">Manage files on the SD card.</string>
-  <!-- ***************************
+	
+	<!-- Automatically filled in by Launchpad: -->
+	<string name="about_translators">Launchpad Contributions:
+  OpenIntents devs https://launchpad.net/~openintents-devs
+  Sérgio Marques https://launchpad.net/~sergio+marques</string>
+	
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">Gestão de ficheiros no cartão SD com o gestor de ficheiros OI.</string>  
+	
+	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
-  <!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-  <string name="app_name">File Manager</string>
-  <string name="menu_new_folder">New Folder</string>
-  <!-- Multi select option menu -->
-  <string name="menu_multi_select">Multi Select</string>
-  <string name="menu_delete">Delete</string>
-  <string name="menu_rename">Rename</string>
-  <string name="menu_send">Send</string>
-  <string name="menu_open">Open</string>
-  <string name="menu_move">Move</string>
-  <string name="menu_copy">Copy</string>
-  <string name="menu_include_in_media_scan">Include in media scan</string>
-  <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
-  <string name="create_new_folder">Create new folder</string>
-  <string name="folder_name">Folder name</string>
-  <string name="file_name">Folder name</string>
-  <string name="this_folder_is_empty">This folder is empty.</string>
-  <string name="really_delete">Do you really want to delete %s?</string>
-  <string name="file_deleted">File deleted.</string>
-  <string name="folder_deleted">Folder deleted.</string>
-  <string name="file_renamed">File renamed.</string>
-  <string name="folder_renamed">Folder renamed.</string>
-  <string name="file_moved">File moved.</string>
-  <string name="folder_moved">Folder moved.</string>
-  <string name="file_copied">File copied.</string>
-  <string name="move_title">Select folder to move to</string>
-  <string name="move_button">Move here</string>
-  <string name="copy_title">Select folder to copy to</string>
-  <string name="copy_button">Copy here</string>
-  <string name="deleting_files">Deleting files...</string>
-  <!-- Strings for a multi select feature -->
-  <string name="really_delete_multiselect">Do you really want to delete %d files?</string>
-  <string name="move_button_multiselect">Move</string>
-  <string name="copy_button_multiselect">Copy</string>
-  <string name="delete_button_multiselect">Delete</string>
-  <string name="multiselect_title">Select multiple files</string>
-  <string name="error_selection">Please select one or more file(s).</string>
-  <!-- Construct a unique file name of a file called %s. -->
-  <string name="copied_file_name">Copy of %s</string>
-  <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
-  <string name="copied_file_name_2">Copy %1$d of %2$s</string>
-  <string name="media_scan_included">This folder will be included in the next media scan.</string>
-  <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
-  <string name="error_creating_new_folder">Could not create new folder.</string>
-  <string name="error_deleting_file">Could not delete file.</string>
-  <string name="error_deleting_folder">Could not delete folder \'%s\'.</string>
-  <string name="error_renaming_file">Could not rename file.</string>
-  <string name="error_renaming_folder">Could not rename folder.</string>
-  <string name="error_moving_file">Could not move file.</string>
-  <string name="error_moving_folder">Could not move folder.</string>
-  <string name="error_copying_file">Could not copy file.</string>
-  <string name="error_file_does_not_exists">File does not exist.</string>
-  <string name="error_deleting_child_file">Could not delete child file \'%s\'.</string>
-  <string name="error_generic">An error occurred: </string>
-  <string name="error_media_scan">Could not change media scan settings.</string>
-  <string name="send_not_available">No application available for sending.</string>
-  <string name="application_not_available">Application not available</string>
-  <!-- ***************************
+	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
+    <string name="app_name">OI File Manager</string>
+    
+    <string name="menu_new_folder">Nova pasta</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Seleção múltipla</string>
+
+    <string name="menu_delete">Eliminar</string>
+    <string name="menu_rename">Mudar nome</string>
+    <string name="menu_send">Enviar</string>
+    <string name="menu_open">Abrir</string>
+    <string name="menu_move">Mover</string>
+    <string name="menu_copy">Copiar</string>
+    <string name="menu_details">Detalhes</string>
+    <string name="menu_more">Mais</string>
+    <string name="menu_compress">Comprimir (ZIP)</string>
+    <string name="menu_extract">Extrair (ZIP)</string>
+    <string name="menu_filter">Filtro</string>
+    <string name="menu_include_in_media_scan">Incluir na análise</string>
+    <string name="menu_exclude_from_media_scan">Excluir da análise</string>
+    <string name="menu_bookmark">Adicionar aos marcadores</string>
+    <string name="menu_refresh">Atualizar</string>
+    
+    <string name="create_new_folder">Criar nova pasta</string>
+    <string name="folder_name">Nome da pasta</string>
+    <string name="file_name">Nome da pasta</string>
+    <string name="extension">Extensão (com \'.\')</string>
+    <string name="this_folder_is_empty">Esta pasta está vazia.</string>
+    <string name="really_delete">Pretende mesmo eliminar %s?</string>
+    <string name="file_deleted">Ficheiro eliminado.</string>
+    <string name="folder_deleted">Pasta eliminada.</string>
+    <string name="file_renamed">Nome do ficheiro alterado.</string>
+    <string name="folder_renamed">Nome da pasta alterado.</string>
+    <string name="file_moved">Ficheiro movido.</string>
+    <string name="folder_moved">Pasta movida.</string>
+    <string name="file_copied">Ficheiro copiado</string>
+    <string name="move_title">Selecione a pasta a mover</string>
+    <string name="move_button">Mover para aqui</string>
+    <string name="copy_title">Selecione a pasta a copiar</string>
+    <string name="copy_button">Copiar para aqui</string>
+	<string name="deleting_files">A eliminar ficheiros...</string>
+    <string name="title_warning_some_may_not_work">Aviso</string>
+    <string name="warning_some_may_not_work">Algumas das seguintes opções podem não funcionar.</string>
+    <string name="show_warning_again">Mostrar aviso novamente</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Pretende realmente eliminar %s ficheiros?</string>
+    <string name="move_button_multiselect">Mover</string>
+    <string name="copy_button_multiselect">Copiar</string>
+    <string name="delete_button_multiselect">Eliminar</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
+    <string name="multiselect_title">Selecionar vários ficheiros</string>
+    <string name="error_selection">Por favor, escolha um ou mais ficheiros.</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">Tipo</string>
+    <string name="details_type_folder">Pasta</string>
+    <string name="details_type_file">Ficheiro</string>
+    <string name="details_type_other">Outros</string>
+    <string name="details_size">Tamanho</string>
+    <string name="details_permissions">Permissões</string>
+    <string name="details_hidden">Ocultos</string>
+    <string name="details_lastmodified">Data de modificação</string>
+    <string name="details_yes">Sim</string>
+    <string name="details_no">Não</string>
+    
+    <!-- Construct a unique file name of a file called %s. -->
+    <string name="copied_file_name">Cópia de %s</string>
+    
+    <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
+    <string name="copied_file_name_2">Cópia %1$d de %2$s</string>
+    
+    <string name="media_scan_included">Esta pasta será incluída na próxima análise.</string>
+    <string name="media_scan_excluded">Esta pasta será excluída na próxima análise.</string>
+    
+    <string name="error_creating_new_folder">Incapaz de criar a nova pasta.</string>
+    <string name="error_deleting_file">Incapaz de eliminar ficheiro.</string>
+    <string name="error_deleting_folder">Incapaz de eliminar a pasta %s.</string>
+    <string name="error_renaming_file">Incapaz de mudar nome.</string>
+    <string name="error_renaming_folder">Incapaz de mudar nome da pasta.</string>
+    <string name="error_moving_file">Incapaz de mover ficheiro.</string>
+    <string name="error_moving_folder">Incapaz de mover pasta.</string>
+    <string name="error_copying_file">Incapaz de copiar ficheiro.</string>
+    <string name="error_file_does_not_exists">O ficheiro não existe.</string>
+    <string name="error_deleting_child_file">Incapaz de eliminar o ficheiro %s.</string>
+    <string name="error_generic">Ocorreu um erro:</string>
+    <string name="error_media_scan">Não foi possível alterar as definições.</string>
+    
+    <string name="send_not_available">Não possui a aplicação de envio.</string>
+    
+    <string name="application_not_available">Aplicação não disponível.</string>
+    
+	<!-- ***************************
 	     Preferences
 	     *************************** -->
-  <!-- Menu item for Settings -->
-  <string name="settings">Settings</string>
-  <!-- Category for preferences. -->
-  <string name="preference_advanced_features">Advanced features</string>
-  <string name="preference_mediascan_title">Exclude from media scan</string>
-  <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
-  <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
-  <string name="oi_distribution_eula_message">Por favor leia e aceite os seguentes Termos de Uso (EULA) para %s.</string>
-  <string name="oi_distribution_eula_accept">Aceitar</string>
-  <string name="oi_distribution_eula_refuse">Rejeitar</string>
-  <string name="oi_distribution_newversion_message">Bem vindo a essa nova versão de %s.</string>
-  <string name="oi_distribution_newversion_recent_changes">Mudanças recentes:</string>
-  <string name="oi_distribution_newversion_continue">Continar</string>
-  <string name="oi_distribution_menu_update">Verificar por atualizações</string>
-  <string name="oi_distribution_update_box_text">Verificar manualmente por atualizações ou instalar o a Atualizador OI para notificações automáticas</string>
-  <string name="oi_distribution_update_check_now">Verificar agora</string>
-  <string name="oi_distribution_update_get_updater">Baixar Atualizador OI</string>
-  <string name="oi_distribution_update_error">Aplicação para download não está disponível.</string>
-  <string name="oi_distribution_update_app">Atualizador OI</string>
-  <string name="oi_distribution_about">Sobre</string>
-  <string name="oi_distribution_aboutapp_not_available">Nenhuma extensão compatível está disponível para mostrar a informação completa (contatos, créditos, licença).</string>
-  <string name="oi_distribution_aboutapp_get">Baixar Sobre OI</string>
-  <string name="oi_distribution_aboutapp">Sobre OI</string>
-  <string name="oi_distribution_filemanager">Gerenciador de Arquivos OI</string>
-  <string name="oi_distribution_filemanager_not_available">Nenhum gerenciador de arquivos compatível está disponível.</string>
-  <string name="oi_distribution_safe">Cofre OI</string>
-  <string name="oi_distribution_safe_not_available">Nenhuma aplicação compatível para criptografar está disponível.</string>
-  <string name="oi_distribution_safe_not_available_decrypt">Nenhuma aplicação compatível para decriptação está disponível.\n\nNota: Você precisa restaurar o chave mestra de um arquivo de backup para poder acessar os dados criptografados anteriormente.</string>
-  <string name="oi_distribution_download_market_message">Por favor baixar %s do Play Store ou website OpenIntents.</string>
-  <string name="oi_distribution_download_message">Por favor baixar %s do website OpenIntents.</string>
-  <string name="oi_distribution_download_market">Baixar via Play Store</string>
-  <string name="oi_distribution_download_web">Baixar via Web</string>
-  <string name="oi_distribution_download_title">Baixar %s</string>
-  <string name="oi_distribution_info_activity_text">%s pode ser usada com as seguintes aplicações:</string>
-  <string name="oi_distribution_info_launch">Iniciar %s</string>
-  <string name="oi_distribution_info_not_available">%1$s requer %2$s %3$s ou superior.</string>
-  <string name="oi_distribution_info_instructions">Instruções</string>
-  <string name="oi_distribution_launch_error">A aplicação não pode ser iniciada</string>
+    <!-- Menu item for Settings -->
+	<string name="settings">Definições</string>
+	
+    <!-- Category for preferences. -->
+    <string name="preference_advanced_features">Avançado</string>
+	<string name="preference_mediascan_title">Excluir da análise</string>
+    <string name="preference_mediascan_summary_on">Mostrar item de menu para excluir as pastas da análise.</string>
+    <string name="preference_mediascan_summary_off">Ocultar item de menu para excluir as pastas da análise.</string>
+    
+    <string name="preference_showallwarning_title">Mostrar todos os avisos</string>
+    <string name="preference_showallwarning_summary_on">Mostrar todas as mensagens de aviso</string>
+    <string name="preference_showallwarning_summary_off">Ocultar mensagens de aviso</string>
+       
+    <string name="preference_displayhiddenfiles_title">Exibir ficheiros ocultos</string>
+    <string name="preference_displayhiddenfiles_summary_on">Exibir ficheiros ocultos</string>
+    <string name="preference_displayhiddenfiles_summary_off">Ocultar ficheiros ocultos</string>
+    
+    <string name="preference_sort_settings">Ordenação</string>
+    <string name="preference_sortby">Ordenar por</string>
+    <string name="preference_sortby_ascending">Ordem ascendente</string>
+    <string name="preference_sortby_ascending_summary_on">Ordem ascendente</string>
+    <string name="preference_sortby_ascending_summary_off">Ordem descendente</string>
+    <string-array name="preference_sortby_names">
+        <item>Nome</item>
+        <item>Tamanho</item>
+        <item>Data de modificação</item>
+    </string-array>
+
+        
+    <!-- ***************************
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">Não escolheu qualquer ficheiro.</string>
+    <string name="saveas_error">Ocorreu um erro.</string>
+    <string name="saveas_file_saved">Ficheiro gravado com sucesso.</string>
+    
+        
+   
+    <string name="bookmarks">Marcadores</string>
+    <string name="bookmarks_cancel">Cancelar</string>
+    <string name="bookmarks_delete">Eliminar</string>
+    <string name="bookmarks_select_to_delete">Selecione os marcadores a eliminar</string>
+    <string name="bookmarks_manage">Gestão de marcadores</string>
+    <string name="bookmark_added">Marcador adicionado</string>
+    <string name="bookmark_not_found">Destino do marcador não encontrado.</string>
+    <string name="bookmarks_deleted">Marcadores selecionados eliminados.</string>
+    <string name="bookmark_already_exists">O ficheiro já existe nos marcadores.</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">Item comprimido com sucesso.</string>
+    <string name="compressing_error">Incapaz de comprimir item.</string>
+    <string name="compress_into_archive">Comprimir para o arquivo:</string>
+    <string name="extracting_success">Item extraído com sucesso.</string>
+    <string name="extracting_error">Incapaz de extrair item.</string>
+    <string name="extract_into_folder">Extrair para a pasta:</string>
+    <string name="extract_title">Selecione a pasta para a extração</string>
+    <string name="extract_button">Extrair aqui</string>
+    <string name="extracting">A extrair...</string>
+    <string name="compressing">A comprimir...</string>
+    <string name="warning_overwrite">O ficheiro %s já existe. Substituir?</string>
+
+    <string name="change_file_extension">Pretende alterar a extensão do ficheiro?</string>
 </resources>
