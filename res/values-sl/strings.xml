@@ -24,14 +24,14 @@
   OpenIntents devs https://launchpad.net/~openintents-devs
   met https://launchpad.net/~dot-cis</string>
 	
-    <!-- Short explanation of the application. Max. 80 characters. -->
-    <string name="about_comments">Upravljajte z dokumenti na SD kartici.</string>  
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">Manage files on the SD card with OI File Manager.</string>  
 	
 	<!-- ***************************
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">File Manager</string>
+    <string name="app_name">OI File Manager</string>
     
     <string name="menu_new_folder">Nova mapa</string>
     
@@ -44,12 +44,20 @@
     <string name="menu_open">Odpri</string>
     <string name="menu_move">Prestavi</string>
     <string name="menu_copy">Kopiraj</string>
+    <string name="menu_details">Details</string>
+    <string name="menu_more">More</string>
+    <string name="menu_compress">Compress (ZIP)</string>
+    <string name="menu_extract">Extract (ZIP)</string>
+    <string name="menu_filter">Filter</string>
     <string name="menu_include_in_media_scan">Vključi v pregled datotek</string>
     <string name="menu_exclude_from_media_scan">Izključi iz pregleda datotek</string>
+    <string name="menu_bookmark">Add to bookmarks</string>
+    <string name="menu_refresh">Refresh</string>
     
     <string name="create_new_folder">Ustvari novo mapo</string>
     <string name="folder_name">Ime mape</string>
     <string name="file_name">Ime mape</string>
+    <string name="extension">Extension (with \'.\')</string>
     <string name="this_folder_is_empty">Ta mapa je prazna.</string>
     <string name="really_delete">Res želiš izbrisati datoteko %s?</string>
     <string name="file_deleted">Datoteka je izbrisana.</string>
@@ -64,14 +72,30 @@
     <string name="copy_title">Izberi mapo, kamor bo datoteka skopirana</string>
     <string name="copy_button">Skopiraj sem</string>
 	<string name="deleting_files">Deleting files...</string>
+    <string name="title_warning_some_may_not_work">Warning</string>
+    <string name="warning_some_may_not_work">Some of the following options may not work.</string>
+    <string name="show_warning_again">Show warning again</string>
     
     <!-- Strings for a multi select feature -->
 	<string name="really_delete_multiselect">Res želiš izbrisati datoteke %d?</string>
     <string name="move_button_multiselect">Prestavi</string>
     <string name="copy_button_multiselect">Kopiraj</string>
     <string name="delete_button_multiselect">Izbriši</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
     <string name="multiselect_title">Izberi več datotek</string>
     <string name="error_selection">Prosim izberi eno ali več datotek.</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">Type</string>
+    <string name="details_type_folder">Folder</string>
+    <string name="details_type_file">File</string>
+    <string name="details_type_other">Other</string>
+    <string name="details_size">Size</string>
+    <string name="details_permissions">Permissions</string>
+    <string name="details_hidden">Hidden</string>
+    <string name="details_lastmodified">Last Modified</string>
+    <string name="details_yes">Yes</string>
+    <string name="details_no">No</string>
     
     <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">%s - kopija</string>
@@ -111,95 +135,60 @@
     <string name="preference_mediascan_summary_on">Pokaži meni za izključitev map iz pregleda datotek.</string>
     <string name="preference_mediascan_summary_off">Skrij meni za izključitev map iz pregleda datotek.</string>
     
-    <!-- ***************************
-	     Distribution
-	     *************************** -->
-	
-	<!-- EULA -->	
-	<!-- EULA (End user license agreement). %s is an application name, e.g. "OI Notepad EULA". 
-		Translation should be short, since this is a title. -->
-	<string name="oi_distribution_eula_title">Pogoji uporabe aplikacije %s</string>
-	
-	<!-- EULA welcome message. %s is an application name, e.g. "... (EULA) for OI Notepad".
-		Translation can be as long as required. -->
-	<string name="oi_distribution_eula_message">Prosimo preberite in potrdite pogoje uporabe za aplikacijo %s.</string>
-	
-	<!-- Button: Accept terms of EULA. -->
-	<string name="oi_distribution_eula_accept">Sprejmi</string>
-	
-	<!-- Button: Refuse terms of EULA. -->
-	<string name="oi_distribution_eula_refuse">Zavrni</string>
-	
-	<!-- New version -->
-	<!-- Application name and version. %1$s is the application name (e.g. "OI Notepad") and %2$s is the version number (e.g. "1.2.0").
-	Keep unmodified, unless your language requires that the version number is displayed first. -->
-	<string name="oi_distribution_name_and_version">%1$s %2$s</string>
-	
-	<!-- Welcome message. %s is an application name. -->
-	<string name="oi_distribution_newversion_message">Dobrodošli v novi različici aplikacije %s.</string>
-	
-	<string name="oi_distribution_newversion_recent_changes">Zadnje spremembe:</string>
-	
-	<!-- Button: Continue to main application. -->
-	<string name="oi_distribution_newversion_continue">Nadaljuj</string>
-	
-	<!-- Update -->
-	<!-- Menu command to look for updates. -->
-    <string name="oi_distribution_menu_update">Preveri za posodobitve</string>
-	<string name="oi_distribution_update_box_text">Za posodobitve preverite sami ali pa namestite OI Update za avtomatska opozorila.</string>
-	<string name="oi_distribution_update_check_now">Preveri zdaj</string>
-	<string name="oi_distribution_update_get_updater">Naloži OI Updater</string>
-	<string name="oi_distribution_update_error">Aplikacije ne morete prenesti.</string>
-	
-    <!-- Name of the application "OI Update". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_update_app">OI Update</string>
+    <string name="preference_showallwarning_title">Show all warnings</string>
+    <string name="preference_showallwarning_summary_on">Show all warning messages</string>
+    <string name="preference_showallwarning_summary_off">Suppress warning messages</string>
+       
+    <string name="preference_displayhiddenfiles_title">Display hidden files</string>
+    <string name="preference_displayhiddenfiles_summary_on">Display hidden files</string>
+    <string name="preference_displayhiddenfiles_summary_off">Hide hidden files</string>
     
-    <!-- About -->
-    <!-- Menu command to open the "about" or "info" dialog. -->
-    <string name="oi_distribution_about">O aplikaciji</string>
-    <!-- %s is the version number (e.g. "1.2.1") -->
-	<string name="oi_distribution_aboutapp_not_available">Ni združljivega vstavka za prikaz vseh informacij (kontakt, zasluge, licenca).</string>
-    
-    
-    <!-- Button text: Get the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp_get">Naloži OI About</string>
-    
-    <!-- Name of the application "OI About". Translations of the application name should be consistent. -->
-    <string name="oi_distribution_aboutapp">OI About</string>
-    
-    <!-- Name of the application "OI File Manager". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_filemanager">OI File Manager</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_filemanager_not_available">Ni združljivega urejevalca dokumentov.</string>
-    
-    <!-- Safe -->
-    <!-- Name of the application "OI Safe". Translations of the application name should be consistent.  -->
-    <string name="oi_distribution_safe">OI Safe</string>
-    <!-- Dialog message. -->
-    <string name="oi_distribution_safe_not_available">Ni združljive aplikacije za šifriranje.</string>
-    <string name="oi_distribution_safe_not_available_decrypt">Ni zružljive aplikacije za šifriranje.\n\nOpomba: Za dostop do šifriranih podatkov potrebujete glavni ključ z varnostne kopije.</string>
-    
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_market_message">Prosimo prenesite aplikacijo %s z Android Market-a ali z domače strani OpenIntents.</string>
-    <!-- Dialog message: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_message">Prosimo prenesite aplikacijo %s z domače strani OpenIntents.</string>
-    <!-- Dialog button: download the suggested application from Android Market. -->
-    <string name="oi_distribution_download_market">Prenos z Android Market-a</string>
-    <!-- Dialog button: download the suggested application from the developer web site. -->
-    <string name="oi_distribution_download_web">Prenos z domače strani</string>
-	<!-- Dialog title: %s is the name of an application (e.g. "OI Notepad"). -->
-    <string name="oi_distribution_download_title">Prenesi %s</string>
-	
-	<!-- %s is an application name (e.g. "OI About can be used with the following applications:") -->
-	<string name="oi_distribution_info_activity_text">%s lahko uporabiš z naslednjimi aplikacijami:</string>
-	<!-- %s is an application name (e.g. "Launch OI Notepad") -->
-    <string name="oi_distribution_info_launch">Zaženi %s</string>
-    <!-- %1$s is the current application name. %2$s is another application name, and %3$s is the other application\'s version name
-    (e.g. "OI About requires OI Notepad 1.2.0 or higher.") -->
-	<string name="oi_distribution_info_not_available">%1$s potrebuje aplikacijo %2$s %3$s ali novejšo različico.</string>
-	<!-- Title of a dialog. -->
-	<string name="oi_distribution_info_instructions">Navodila</string>
-	<!-- Error message -->
-	<string name="oi_distribution_launch_error">Aplikacije ni možno zagnati</string>
+    <string name="preference_sort_settings">Sort settings</string>
+    <string name="preference_sortby">Sort by</string>
+    <string name="preference_sortby_ascending">In ascending order</string>
+    <string name="preference_sortby_ascending_summary_on">Sort in ascending order</string>
+    <string name="preference_sortby_ascending_summary_off">Sort in descending order</string>
+    <string-array name="preference_sortby_names">
+        <item>Name</item>
+        <item>Size</item>
+        <item>Last modified</item>
+    </string-array>
 
+        
+    <!-- ***************************
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">You haven\'t picked any file.</string>
+    <string name="saveas_error">An error occured.</string>
+    <string name="saveas_file_saved">File successfully saved!</string>
+    
+        
+   
+    <string name="bookmarks">Bookmarks</string>
+    <string name="bookmarks_cancel">Cancel</string>
+    <string name="bookmarks_delete">Izbriši</string>
+    <string name="bookmarks_select_to_delete">Select bookmarks to delete</string>
+    <string name="bookmarks_manage">Manage bookmarks</string>
+    <string name="bookmark_added">Bookmark added</string>
+    <string name="bookmark_not_found">Bookmarked destination not found.</string>
+    <string name="bookmarks_deleted">Selected bookmarks deleted</string>
+    <string name="bookmark_already_exists">This file is already bookmarked</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">Item compressed successfully</string>
+    <string name="compressing_error">Could not compress the item</string>
+    <string name="compress_into_archive">Compress into archive:</string>
+    <string name="extracting_success">Item extracted successfully</string>
+    <string name="extracting_error">Could not extract the item</string>
+    <string name="extract_into_folder">Extract into folder:</string>
+    <string name="extract_title">Select folder to extract into</string>
+    <string name="extract_button">Extract here</string>
+    <string name="extracting">Extracting...</string>
+    <string name="compressing">Compressing...</string>
+    <string name="warning_overwrite">File %s exists. Do you want to overwrite it?</string>
+
+    <string name="change_file_extension">Do you want to change the file extension?</string>
 </resources>
